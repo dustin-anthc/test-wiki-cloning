@@ -1,4 +1,4 @@
--   [Introduction](wiki-AKWarm-Software-Overview#Introduction)
+-   [Introduction](#Introduction)
 -   User Interface
 -   Application Data Storage and Storage to File
 -   Energy Library
@@ -13,7 +13,7 @@
 -   Developer Software Requirements
 -   [Developer Contact Information](AKWarm-Software-Overview#Developer-Contact-Information)
 
-# Introduction
+# Introduction <a name="Introduction"></a>
 ------------
 
 The purpose of this document is to provide a general overview of the AkWarm software application so that a software developer can more easily maintain and enhance the application. The intended audience for this document is software developers.
