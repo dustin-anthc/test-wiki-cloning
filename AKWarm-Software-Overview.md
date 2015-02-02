@@ -13,7 +13,7 @@
 -   Developer Software Requirements
 -   [Developer Contact Information](AKWarm Software Overview#Developer Contact Information)
 
-Introduction
+# Introduction
 ------------
 
 The purpose of this document is to provide a general overview of the AkWarm software application so that a software developer can more easily maintain and enhance the application. The intended audience for this document is software developers.
@@ -193,7 +193,7 @@ The following development tools are being used for AkWarm development:
 
 5.  Microsoft Chart Controls for .NET Framework 3.5.
 
-Developer Contact Information
+# Developer Contact Information
 -----------------------------
 
 The following people have had extensive involvement with the development of the source code, Energy Libraries, and Help file for AkWarm:
