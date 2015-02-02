@@ -4,12 +4,12 @@
 -   [Releasing a New Energy Library](#release)
 -   [Adding a New Field or Table to the Energy Library](#add_new_field)
 -   [Notes on Editing Energy Library Data](#editing_notes)
-    -[GENERAL INFORMATION](#general_info)
-    -[GENERAL LIBRARIES](#general_libraries)
-    - BUILDING THERMAL COMPONENTS
-    -[MECHANICAL SYSTEMS](#mechanical_systems)
-    -[RECOMMENDED IMPROVEMENTS](#recommended improvements)
-    -[PROGRAM AND RATING LIBRARIES](#program_and_rating)
+* [GENERAL INFORMATION](#general_info)
+* [GENERAL LIBRARIES](#general_libraries)
+* BUILDING THERMAL COMPONENTS
+* [MECHANICAL SYSTEMS](#mechanical_systems)
+* [RECOMMENDED IMPROVEMENTS](#recommended_improvements)
+* [PROGRAM AND RATING LIBRARIES](#program_and_rating)
 
 Introduction <a name="introduction"></a>
 ------------
