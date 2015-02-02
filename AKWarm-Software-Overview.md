@@ -205,19 +205,13 @@ The following people have had extensive involvement with the development of the 
 > 907-310-9124
 >
 > **Ian Moore**
->
 > Alaska Map Science
->
 > 15585 Newell Drive
->
 > Anchorage, AK 99516
->
 > 907-348-0237
 >
 > **Ginny Moore**
 > Flattop Technical Services
->
 > 14530 Echo Canyon Road
 > Anchorage, AK 99516
->
 > 907-345-1355
