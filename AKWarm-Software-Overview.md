@@ -11,7 +11,7 @@
     -   AkWarm’s Setup/Installer Program
     -   Utilities to Create and Test Energy Libraries
 -   Developer Software Requirements
--   [Developer Contact Information](AKWarm-Software-Overview#Developer-Contact-Information)
+-   [Developer Contact Information](#developer_contact)
 
 # Introduction <a name="Introduction"></a>
 ------------
@@ -193,7 +193,7 @@ The following development tools are being used for AkWarm development:
 
 5.  Microsoft Chart Controls for .NET Framework 3.5.
 
-# Developer Contact Information
+# Developer Contact Information <a name="developer_contact"></a>
 -----------------------------
 
 The following people have had extensive involvement with the development of the source code, Energy Libraries, and Help file for AkWarm:
