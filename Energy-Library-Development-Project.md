@@ -1,4 +1,4 @@
--   Introduction
+-   [Introduction](#introduction)
 -   Energy Library File Details
 -   Overview of Visual Basic Projects involving the Energy Library
 -   Releasing a New Energy Library
@@ -11,7 +11,7 @@
     -    RECOMMENDED IMPROVEMENTS
     -   PROGRAM AND RATING LIBRARIES
 
-Introduction
+Introduction <a name="introduction"></a>
 ------------
 
 The *Energy Library* is a database of information that the AkWarm application uses in a read-only fashion to performs its tasks. Examples of the information contained in the Energy Library are:
