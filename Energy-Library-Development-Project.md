@@ -1,15 +1,15 @@
 -   [Introduction](#introduction)
--   Energy Library File Details
--   Overview of Visual Basic Projects involving the Energy Library
--   Releasing a New Energy Library
--   Adding a New Field or Table to the Energy Library
--   Notes on Editing Energy Library Data
-    -   GENERAL INFORMATION
-    -   GENERAL LIBRARIES
-    -   BUILDING THERMAL COMPONENTS
-    -   MECHANICAL SYSTEMS
-    -    RECOMMENDED IMPROVEMENTS
-    -   PROGRAM AND RATING LIBRARIES
+-   [Energy Library File Details](#file_details)
+-   [Overview of Visual Basic Projects involving the Energy Library](#overview)
+-   [Releasing a New Energy Library](#release)
+-   [Adding a New Field or Table to the Energy Library](#add_new_field)
+-   [Notes on Editing Energy Library Data](#editing_notes)
+    -[GENERAL INFORMATION](#general_info)
+    -[GENERAL LIBRARIES](#general_libraries)
+    - BUILDING THERMAL COMPONENTS
+    -[MECHANICAL SYSTEMS](#mechanical_systems)
+    -[RECOMMENDED IMPROVEMENTS](#recommended improvements)
+    -[PROGRAM AND RATING LIBRARIES](#program_and_rating)
 
 Introduction <a name="introduction"></a>
 ------------
@@ -38,7 +38,7 @@ This document describes the:
 
 -   Notes about editing and updating the Energy Library data
 
-Energy Library File Details
+Energy Library File Details <a name="file_details"></a>
 ---------------------------
 
 An Energy Library starts as a standard Microsoft Access database. The Microsoft Access format facilitates the editing and viewing of the data. There are actually two different MS Access databases involved when the data is being edited. One database holds the tables of data, but no forms for viewing and editing the data. As an example, the data for the May 18, 2012 release of the Energy Library is stored in an Access file named *2012-05-18.accdb.* The Access file that holds the forms to edit the data in *2012-05-18.accdb* is named *LibEdit.accdb.* The forms in *LibEdit.accdb* attach to the tables in *2012-05-18.accdb* to allow for access to that data. *LibEdit.accdb* does not change over time (unless the structure of the Energy Library changes), but each new release of the Energy Library results in a new database file, such as *2012-05-18.accdb,* holding the new Energy Library data.
@@ -47,7 +47,7 @@ The Microsoft Access database is not directly used by the AkWarm application. In
 
 An AkWarm installation on a user’s computer contains the most current Energy Library but also all prior Energy Library releases. These older libraries are kept available because it is often necessary to open an older AkWarm file that was created with an older Library version. AkWarm allows the user to work with that file using the original Library. Doing so helps ensure that the user can replicate the original calculated results that were produced when the file was first created.
 
-Overview of Visual Basic Projects involving the Energy Library
+Overview of Visual Basic Projects involving the Energy Library <a name="overview"></a>
 --------------------------------------------------------------
 
 There are a number of Visual Basic Projects that work with Energy Libraries. Following is the list, with a brief description of each. These projects will be referenced later in this document.
@@ -69,7 +69,7 @@ The following three projects are used to convert the MS Access Energy Library fi
 
 The ***LibraryTester*** project creates a small GUI application that performs some simple data validity checks on an Energy Library. These tests are used to review and identify data entry errors in an Energy Library before releasing the library.
 
-Releasing a New Energy Library
+Releasing a New Energy Library <a name="release"></a>
 ------------------------------
 
 New versions of the Energy Library are released as information in the library is updated. Fuel price changes are generally updated in the Library every six months, so a new library release occurs at least that often. Energy Libraries are installed when the AkWarm application is installed. However, new Energy Libraries can also be installed independently and automatically through a Web update process. The steps below outline the process of releasing a new Energy Library.
@@ -122,7 +122,7 @@ New versions of the Energy Library are released as information in the library is
         2012-05-18.lib 2.2.0
         This file lists each AkWarm library file and also gives the minimum version number that that Library file is compatible with (for users running older versions, the Library will not be automatically downloaded and installed). If the minimum version number is entered as “DELETED”, the Library file will automatically be deleted from users computers; this feature is available to remove Library files that were found to be defective after release.
 
-Adding a New Field or Table to the Energy Library
+Adding a New Field or Table to the Energy Library <a name="add_new_field"></a>
 -------------------------------------------------
 
 If changes to the AkWarm application code require that a new field be added to an Energy Library table or perhaps an entire new table needs to be added, this section describes the steps required to make those structural modifications to the Energy Library. If a new field needs to be added, the steps are:
@@ -165,10 +165,10 @@ If you need to add an entire new Table to the Energy Library, these are the step
 
 4.  In the Visual Basic AkWarm application, a new Partial Class must be added to the *EnergyLibraryEntities* project in the *DataObjects* folder. The Class must inherit *EnergyLibraryObject* and be named with the name given in the **ObjectType** field above. Each field in the Access Table should have a corresponding property in the class, with names and data types according to the entries in the *EnergyLibraryObjectFieldMapping* table. After this step, the new table should be ready to use in the AkWarm application via *AkWarmEnergyLibrary* methods.
 
-Notes on Editing Energy Library Data
+Notes on Editing Energy Library Data <a name="editing_notes"></a>
 ------------------------------------
 
-### GENERAL INFORMATION
+### GENERAL INFORMATION <a name="general_info"></a>
 
 All entries are made in *Form* or *Datasheet* view of the file “libedit.accdb”. The “libedit.accdb” file must always remain in the same folder location as the actual xxxx.accdb library file.
 
@@ -184,7 +184,7 @@ Every library has a few common entries:
 
 Information specific to each library is described below.
 
-### GENERAL LIBRARIES
+### GENERAL LIBRARIES <a name="general_libraries"></a>
 
 **1. CITY**
 
@@ -326,7 +326,7 @@ Some structural walls have no lumber framing, but are concrete –based. This li
 
 This library is a catchall for all above grade walls that cannot be “built” by simply describing framing, insulation, and sheathing. Unlike those standard walls, the R-values for these walls are for **whole wall R-value (structural material and insulation).** This library currently includes concrete and brick walls, metal stud walls, and a value for a common wall in a multi-unit building. Metal stud walls are very difficult to model and most information comes from test lab data. Although there are many more possible types than those included here, we have not found a ready resource to provide us with reliable R-values for them.
 
-### MECHANICAL SYSTEMS
+### MECHANICAL SYSTEMS <a name="mechanical_systems"></a>
 
 **11. SPACE HEATERS**
 
@@ -350,7 +350,7 @@ This information is found on the yellow energy guide label on appliances.
 
 The[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Directory**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**of**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Certified**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Product**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Performance**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**for**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Residential**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Water**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[ ](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH)[**Heaters**](http://cafs.ahrinet.org/gama_cafs/sdpsearch/search.jsp?table=RWH) is a searchable database provided by the Air Conditioning, Heating and Refrigeration Institute. It provides information on performance and efficiency of specific water heater models.
 
-###  RECOMMENDED IMPROVEMENTS
+###  RECOMMENDED IMPROVEMENTS <a name="recommended_improvements"></a>
 
 Any improvement measure that is to be analyzed by AkWarm must be included in one of the improvement libraries. There are four different improvement libraries, dealing individually with shell, space heating, domestic water heating and miscellaneous other improvements that are available for evaluation by AkWarm. While each library contains information specific to that component, they all require the same type of information:
 
@@ -382,7 +382,7 @@ Any improvement measure that is to be analyzed by AkWarm must be included in one
 
 **16. MISCELLANEOUS IMPROVEMENTS:** This catch-all library includes improvement options that are not related to specific shell, space heating or water heating components, but to overall building efficiency, such as a setback thermostat, or a ventilation system.
 
-### PROGRAM AND RATING LIBRARIES
+### PROGRAM AND RATING LIBRARIES <a name="program_and_rating"></a>
 
 **17. MISCELLANEOUS INFORMATION**
 
