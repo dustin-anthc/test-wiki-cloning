@@ -13,7 +13,7 @@
 -   [Developer Software Requirements](#developer_requirements)
 -   [Developer Contact Information](#developer_contact)
 
-# Introduction <a name="Introduction"></a>
+Introduction <a name="Introduction"></a>
 ------------
 
 The purpose of this document is to provide a general overview of the AkWarm software application so that a software developer can more easily maintain and enhance the application. The intended audience for this document is software developers.
