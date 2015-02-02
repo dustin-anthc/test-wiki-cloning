@@ -1,16 +1,16 @@
 -   [Introduction](#Introduction)
--   User Interface
--   Application Data Storage and Storage to File
--   Energy Library
--   Calculations
--   Reporting
--   Web Server Functions
--   Tasks Involved when Adding a New Input
--   List of Visual Basic Projects and Associated Descriptions
+-   [User Interface](#user_interface)
+-   [Application Data Storage and Storage to File](#data_storage)
+-   [Energy Library](#energy_library)
+-   [Calculations](#calculations)
+-   [Reporting](#reporting)
+-   [Web Server Functions](#web_server)
+-   [Tasks Involved when Adding a New Input](#new_input)
+-   [List of Visual Basic Projects and Associated Descriptions](#vb_projects)
     -   Main AkWarm Application
     -   AkWarm’s Setup/Installer Program
     -   Utilities to Create and Test Energy Libraries
--   Developer Software Requirements
+-   [Developer Software Requirements](#developer_requirements)
 -   [Developer Contact Information](#developer_contact)
 
 # Introduction <a name="Introduction"></a>
@@ -42,7 +42,7 @@ Previously, AkWarm was split into two separate applications: AkWarm-Residential 
 
 The following sections describe the major components of the AkWarm application.
 
-User Interface
+<a name="user_interface"></a> # User Interface 
 --------------
 
 The user interface for AkWarm is a Multiple Document Interface (MDI) application utilizing Windows Forms. Multiple home and/or commercial building files can be open simultaneously. The open files need not be all of the same type (Residential or Commercial). The main project that holds the AkWarm user interface is the *AkWarm\_UI* project. The document describing that project is the next place to go for learning more details about the user interface development.
@@ -51,14 +51,14 @@ Windows Forms data binding is used to move the user-entered data on the input fo
 
 Context-sensitive Help is available in the AkWarm application. The Help file is a Microsoft HTML Help file. The procedure for updating the file and linking topics to the AkWarm application is further described in the “AkWarm Help System” document.
 
-Application Data Storage and Storage to File
+<a name="data_storage"></a> # Application Data Storage and Storage to File
 --------------------------------------------
 
 For one particular AkWarm analysis, which is either one residential building or one commercial building, the data for that analysis is stored in an object hierarchy (a root object containing other objects, which in turn contain objects, etc). For a residential analysis, the root object in the object model is of the type *Project,* a class found in the *AkWarmCalc* project. The hierarchy of objects starting with the root *Project* object describe the inputs to the residential home analysis and also hold a number of the calculated results. For an analysis of a commercial building, the root object is of the type *ProjectComm.* A similar hierarchy of objects is contained within that root object. Further details on the residential and commercial object models are found in the document describing the *AkwarmCalc* project.
 
 When a user saves an AkWarm analysis to the user’s hard drive, each individual analysis occupies a separate file on disk. The application does *not* utilize a database system to store multiple AkWarm analyses within one database. AkWarm uses the .NET System.Xml.Serialization libraries to serialize the *Project* or *ProjectComm* object hierarchy into an XML document that is compressed and lightly encrypted before being stored on disk as an *.hm2* (residential) or *.hmc* (commercial) AkWarm file. See the *Project.SerializeToFile()* and *Project.ToByteArray()* methods for details on the serialization process.
 
-Energy Library
+<a name="energy_library"></a> # Energy Library
 --------------
 
 The *Energy Library* is a database of information that the AkWarm application uses in a read-only fashion to performs its tasks. Examples of the information contained in the Energy Library are:
@@ -77,7 +77,7 @@ An AkWarm installation on a user’s computer contains the most current Energy L
 
 An Energy Library begins as a Microsoft Access database but is converted to a compressed and lightly-encrypted XML-serialized Visual Basic dictionary of generic lists for use with the AkWarm application. A separate document titled “AkWarm Energy Library” describes this process in more detail. Inside the AkWarm application, the *AkWarmEnergyLibrary* and *AkWarmEnergyLibraryEntities* projects contain the code that read and make available Energy Library information to the rest of the AkWarm application.
 
-Calculations
+<a name="calculations"></a> # Calculations
 ------------
 
 As mentioned before, three different calculations are performed on a residential building--the energy use calculation, the home energy rating calculation, and the improvement analysis calculation. For commercial buildings, the same calculations are performed with the exception that the energy rating calculation is not performed. The calculations are initiated by the user clicking the “Calculate” button on the main input screen. The actual calculation code is found in the *AkWarmCalc* project. The energy use calculation is performed by the *Calculate()* method found in the *EnergyCalc* class for the residential analysis and the same-named method in the *EnergyCalcComm* class for the commercial analysis. Energy use is calculated on a monthly basis and includes space heating, space cooling, water heating, and lights and appliances energy use.
@@ -94,14 +94,14 @@ The improvement analysis for the residential analysis is performed by the *AkWar
 
 After AkWarm performs the calculations above, some of the results of the calculations are stored in the object model so that those results are serialized into the AkWarm file. None of the calculated results *need* to be stored in the AkWarm file, since the calculated results can always be reproduced from the user input values, which are stored in the file. However, the data in the AkWarm file is ultimately loaded into the ARIS (Alaska Retrofit Information System) database, and the calculated results are essential for producing ARIS reports and analyses. A very large number of calculated values are available, and only the most important values are saved in the AkWarm file.
 
-Reporting
+<a name="reporting"></a> # Reporting
 ---------
 
 A number of reports are available in AkWarm. The reports generally display calculated results, but there is also a report that summarizes all of the input values entered by the user. The report showing all of the inputs is available from the File menu in the application, but all of the other reports depend on calculated values and are therefore only available from the *Reports* tab on the output screen of AkWarm. The code used for reporting in AkWarm can be found in the *AkWarmReporting* project.
 
 A number of different reporting technologies are used in AkWarm. The relatively low-level System.Drawing library is used to create the *Home Energy Rating* certificate because of the precise placement afforded by that library. The *Energy Features* and *Energy Flows* report also use that library. Other reports are created in Rich Text Format (RTF), for example the *Home Inputs* report. The most recent report, the *Design Heat Loss Report*, was created using HTML, which we hope to use for most future reports. Finally, reports that are customizable by the user are created as Microsoft Word documents using Word Automation. Examples are the residential *Improvement Options Report* and the commercial *Long Audit Report.* After those reports are created, the user is able to edit and augment the report by using standard Microsoft Word editing tools.
 
-Web Server Functions
+<a name="web_server"></a> # Web Server Functions
 --------------------
 
 A web server is used to perform a number of important functions in AkWarm, including:
@@ -118,7 +118,7 @@ A web server is used to perform a number of important functions in AkWarm, inclu
 
 The *analysisnorth.com* web server is currently used for the above purposes. However, changing a few URLs in the code would allow the use of any web server. The posting of unhandled exceptions does utilize a short CGI script on the web server. That script is currently written in the Python scripting language but could be rewritten in a different language if no Python support is available on the new web server.
 
-Tasks Involved when Adding a New Input
+<a name="new_input"></a> # Tasks Involved when Adding a New Input
 --------------------------------------
 
 When a new user input value needs to be added to AkWarm, there are a number of tasks that must be completed. The list below summarizes those tasks:
@@ -137,7 +137,7 @@ When a new user input value needs to be added to AkWarm, there are a number of t
 
 7.  Include the new input in any calculations and reports relevant to the input.
 
-List of Visual Basic Projects and Associated Descriptions
+<a name="vb_projects"></a> # List of Visual Basic Projects and Associated Descriptions
 ---------------------------------------------------------
 
 Below are brief descriptions of each Visual Basic Project in the AkWarm application. Separate documents provide more detailed developer information for the major projects in this list. The projects are categorized below by the part of the AkWarm system they apply to.
@@ -178,7 +178,7 @@ Below are brief descriptions of each Visual Basic Project in the AkWarm applicat
 
 ***LibraryTester -*** The project contains a small GUI application that performs some validation tests on the data found in an Energy Library. These tests are used to review and identify data entry errors in an Energy Library before releasing the library.
 
-Developer Software Requirements
+<a name="developer_requirements"></a> # Developer Software Requirements
 -------------------------------
 
 The following development tools are being used for AkWarm development:
