@@ -1,15 +1,15 @@
--   [Introduction](#introduction)
--   [Energy Library File Details](#file_details)
--   [Overview of Visual Basic Projects involving the Energy Library](#overview)
--   [Releasing a New Energy Library](#release)
--   [Adding a New Field or Table to the Energy Library](#add_new_field)
--   [Notes on Editing Energy Library Data](#editing_notes)
-* [GENERAL INFORMATION](#general_info)
-* [GENERAL LIBRARIES](#general_libraries)
-* BUILDING THERMAL COMPONENTS
-* [MECHANICAL SYSTEMS](#mechanical_systems)
-* [RECOMMENDED IMPROVEMENTS](#recommended_improvements)
-* [PROGRAM AND RATING LIBRARIES](#program_and_rating)
+- [Introduction](#introduction)
+- [Energy Library File Details](#file_details)
+- [Overview of Visual Basic Projects involving the Energy Library](#overview)
+- [Releasing a New Energy Library](#release)
+- [Adding a New Field or Table to the Energy Library](#add_new_field)
+- [Notes on Editing Energy Library Data](#editing_notes)
+	- [GENERAL INFORMATION](#general_info)
+	- [GENERAL LIBRARIES](#general_libraries)
+	- [BUILDING THERMAL COMPONENTS](#thermal_components)
+	- [MECHANICAL SYSTEMS](#mechanical_systems)
+	- [RECOMMENDED IMPROVEMENTS](#recommended_improvements)
+	- [PROGRAM AND RATING LIBRARIES](#program_and_rating)
 
 Introduction <a name="introduction"></a>
 ------------
@@ -290,7 +290,7 @@ Some utilities, such as Golden Valley Electric, combine Fuel Surcharge and Purch
 
 There are 22 communities in the Weather Library (described below) for which we have detailed weather data including monthly averages for wind, solar and temperatures. All other communities are assigned one of these “weather cities” based on proximity.
 
-### BUILDING THERMAL COMPONENTS
+### BUILDING THERMAL COMPONENTS <a name="thermal_components"></a>
 
 The AkWarm Energy Library contains six main libraries that provide information on thermal properties of the various components of the building shell. Each entry provides a default R-value (for insulation, framing, masonry, above grade walls) or U-value (*U*-*factor*) (windows, doors) for the available options on the user screens. While there may be a number of different values publically available to describe these materials, it is always recommended to use a standard reference, such as ASHRAE Fundamentals.
 
