@@ -1,10 +1,11 @@
--   Overview of Rating Calculation Steps
--   Sample Calculation
--   Additional Calculation Details
-    -   Standardized Operating Conditions
-    -   Source Energy Factors
-    -   Reference Home Characteristics
+-   [Overview of Rating Calculation Steps](#overview)
+-   [Sample Calculation](#sample_calc)
+-   [Additional Calculation Details](#more_details)
+    -   [Standardized Operating Conditions](#soc)
+    -   [Source Energy Factors](#source_energy)
+    -   [Reference Home Characteristics](#reference_home)
 
+<a name="overview"></a>
 Overview of Rating Calculation Steps
 ------------------------------------
 
@@ -24,6 +25,7 @@ This document describes the calculation details for the Home Energy Rating Point
 
 6.  **Determine the Rating Star Score for this Home.** There are fixed point ranges for each Rating Star level. It is simply a matter of determining which point range encompasses the actual Rating Point score for the home to determine what the associated Rating Star level is.
 
+<a name="sample_calc"></a>
 Sample Calculation
 ------------------
 
@@ -35,13 +37,17 @@ Step 4 in the process is to determine the source energy use of a home scoring 10
 
 The Step 5 process of determining the Rating Point score of the actual home is best illustrated with the following diagram. A linear relationship is established between source energy use and the Rating Point score. That relationship is created by drawing a line through two points: 1) The energy use and point score of 85 for the Reference Home, and 2) The energy use and point score of 100 for the 100 Point Home. On the diagram, these two points are shown as the red dots. The blue line is the line formed by these two points. The line is constrained to not exceed 100 Rating Points or fall below 0 Rating Points.
 
+![Example Rating Calculation Graph](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/rating_example.png)
+
 Once this linear relationship is established, the source energy use of the actual home, 350 MMBtu/year in this example, is found on the blue line, and the corresponding Rating Point score is read off. For the 350 MMBtu/year home, the Rating Point score is ***60.4 Points***. This point score falls in the point range for a **2 Star Plus** home.
 
 If the actual home had the same shape (wall area, ceiling area, etc.) but instead had a source energy use greater than 817 MMBtu/year, it would score 0 Rating Points, no matter how high the energy use beyond that level. Also, if the home had a source energy use less than 44 MMBtu/year, it would score 100 Points, no matter how low the energy use below that level.
 
+<a name="more_details"></a>
 Additional Calculation Details
 ------------------------------
 
+<a name="soc"></a>
 ### Standardized Operating Conditions
 
 The Home Energy Rating is intended to rate the efficiency of the home and not the occupants. Therefore a number of energy-affecting characteristics that are controlled by the home occupants are set to standard values before performing the various energy calculations associated with the rating. Also, certain other values are standardized to remove their effects from the rating process due to rating policy concerns. The items that are standardized are:
@@ -63,6 +69,7 @@ The Home Energy Rating is intended to rate the efficiency of the home and not th
 
 7.  All shell components that are exposed to **Garage Temperature** are changed to Living Space temperature shell components. Doing so causes all garage components to be as important as Living Space components in the rating process.
 
+<a name="source_energy"></a>
 ### Source Energy Factors
 
 The energy used by a building at the site of the building has often incurred conversion, transmission and distribution losses before reaching the building. In order to reflect these losses and also to reflect the fact that some energy forms are of higher quality and more valuable than other energy forms, source-to-site multiplicative factors are applied to the energy used by the building before adding together the energy used from multiple fuel types. The following source energy factors are used:
@@ -89,6 +96,7 @@ The wood fuel types--Birch, and Spruce--receive source multipliers of 0.8, multi
 
 The District Steam and Hot Water energy types were given relatively favorable treatment because the heat source for these fuel types is often waste heat from an electricity generator.
 
+<a name="reference_home"></a>
 ### Reference Home Characteristics
 
 This section gives more details on the Reference Home, which is the home that has the same physical shape as the actual home but has specified efficiency characteristics. The current rating system specifies that this Reference Home will score 85 Rating Points.
