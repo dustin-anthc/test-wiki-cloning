@@ -14,7 +14,7 @@
 
 # AKWarm User Interface Project Documentation
 
-Introduction <a name="introduction"></a>
+<a name="introduction"></a> Introduction 
 -------------
 
 The AkWarm User Interface is structured as a MDI (Multiple Document Interface) application. The main form (MDImain.vb) is a MDI container and can open and contain Home forms (Home.vb) and Building forms (Building.vb), but provides little functionality on its own. The Home form (Home.vb) handles the majority of the user interface for Residential data entry and rating results presentation, but calls a number of other forms and user controls to handle specific tasks.  The Building form (Building.vb) is the corresponding primary form for Commercial projects. A number of general functions that are used throughout the user interface are found the the module UI\_Helpers.vb.
@@ -47,13 +47,13 @@ The approaches used in the user interface have evolved and improved over the cou
 
 The AkWarm interface is integrated with a help document (AkWarm.chm) and most controls are setup so that pressing F1 will take the user directly to the applicable help topic. When new features are added to AkWarm, corresponding topics should be added to (or updated in) the help document. The AkWarm.CHM file can be updated with Microsoft HTML Help Workshop (a free download) or with any number of third party .CHM editors (which may be easier to use). To avoid impacts on the existing F1 functionally, the filename and location of the help document and names of existing pages should not be changed, and existing pages should not be removed without verifying that they are no longer referenced within the interface. Within the project, F1 functionality is implemented with .NET HelpProvider controls. On the Home and Building forms, the help associations are set up with calls to the SetControlProperties routine.
 
-List of Files and Associated Descriptions <a name="list_file"></a>
+<a name="list_file"></a> List of Files and Associated Descriptions 
 -----------------------------------------
 
 The files in the AkWarmUI project are listed below with short descriptions of their purpose. The files are categorized by function.
 
-### Primary Forms <a name="primary_forms"></a>
-
+<a name="primary_forms"></a>
+### Primary Forms 
 **Forms/MDImain.vb** - MDI container, opens Home forms, but little functionality of its own.
 
 **Forms/Home.vb** - Primary form for Residential data entry and results presentation
@@ -62,8 +62,8 @@ The files in the AkWarmUI project are listed below with short descriptions of th
 
 
 ----------
-
-### Dialog Forms  <a name="dialog_forms"></a>
+<a name="dialog_forms"></a
+### Dialog Forms  >
 
 **Forms/AboutBox.vb** - Informational screen that can be displayed at any time from MDImain
 
@@ -121,8 +121,8 @@ The files in the AkWarmUI project are listed below with short descriptions of th
 
 
 ----------
-
-### Generic User Controls <a name="user_controls"></a>
+<a name="user_controls"></a>
+### Generic User Controls 
 
 **OtherUserControls/ArithExpressionControl.vb** - User interface for the AkWarmCalc ArithExpression object
 
@@ -146,8 +146,8 @@ The files in the AkWarmUI project are listed below with short descriptions of th
 
 
 ----------
-
-### Residential Inputs Controls <a name="residential_inputs"></a>
+<a name="residential_inputs"></a>
+### Residential Inputs Controls 
 
 **OtherUserControls/BoilerplateSelectionControl.vb** - Control to select from available reporting boilerplate options
 
@@ -168,8 +168,8 @@ The files in the AkWarmUI project are listed below with short descriptions of th
 **OtherUserControls/DesignHeatLossControl.vb** - Control to collect the inputs for the Design Heat Load calculation.
 
 ----------
-
-### Commercial Inputs Controls <a name="commercial_inputs"></a>
+<a name="commercial_inputs"></a>
+### Commercial Inputs Controls 
 
 The following controls provide user inputs for AkWarm Commercial buildings. Most inherit from BaseUserControl:
 
@@ -221,8 +221,8 @@ The following controls provide user inputs for AkWarm Commercial buildings. Most
 
 ----------
 
-
-### Shell Component Controls <a name="shell_component"></a>
+<a name="shell_component"></a>
+### Shell Component Controls 
 
 **ShellComponentControls/ShellComponentsListControl.vb** - Not yet used, but eventually should replace the controls on the Home and Building forms to reduce code duplication
 
@@ -256,8 +256,8 @@ The following user controls provide inputs specific to each shell component type
 
 ----------
 
-
-### Residential Lights & Appliances Controls <a name="residential_lights"></a>
+<a name="residential_lights"></a>
+### Residential Lights & Appliances Controls 
 
 **ResidentialLightsAndAppliances/LightsAndAppliancesControl.vb** - List control for residential lights and appliances. This is currently used on the Home form.
 
@@ -277,8 +277,8 @@ The following user controls provide inputs specific to each shell component type
 
 ----------
 
-
-### Commerical Electrical Loads Controls <a name="commercial_electric"></a>
+<a name="commercial_electric"></a>
+### Commerical Electrical Loads Controls 
 
 **Electrical Loads/ElectricalLoadsControl.vb -** List control to manage electrical loads for a building. It employs the same look and feel as the shell components list.
 
@@ -300,8 +300,8 @@ The following commercial Electrical Load usercontrols make use of Visual Inherit
 
 ----------
 
-
-### Commercial Scheduling Controls <a name="commercial_scheduling"></a>
+<a name="commercial_scheduling"></a>
+### Commercial Scheduling Controls 
 
 **ScheduleUI/ScheduleChooserControl.vb** - Dropdown control for selecting a schedule from the list of existing schedules and/or adding new schedules.
 
@@ -317,7 +317,7 @@ The following commercial Electrical Load usercontrols make use of Visual Inherit
 
 ----------
 
-
-### Stand-alone Modules <a name="stand_alone"></a>
+<a name="stand_alone"></a>
+### Stand-alone Modules 
 
 **AkWarm\_UI/UI\_Helpers.vb** - A number of general functions that are used throughout the user interface
