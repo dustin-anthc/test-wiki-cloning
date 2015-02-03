@@ -17,3 +17,5 @@
 
 <H2> Other </H2>
 * [Documentation Overview](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Documentation-Overview-mmap)
+
+![AHFC Logo](https://cloud.githubusercontent.com/assets/8260437/6011254/b86f5df0-ab07-11e4-9ce3-21f255805cc0.png)
