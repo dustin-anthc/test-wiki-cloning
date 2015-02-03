@@ -1,4 +1,6 @@
-![/Wiki\_Test\_Repository/AKWarmLogo.png](https://raw.githubusercontent.com/dustin-cchrc/Wiki_Test_Repository/master/AKWarmLogo.png)
+:skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:<BR>
+![/Wiki\_Test\_Repository/AKWarmLogo.png](https://raw.githubusercontent.com/dustin-cchrc/Wiki_Test_Repository/master/AKWarmLogo.png)<BR>
+:skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:<BR>
 <H1> Wiki Test Repository </H1>
 <H5> Early experiments with documents </H5>
 
