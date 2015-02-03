@@ -21,11 +21,11 @@
 <H2> Technical Resources </H2>
 * [Source BTUs (Including Special Hydro)](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/0000-Source-BTU)
 * [1998 Tech Manual](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/1998-Tech-Manual)
-* [2005 Tax Credit Protocol V1.0](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2005-Tax-Credit-Protocol-V1-0)
 * [2007 Rating Program Evaluation](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2007-Rating-Prgm-Eval)
 * [2012 Calc Process](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2012-Calc-Process)
-* [2013 BEES Update Method](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2013-BEES-Update-Method)
 
 <H2> Developer Resources </H2>
+* [2005 Tax Credit Protocol V1.0](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2005-Tax-Credit-Protocol-V1-0)
+* [2013 BEES Update Method](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2013-BEES-Update-Method)
 
 <H2> TEAC Meeting Notes </H2>
