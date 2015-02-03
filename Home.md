@@ -18,4 +18,8 @@
 <H2> Other </H2>
 * [Documentation Overview](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Documentation-Overview-(mmap))
 
+<H2> Technical Resources </H2>
+<NL>
+<H2> Developer Resources </H2>
+<NL>
 ![AHFC Logo](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/AHFC%20MASTER%20HEADER.png)
