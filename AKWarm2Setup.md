@@ -1,12 +1,14 @@
--   Introduction
--   Installed Files and Locations
--   Procedure for Releasing a New Version of AkWarm
+-   [Introduction](#introduction)
+-   [Installed Files and Locations](#installed_files)
+-   [Procedure for Releasing a New Version of AkWarm](#release_procedure)
 
+<a name="introduction"></a> 
 Introduction
 ------------
 
 The AkWarm2Setup project is a standard Visual Studio 2008 Setup Project that creates a Windows Installer application. That Installer application is capable of installing AkWarm on the user’s computer. This document gives an overview of the files installed by the application and the target location on the user’s computer for those files. Also, a step-by-step procedure is given for preparing a new AkWarm release.
 
+<a name="installed_files"></a> 
 Installed Files and Locations
 -----------------------------
 
@@ -26,6 +28,7 @@ The list below gives the files installed and the default locations for those fil
 
 7.  **Application Shortcuts:** Shortcuts for starting the AkWarm application are installed on the user’s Desktop and under the *AkWarm* group on the Start menu.
 
+<a name="release_procedure"></a> 
 Procedure for Releasing a New Version of AkWarm
 -----------------------------------------------
 
