@@ -1,6 +1,6 @@
 -   [Introduction](#introduction)
 -   [Help File Integration](#help_file)
--   [List of Files and Associated Descriptions](#file_list)
+-   [List of Files and Associated Descriptions](#list_file)
     -   [Primary Forms](#primary_forms)
     -   [Dialog Forms](#dialog_forms)
     -   [Generic User Controls](#user_controls)
@@ -42,7 +42,7 @@ Wherever possible the code attempts to avoid cases that might cause errors, or t
 
 The approaches used in the user interface have evolved and improved over the course of AkWarm development. One of the more recent modules is the ResidentialLightsAndApplinaces interface, which is a reasonably good model for future UI development.
 
-Help File Integration <a name="help_file"></a>
+<a name="help_file"></a> Help File Integration 
 ---------------------
 
 The AkWarm interface is integrated with a help document (AkWarm.chm) and most controls are setup so that pressing F1 will take the user directly to the applicable help topic. When new features are added to AkWarm, corresponding topics should be added to (or updated in) the help document. The AkWarm.CHM file can be updated with Microsoft HTML Help Workshop (a free download) or with any number of third party .CHM editors (which may be easier to use). To avoid impacts on the existing F1 functionally, the filename and location of the help document and names of existing pages should not be changed, and existing pages should not be removed without verifying that they are no longer referenced within the interface. Within the project, F1 functionality is implemented with .NET HelpProvider controls. On the Home and Building forms, the help associations are set up with calls to the SetControlProperties routine.
