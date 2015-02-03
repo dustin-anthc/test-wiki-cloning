@@ -142,7 +142,8 @@ When a new user input value needs to be added to AkWarm, there are a number of t
 
 Below are brief descriptions of each Visual Basic Project in the AkWarm application. Separate documents provide more detailed developer information for the major projects in this list. The projects are categorized below by the part of the AkWarm system they apply to.
 
-<a name="main_app"></a> ### Main AkWarm Application
+<a name="main_app"></a> 
+### Main AkWarm Application
 
 ***AkWarm\_UI* -** This project contains the Windows Forms, User Controls, and other code related to AkWarm’s user interface.
 
@@ -162,11 +163,13 @@ Below are brief descriptions of each Visual Basic Project in the AkWarm applicat
 
 ***Experiments -*** This is a project that is used to run test code and various code experiments related to AkWarm. It is currently not necessary for building AkWarm or any other AkWarm-related tools.
 
-<a name="installer"></a> ### AkWarm’s Setup/Installer Program
+<a name="installer"></a> 
+### AkWarm’s Setup/Installer Program
 
 ***Akwarm2Setup -*** This project creates the setup program (installer) for AkWarm.
 
-<a name="test_utilities"></a> ### Utilities to Create and Test Energy Libraries
+<a name="test_utilities"></a> 
+### Utilities to Create and Test Energy Libraries
 
 ***CommandInterface -*** This project is only used for the command-line utilities that prepare Energy Libraries. This particular project holds a Visual Basic Interface that must be supported by each command line utility.
 
