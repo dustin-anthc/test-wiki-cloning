@@ -26,13 +26,10 @@ For one particular AkWarm analysis, which is either one residential building or 
 
 The two diagrams below, which have links to more readable full size diagrams, show the AkWarm Residential Object Model and the AkWarm Commercial Object Model. The diagrams show some of the most important objects in the hierarchy but many more objects are present in the models. These objects can be investigated through examination of the source code.
 
-*A full-size version of this diagram is attached to the end of this document.*
 
-![](media/image1.png)
+![Residential Object Model](https://cloud.githubusercontent.com/assets/8260437/6024780/abd09804-ab9b-11e4-96a5-2250acfce031.png)
 
-*A full-size version of this diagram is attached to the end of this document.*
-
-![](media/image2.png)
+![Commercial Object Model](https://cloud.githubusercontent.com/assets/8260437/6024775/a22734ca-ab9b-11e4-95e3-73e49bfbc4d5.png)
 
 When a user saves an AkWarm analysis to the user’s hard drive, each individual analysis occupies a separate file on disk. The application does *not* utilize a database system to store multiple AkWarm analyses within one database. AkWarm uses the .NET System.Xml.Serialization libraries to serialize the *Project* or *ProjectComm* object hierarchy into an XML document that is compressed and lightly encrypted before being stored on disk as an *.hm2* (residential) or *.hmc* (commercial) AkWarm file. See the *Project.SerializeToFile()* and *Project.ToByteArray()* methods for details on the serialization process.
 
@@ -399,7 +396,3 @@ These classes are common to useable in both Residential and Commercial AkWarm. T
 **Calc Details/DictionaryOfMonthArrayOfTypicalWeek.vb -** A VB Dictionary with a key of a specified type and values that are *MonthArrayOfTypicalWeek*’s. Currently only used in Commercial AkWarm.
 
 **Calc Details/Dictionary2KeyOfMonthArrayOfTypicalWeek.vb -** A VB dictionary with two keys of specified but possibly different types having values that *MonthArrayOfTypicalWeek*’s. Currently only used in Commercial AkWarm.
-
-![](media/image1.png)
-
-![](media/image2.png)
