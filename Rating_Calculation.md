@@ -1,13 +1,9 @@
--   AkWarm Rating Calculation
-    -   Overview of Rating Calculation Steps
-    -   Sample Calculation
-    -   Additional Calculation Details
-        -   Standardized Operating Conditions
-        -   Source Energy Factors
-        -   Reference Home Characteristics
-
-# AkWarm Rating Calculation
-*June 11, 2012*
+-   Overview of Rating Calculation Steps
+-   Sample Calculation
+-   Additional Calculation Details
+    -   Standardized Operating Conditions
+    -   Source Energy Factors
+    -   Reference Home Characteristics
 
 Overview of Rating Calculation Steps
 ------------------------------------
