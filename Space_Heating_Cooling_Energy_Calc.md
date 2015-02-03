@@ -1,23 +1,25 @@
--   Introduction
--   General Overview of the Residential Space Heating Calculation
--   Calculation Details
-    -   Temperature Difference driving Gross Heat Loss
-    -   U-Values of Shell Components
-    -   Natural Air Leakage and Mechanical Ventilation Rates
-    -   Internal Gain Calculation
-    -   Solar Gain Calculation
-    -   Primary and Secondary Heating Systems
-    -   Distribution System Efficiency
-    -   Heating Plant Efficiency
--   Cooling Load and Electricity Use
--   Space Heating Design Heat Load Calculation
--   How the Space Heating and Cooling Calculations differ for Commercial Buildings
+-   [Introduction](#intro)
+-   [General Overview of the Residential Space Heating Calculation](#overview)
+-   [Calculation Details](#calc_details)
+    -   [Temperature Difference driving Gross Heat Loss](#temp_difference)
+    -   [U-Values of Shell Components](#u-values)
+    -   [Natural Air Leakage and Mechanical Ventilation Rates](#air_leakage)
+    -   [Internal Gain Calculation](#internal_gains)
+    -   [Solar Gain Calculation](#solar_gains)
+    -   [Primary and Secondary Heating Systems](#heating)
+    -   [Distribution System Efficiency](#distribution)
+    -   [Heating Plant Efficiency](#heat_efficiency)
+-   [Cooling Load and Electricity Use](#cooling)
+-   [Space Heating Design Heat Load Calculation](#design_load)
+-   [How the Space Heating and Cooling Calculations differ for Commercial Buildings](#commercial)
 
+<a name="intro"></a>
 Introduction
 ------------
 
 The space heating energy use calculation is the most important calculation performed by AkWarm when analyzing residential buildings and is of major importance in the commercial building energy analysis. This document describes the details of that calculation in a way that is hopefully understandable to a technical energy analyst; computer programming experience is not a prerequisite. The document focuses on the residential space heating calculation but includes a section that describes how the commercial space heating calculation differs from the residential. A description of the space cooling calculation is also included in this document.
 
+<a name="overview"></a>
 General Overview of the Residential Space Heating Calculation
 -------------------------------------------------------------
 
@@ -37,11 +39,13 @@ For each month, these are the calculations that are performed:
 
 -   The **Seasonal Efficiency of the Primary and Secondary Heating Plants** are determined from the AFUE of the plants in the Energy Library or the direct entry of the AFUE by the user. Also, the AFUE is adjusted for the existence of any upgrade devices on the heating system (e.g. vent damper, modulating aquastat). Once the heating plant efficiency has been determined, the fuel use of the heating plant can be calculated by dividing the net heat load seen by the plant by the seasonal efficiency.
 
+<a name="calc_details"></a>
 Calculation Details
 -------------------
 
 This section provides additional details on the space heating fuel use calculation, organized in the same order as the steps of the calculation presented in the prior section.[1]
 
+<a name="temp_difference"></a>
 ### Temperature Difference driving Gross Heat Loss
 
 The basic calculation of gross heat loss in a given month has the form of a *temperature difference* times a *building heat loss coefficient* (which is the rate of heat loss per degree of temperature difference for the building). The *temperature difference* is the difference in temperature between the inside of the building and the outdoors.
@@ -60,6 +64,7 @@ For the Main Living Space, the user is allowed to select whether the setback the
 
 Some of the assumptions that enter into AkWarm’s calculation of the effect of a setback thermostat are: a 5 degree Fahrenheit setback in the setpoint occurs for 8 hours each day; the thermal mass of the building is 3.5 Btus per square foot of living area per degree Fahrenheit, a value reflective of standard wood frame construction. If only half of the home is controlled by a setback thermostat, the reduction in temperature caused by the thermostat is reduced by 60%, because the the setback effect is hampered by the adjacent space that is not being set back. Also, when the Energy Rating calculation is performed on the building, the overall effect of the setback thermostat is reduced by 50% because not all occupants of a home effectively utilize a setback thermostat.[4]
 
+<a name="u-values"></a>
 ### U-Values of Shell Components
 
 The gross heat loss in a particular month is product of the indoor-to-outdoor temperature difference, discussed above, and the building’s heat loss coefficient. The heat loss coefficient is the heat loss rate in Btu/hour per degree of temperature difference. Conduction through the building’s shell components is the major contributor to the heat loss coefficient. Natural infiltration and forced mechanical ventilation are the other contributors and are discussed in a subsequent section.
@@ -70,18 +75,26 @@ Below-grade walls and floors are covered by ground on their exterior surfaces. T
 
 The R-values of the insulation types used in the shell component calculations are stored in the Energy Library. Additional insulation types are added as needed to the Energy Library. For windows, the overall U-value of a particular window frame / window glass combination is also stored in the Energy Library.
 
+<a name="air_leakage"></a>
 ### Natural Air Leakage and Mechanical Ventilation Rates
 
 Natural air leakage also contributes to the building’s heat loss coefficient. AkWarm uses the Lawrence Berkeley Laboratory infiltration model[6] to estimate the amount of natural air leakage in each month given the 50 Pascal blower door test results entered by the user. A number of parameters in the model are fixed in the AkWarm calculation, including:
 
-> n, the flow exponent = 0.67
-> R = 0.5, X = 0.0. These are parameters describing the assumed leakage distribution in the building.
+
+
+- n, the flow exponent = 0.67
+- R = 0.5
+- X = 0.0 
+
+*These are parameters describing the assumed leakage distribution in the building.*
 
 AkWarm uses the airport-to-site wind conversion method found in the LBL infiltration model to predict the site wind speed, which affects the amount of predicted infiltration. Inputs to the LBL model include the height of the building (which is entered by the AkWarm user), a Terrain Class (5 possible categories), and a Shielding Class (5 possible categories). Instead of having the AkWarm user estimate a Terrain and Shielding Class, AkWarm asks the user to select one of three general wind shielding levels: Shielded, Average, Exposed. Those selections correspond the following Terrain and Shielding classes in the LBL model:
 
-> **Shielded**: Terrain Class 4, Shielding Class 4
-> **Average**: Terrain Class 3, Shielding Class 3
-> **Exposed:** Terrain Class 3, Shielding Class 2
+**Shielded**: Terrain Class 4, Shielding Class 4
+
+**Average**: Terrain Class 3, Shielding Class 3
+
+**Exposed:** Terrain Class 3, Shielding Class 2
 
 Because AkWarm calculates the heat loss of the garage separate from the main living space, the estimated infiltration needs to be partitioned between these two zones (it is assumed that the blower door test included both the main living space and the garage). To do this, AkWarm proportions the leakage according to the ratio of the above-grade shell component area of the garage versus the main living space.
 
@@ -101,6 +114,7 @@ Because of the difference between the 0.29 ACH and the 0.25 ACH assumption, a ti
 
 The amount of energy lost by a cubic foot of air leaving a building either due to natural infiltration or mechanical ventilation depends on the density of the air. An estimate of the average air density can be made knowing the elevation of the building above sea level; air density exponentially decays with elevation. The Energy Library has the elevation of the cities available in AkWarm; this value is used to estimate air density.
 
+<a name="internal_gains"></a>
 ### Internal Gain Calculation
 
 Internal heat gains are generated by people, lights and appliances, including the domestic hot water heater. A large portion of these gains offset heat load and therefore reduce the heating fuel use of the building.
@@ -119,6 +133,7 @@ Tank type domestic hot water heaters also generate internal gains if they are lo
 
 Not all of internal gains offset space heating load because sometimes the gains cause the home to heat beyond the thermostat setpoint, causing higher than needed heat loss. A formula from the Hot-2000 thermal modeling program is used to determine the usability fraction of the internal gains in each month. This formula depends on the ratio of the gross internal gains to the gross heat load in the month. As that ratio increases, the usability of the internal gains decreases, since overheating is more likely to occur. For Alaskan locations, the gain-to-load ratio for residential buildings is low, and thus the usability of internal gains is quite high. The Energy Flows report shows the gross and usable internal gains by month for the home being modeled.
 
+<a name="solar_gains"></a>
 ### Solar Gain Calculation
 
 Solar gains are another type of heat gain that help offset the need for space heating fuel. AkWarm considers solar heat gain from windows, skylights, walls, and doors. For windows and skylights, the glazing system admits solar gain into the building. For opaque walls and doors, solar gain incident on the exterior surface of the component serves to increase the temperature of that surface and diminish heat loss from the building. AkWarm does *not* consider solar gain through roof components, because these components are often covered with snow, which reflects most of the solar; also, attic spaces are often present that isolate the solar gain from the conditioned space.
@@ -128,8 +143,10 @@ For the 20 main weather cities in the AkWarm Energy Library, the Library contain
 The solar gain values in the Energy Library assume that the solar-receiving surface is unobstructed, which is rarely the case. For windows and skylights, AkWarm asks the user to specify the level of External Shading (e.g. trees, buildings, hills) and gives three choices: Little, Moderate, Heavy. AkWarm reduces solar gain by the following amounts for each choice:
 
 > **Little**: 10% reduction
-> **Moderate:** 30% reduction**
-> Heavy:** 50% reduction
+> 
+> **Moderate:** 30% reduction
+> 
+> **Heavy:** 50% reduction
 
 AkWarm also considers the fact that home occupants often have shades on the inside of windows, and these shades are often closed or partially closed during the daytime. To account for this impact on solar admitted to the building, AkWarm reduces the solar admitted through the glazing portion of the window by 25%.
 
@@ -141,6 +158,7 @@ Once the gross solar admitted to the building is calculated considering all of t
 
 With this algorithm, the usability depends on the ratio of the solar gain to the net heat load after removing usable internal gains. The usability also depends on the ratio of the thermal mass of the building to the solar gain. AkWarm uses a fixed assumption for the thermal mass of the building per square foot of floor area (3.5 Btus/ft2-deg F). The Energy Flows report shows the gross solar gain and the usable solar gain by month, as calculated by AkWarm.
 
+<a name="heating"></a>
 ### Primary and Secondary Heating Systems
 
 Once the net heating load is calculated (gross load minus usable internal gains and usable solar gains), that net heating load is partitioned between the primary and secondary heating systems, if a secondary system is specified by the AkWarm user. If a secondary system exists, the user must select whether the system provides a Small, Some, or Moderate level of the heating load. According to this choice, AkWarm assigns some of the heating load to the secondary system:
@@ -153,6 +171,7 @@ Once the net heating load is calculated (gross load minus usable internal gains 
 
 This portion of the load is served by the Secondary heating system, and the rest of the load is served by the Primary system.
 
+<a name="distribution"></a>
 ### Distribution System Efficiency
 
 Once the heating load for a Primary or Secondary Heating System is calculated, the distribution system that takes heat from the heating plant and delivers it to the conditioned spaces needs to be analyzed. That system is typically a forced air distribution system, a hydronic distribution system, or a direct-to-space system that distributes heat from a heating plant that is located within the space to be heated (e.g. a woodstove or a Toyostove). These heat distribution systems have the potential of creating additional losses to the outdoors that must be made up by the heating plant. AkWarm estimates the distribution system efficiency in order to account for these additional losses.
@@ -163,6 +182,7 @@ For hydronic distribution systems, AkWarm again asks the user to specify the por
 
 For heating systems with direct-to-space distribution, AkWarm assigns a 100% distribution efficiency.
 
+<a name="heat_efficiency"></a>
 ### Heating Plant Efficiency
 
 Once the net heating load has been partitioned across the Primary and Secondary heating systems and the distribution efficiencies of those systems has been accounted for, the final step in calculating space heating fuel use is to estimate the seasonal efficiency of the Primary and Secondary heating plants. The AkWarm user is presented with a list of possible heating systems that comes from the Energy Library. Each one of those systems has an AFUE (Annual Fuel Utilization Efficiency) assigned in the Energy Library. If the user makes no further inputs, this AFUE is used as the seasonal efficiency of the heating plant.
@@ -175,6 +195,7 @@ Finally, the user can enter into AkWarm the results of a combustion efficiency t
 
 Once the seasonal efficiencies of the Primary and Secondary heating plants have been determined, the fuel use of each system is determined by dividing the net heating load served by the plant by its seasonal efficiency.
 
+<a name="cooling"></a>
 Cooling Load and Electricity Use
 --------------------------------
 
@@ -186,6 +207,7 @@ To do the cooling load calculation, AkWarm steps through each bin in the month b
 
 After the total cooling load is calculated for the month, the cooling load is scaled up by the cooling distribution system efficiency. A simple IECC model of distribution efficiency is used, which depends on whether the air-conditioning ductwork is entirely in conditioned space or not, and whether the ductwork meets the IECC reduced Leakage specification. After the cooling load is increased to account for distribution losses, the user-entered Seasonal Energy Efficiency Ratio (SEER) is used to calculate the electricity use of the air-conditioning unit. The seasonal efficiency of the air-conditioner is simply the SEER divided by 3.413 Btu/hr-W.
 
+<a name="design_load"></a>
 Space Heating Design Heat Load Calculation
 ------------------------------------------
 
@@ -199,6 +221,7 @@ Because occupants may operate their mechanical ventilation systems differently u
 
 The design heat load calculation produces separate results for the main living space and for the garage, since these spaces often utilize different heating systems. Because of this disaggregation, some additional inputs are required for the garage space, such as ventilation rate and heating distribution efficiency. Also, if there is any uninsulated wall and/or ceiling separating living space from the garage, the user is asked to enter the area. The heat flow through that common component area is used to reduce the design garage heat load and increase the design living space heat load.
 
+<a name="commercial"></a>
 How the Space Heating and Cooling Calculations differ for Commercial Buildings
 ------------------------------------------------------------------------------
 
