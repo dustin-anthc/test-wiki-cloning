@@ -21,6 +21,7 @@ Six Special Hydro cities were designated by Steve Baden in 1994, during the init
 | Spruce        | 0.8        |
 | Coal          | 1          |
 | Special Hydro | 1.5        |
+|---------------|------------|
 
 The values used for some of these factors are influenced by policy considerations.  For example, the “Special Hydro” Electricity factor is applied for use of electricity in certain communities that acquire all or nearly all of their electricity from hydroelectric resources.  Because the Special Hydro source multiplier is 1.5 and the normal electricity multiplier is 3.0, use of electricity for water and space heating is not discouraged as much in these communities.  The current list of Special Hydro communities with over 90% hydro/renewables is:
 
