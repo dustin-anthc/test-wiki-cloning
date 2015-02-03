@@ -9,18 +9,6 @@ AKWarm uses source BTU’s. For rating purposes only, the energy use in MMBTUs i
 Six Special Hydro cities were designated by Steve Baden in 1994, during the initial phase of preliminary AKWarm development. Juneau, Haines, Sitka, Wrangell/Petersburg, Ketchikan and Kodiak we granted this designation. They were, at the time supplied with ample capacity of hydroelectric power. Over the years that supply has ebbed and flowed with changing populations, industry and residential loads. The site to source multipliers are shown below. Since that time AHFC uses the Alaska Energy Statistics published by AEA to determine cities with a substantial hydroelectric generation capacity. If the city has over 90% of its capacity from hydro/renewables, it becomes a “special Hydro” city.
 
 ##### Site-to-Source BTU Multipliers
-<TABLE>
-<TR><TD>Fuel</TD><TD>Multiplier</TD></TR>
-<TR><TD>Electricity</TD><TD>3</TD></TR>
-<TR><TD>Natural Gas</TD><TD>1</TD></TR>
-<TR><TD>Propane</TD><TD>1</TD></TR>
-<TR><TD>\#1 Oil</TD><TD>1</TD></TR>
-<TR><TD>\#2 Oil</TD><TD>1</TD></TR>
-<TR><TD>Birch</TD><TD>0.8</TD></TR>
-<TR><TD>Spruce</TD><TD>0.8</TD></TR>
-<TR><TD>Coal</TD><TD>1</TD></TR>
-<TR><TD>Special Hydro</TD><TD>1.5</TD></TR>
-</TABLE>
 
 | Fuel          | Multiplier |
 |:--------------|-----------:|
