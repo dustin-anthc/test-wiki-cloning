@@ -22,4 +22,6 @@
 <NL>
 <H2> Developer Resources </H2>
 <NL>
+<H2> TEAC Meeting Notes </H2>
+<NL>
 ![AHFC Logo](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/AHFC%20MASTER%20HEADER.png)
