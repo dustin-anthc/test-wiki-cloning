@@ -1,22 +1,24 @@
--   Introduction
--   Object Models
--   Calculations
--   List of Files and Associated Descriptions
-    -   Residential Energy Related
-    -   Residential Lights and Appliances
-    -   Shell Components and Related
-    -   Energy Classes used by both Residential and Commercial
-    -   Commercial Energy Related
-    -   Commercial Electrical Loads
-    -   Commercial HVAC Related
-    -   Commercial Usage Scheduling Classes
-    -   General Purpose Data Structures
+-   [Introduction](#introduction)
+-   [Object Models](#object_models)
+-   [Calculations](#calculations)
+-   [List of Files and Associated Descriptions](#list_files)
+    -   [Residential Energy Related](#residential_energy)
+    -   [Residential Lights and Appliances](#residential_lights)
+    -   [Shell Components and Related](#shell_components)
+    -   [Energy Classes used by both Residential and Commercial](#energy_classes)
+    -   [Commercial Energy Related](#commercial_energy)
+    -   [Commercial Electrical Loads](#commercial_electric)
+    -   [Commercial HVAC Related](#commercial_hvac)
+    -   [Commercial Usage Scheduling Classes](#commercial_usage)
+    -   [General Purpose Data Structures](#data_structures)
 
-Introduction
+<a name="introduction"></a> Introduction
 ------------
 
 The AkWarmCalc project contains classes that hold and process the user’s input data and hold the results of AkWarm’s energy, rating, and improvement calculations. No user interface code is contained in this project. The AkWarmCalc code in theory could be used with a number of different user interface implementations but is currently being used with one implementation, that being the Windows Forms interface in the AkWarm\_UI project.
 
+
+<a name="object_models"></a>
 Object Models
 -------------
 
@@ -34,6 +36,8 @@ The two diagrams below, which have links to more readable full size diagrams, sh
 
 When a user saves an AkWarm analysis to the user’s hard drive, each individual analysis occupies a separate file on disk. The application does *not* utilize a database system to store multiple AkWarm analyses within one database. AkWarm uses the .NET System.Xml.Serialization libraries to serialize the *Project* or *ProjectComm* object hierarchy into an XML document that is compressed and lightly encrypted before being stored on disk as an *.hm2* (residential) or *.hmc* (commercial) AkWarm file. See the *Project.SerializeToFile()* and *Project.ToByteArray()* methods for details on the serialization process.
 
+
+<a name="calculations"></a> 
 Calculations
 ------------
 
@@ -51,11 +55,15 @@ The improvement analysis for the residential analysis is performed by the *Analy
 
 After AkWarm performs the calculations above, some of the results of the calculations are stored in the object model so that those results are serialized into the AkWarm file. None of the calculated results *need* to be stored in the AkWarm file, since the calculated results can always be reproduced from the user input values, which are stored in the file. However, the data in the AkWarm file is ultimately loaded into the ARIS (Alaska Retrofit Information System) database, and the calculated results are essential for producing ARIS reports and analyses. A very large number of calculated values are available, and only the most important values are saved in the AkWarm file.
 
+
+<a name="list_files"></a>
 List of Files and Associated Descriptions
 -----------------------------------------
 
 The files in the AkWarmCalc project are listed below with short descriptions of their purpose. The files are categorized by function.
 
+
+<a name="residential_energy"></a>
 ### Residential Energy Related
 
 These files are used in the Residential analysis only and are files that address energy characteristics or calculations for the home.. Other residential-only files are found in the *Residential Lights and Appliances* category that follows this one.
@@ -122,6 +130,8 @@ These files are used in the Residential analysis only and are files that address
 
 **VentilationSystem.vb -** Models the home’s mechanical ventilation system, if present.
 
+
+<a name="residential_lights"></a>
 ### Residential Lights and Appliances
 
 The following classes are used to model ‘itemized’ inputs for residential lights and appliances to support more detailed analysis of energy use and improvement benefits. For the ‘old style’ basic lights and appliances analysis, the inputs are contained in the HomeInputs object and analysis is contained in the EnergyCalc object.
@@ -142,6 +152,8 @@ The following classes are used to model ‘itemized’ inputs for residential li
 
 **ResidentialLightsAndAppliances/LightsAndAppliancesList.vb** - List of LightOrAppliancePrePost objects.
 
+
+<a name="shell_components"></a>
 ### Shell Components and Related
 
 The following classes used to model shell components are used by both Residential and Commercial AkWarm.
@@ -188,6 +200,8 @@ The following classes used to model shell components are used by both Residentia
 
 **Shell/Sh\_Window.vb -** Models a window or skylight component.
 
+
+<a name="energy_classes"></a>
 ### Energy Classes used by both Residential and Commercial
 
 These are energy-related classes that are used in both Residential and Commercial AkWarm.
@@ -226,6 +240,8 @@ These are energy-related classes that are used in both Residential and Commercia
 
 **Weather.vb -** Class to calculate and provide the weather data for any given city, using data from the Energy Library. See the *New()* constructor method for the logic used to calculate the weather data.
 
+
+<a name="commercial_energy"></a>
 ### Commercial Energy Related
 
 **AirLeakage.vb -** Holds building air tightness inputs and calculates natural infiltration (see *CalculateInfiltration()* method).
@@ -264,6 +280,8 @@ These are energy-related classes that are used in both Residential and Commercia
 
 **Other End Uses/CookingEquipment.vb -** Models a piece of cooking equipment. Inherits from the *AnyFuelLoad* class.
 
+
+<a name="commercial_electric"></a>
 ### Commercial Electrical Loads
 
 **Electrical Loads/AkWarmLoad.vb** - Class to hold pre and post improvement versions of an electrical load.
@@ -286,6 +304,8 @@ These are energy-related classes that are used in both Residential and Commercia
 
 **Electrical Loads/RefrigerationLoad.vb** - Class representing refrigeration loads. Inherits from HourlyLoad.
 
+
+<a name="commercial_hvac"></a>
 ### Commercial HVAC Related
 
 **HVAC/CoolingPlant.vb -** Models a cooling plant (chiller or air conditioner) and calculates the energy use of the plant given a set of monthly loads (see the *Calculate()* method).
@@ -322,6 +342,8 @@ These are energy-related classes that are used in both Residential and Commercia
 
 **HVAC/VentilationPrePost.vb -** Holds two sets of ventilation systems: an existing set and a proposed set. Also holds costs and information related to the retrofit of the proposed system.
 
+
+<a name="commercial_usage"></a>
 ### Commercial Usage Scheduling Classes
 
 The following classes support the definition of detailed usage schedules that are currently used for Building Spaces, Electrical Loads, AnyFuel Loads, Pumps, Fans and Ventilation. The schedules separate a year into ‘High’ and ‘Low’ use times.
@@ -336,6 +358,8 @@ The following classes support the definition of detailed usage schedules that ar
 
 **Scheduling/UsageSeason.vb** - The seasonal components of a schedule, defined by start and end dates. A special type of season, ‘All Remaining Dates’ represents any dates that are not specifically allocated to a different season.
 
+
+<a name="data_structures"></a>
 ### General Purpose Data Structures
 
 These classes are common to useable in both Residential and Commercial AkWarm. They are more general purpose data structures and are not specifically energy related.
