@@ -1,4 +1,4 @@
-![AHFC Logo](https://cloud.githubusercontent.com/assets/8260437/6011254/b86f5df0-ab07-11e4-9ce3-21f255805cc0.png)
+![AKWarm Logo](https://cloud.githubusercontent.com/assets/8260437/6023072/6f261ca0-ab8f-11e4-9c30-3be4657e02b0.png)
 <H1> Wiki Test Repository </H1>
 <H5> Early experiments with documents </H5>
 
