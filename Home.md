@@ -1,4 +1,3 @@
-![AKWarm Logo](https://cloud.githubusercontent.com/assets/8260437/6023072/6f261ca0-ab8f-11e4-9c30-3be4657e02b0.png)
 <NL>
 ![/Wiki\_Test\_Repository/AKWarmLogo.png](https://raw.githubusercontent.com/dustin-cchrc/Wiki_Test_Repository/master/AKWarmLogo.png)
 <H1> Wiki Test Repository </H1>
