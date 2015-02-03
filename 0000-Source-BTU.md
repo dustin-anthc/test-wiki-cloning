@@ -42,4 +42,3 @@ The practical effect of this multiplier is that homes rated with a source multip
 
 The wood fuel types--Birch, and Spruce--receive source multipliers of 0.8, multipliers that are clearly not consistent with the concept of accounting for harvesting and transportation energy use.  However, these favorable multipliers were chosen to encourage the use of wood, which is generally a renewable resource.  Also, the low multipliers also reflect the lower quality of this fuel source; natural gas and fuel oil heating equipment have higher efficiencies than wood heating equipment because of the higher quality of those fuel types.
 The District Steam and Hot Water energy types were given relatively favorable treatment because the heat source for these fuel types is often waste heat from an electricity generator.
-</FONT>
