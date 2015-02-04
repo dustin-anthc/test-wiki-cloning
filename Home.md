@@ -1,5 +1,5 @@
 :skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:<BR>
-![/Wiki\_Test\_Repository/AKWarmLogo.png](https://raw.githubusercontent.com/dustin-cchrc/Wiki_Test_Repository/master/AKWarmLogo.png)<BR>
+![/Wiki\_Test\_Repository/AKWarmLogo.png](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Images/AKWarmLogo.png)<BR>
 :skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:<BR>
 <H1> Wiki Test Repository </H1>
 
