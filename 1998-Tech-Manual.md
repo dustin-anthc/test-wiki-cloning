@@ -418,11 +418,9 @@ To determine framing fraction, AKWarm takes into account the characteristics of 
 
 
 | *Wall Type* PATHS| Single Stud Wall   | Strapped Wall           | Double Wall  | Curtain/Standoff Wall | Stressed Skin Panel |
-|------------------|----------|---------|-------------------------|--------------|-----------------------|---------------------|
 |                  | 16 “o.c. | 24” o.c.| 16 “o.c.   | 24” o.c.   |              |                       |                     |
 |------------------|----------|---------|-------------------------|--------------|-----------------------|---------------------|
 | Header           | .03      | .03     | .03        | .03        | .03          | .03                   |                     |
-|------------------|----------|---------|-------------------------|--------------|-----------------------|---------------------|
 | Framing Fraction | .18      | .13     | Main:.18   | Main:.144  | Main:.126    | Main:.126             | Frame:.061          |
 |                  |          |         | Other:.09  | Other:.09  | Other:.112   | Other:.099            | Spline:.076         |
 |                  |          |         | Overlap:.5 | Overlap:.5 | Plywood:.015 | Plywood:.007          |                     |
