@@ -212,104 +212,42 @@ The coefficient and exponent vary depending on the terrain and shielding assumed
 <H4>1.3.2 ENERGY ALGORITHMS</h4>
 
 1.  Above Grade Heat Loss
-
 2.  Below Grade/Foundation Heat Loss
-
 3.  Air Infiltration & Mechanical Ventilation Heat Loss
-
 4.  Solar and Internal Heat Gains
-
 5.  Space Heating System Performance
-
 6.  Domestic Hot Water Heating Performance
 
-### <span id="_Toc371140046" class="anchor"><span id="_Toc371140173" class="anchor"></span></span>1.3.3 Results of monthly calculations
+### 1.3.3 Results of monthly calculations
 
 1.  Natural infiltration in cubic feet/minute
+2.  Mechanical ventilation in cubic feet/minute
+3.  Apparent Sensible Effectieness of the mechanical ventilation system
+4.  UA values for natural and mechanical ventilation by month and temperature of exfiltrating air, Btu/hr/deg F.
+5.  Amount that the setback thermostat lowers the daily average indoor temperature in the living space, degrees F.
+6.  Gross heat losses by month and temperature of indoor space, Btu/hr
+7.  Gross solar gains by month and orientation
+8.  Utilized fraction of gross solar gains
+9.  Useable solar gains by month
+10.  Gross internal gains by month, But/hr
+11.  Useable internal gains by month, But/hr
+12.  Net space heating load by month, But/hr
+13.  Net load on primary and secondary heating system by month, Btu/hr
+14.  Heating system loss for primary and secondary systems by month, Btu/hr (includes both distribution loss and heating plant loss)
+15.  Fuel use for all end uses, split by month and fuel type, Btu/hr for all fuel types
 
-<!-- -->
-
-1.  Mechanical ventilation in cubic feet/minute
-
-<!-- -->
-
-1.  Apparent Sensible Effectieness of the mechanical ventilation system
-
-<!-- -->
-
-1.  UA values for natural and mechanical ventilation by month and temperature of exfiltrating air, Btu/hr/deg F.
-
-<!-- -->
-
-1.  Amount that the setback thermostat lowers the daily average indoor temperature in the living space, degrees F.
-
-<!-- -->
-
-1.  Gross heat losses by month and temperature of indoor space, Btu/hr
-
-<!-- -->
-
-1.  Gross solar gains by month and orientation
-
-<!-- -->
-
-1.  Utilized fraction of gross solar gains
-
-<!-- -->
-
-1.  Useable solar gains by month
-
-<!-- -->
-
-1.  Gross internal gains by month, But/hr
-
-<!-- -->
-
-1.  Useable internal gains by month, But/hr
-
-<!-- -->
-
-1.  Net space heating load by month, But/hr
-
-<!-- -->
-
-1.  Net load on primary and secondary heating system by month, Btu/hr
-
-<!-- -->
-
-1.  Heating system loss for primary and secondary systems by month, Btu/hr (includes both distribution loss and heating plant loss)
-
-<!-- -->
-
-1.  Fuel use for all end uses, split by month and fuel type, Btu/hr for all fuel types
-
-### <span id="_Toc371140047" class="anchor"><span id="_Toc371140174" class="anchor"></span></span>1.3.4 Annual energy totals
+### 1.3.4 Annual energy totals
 
 After making the above-cited calculations for each month, AKWarm creates annual summaries which are included in the output reports:
 
 1.  Space heating fuel use in MMBtu
+2.  Domestic hot water heating fuel use in MMBtu
+3.  Lights and Appliance fuel use in MMBtu
+4.  Total fuel use of all end uses in MMBtu
+5.  Total annual fuel cost by fuel type in $
 
-<!-- -->
-
-1.  Domestic hot water heating fuel use in MMBtu
-
-<!-- -->
-
-1.  Lights and Appliance fuel use in MMBtu
-
-<!-- -->
-
-1.  Total fuel use of all end uses in MMBtu
-
-<!-- -->
-
-1.  Total annual fuel cost by fuel type in $
-
-<span id="_Toc371140048" class="anchor"><span id="_Toc371140175" class="anchor"><span id="_Toc371146336" class="anchor"></span></span></span>1.4 AKWarm Outputs
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### <span id="_Toc371140049" class="anchor"><span id="_Toc371140176" class="anchor"></span></span>1.4.1 Heat Loss and Heat Load Report
-
+## 1.4 AKWarm Outputs
+### 1.4.1 Heat Loss and Heat Load Report
 #### What AKWarm Does With Heat Loss Calculations
 
 1.  **Determines Design Heat Load**: AKWarm provides an estimate of the overall heat loss *rate* of a building through its individual components (BTUs/hr). This can be summed in order to estimate the amount of heat which will flow from the building for each degree of temperature difference between the inside and outside of the building. This building heat loss rate can then be used to determine the amount of heat that needs to be supplied to the house under peak conditions, and the equipment which will need to be installed to heat the house under this condition can be sized accordingly. This allows engineers and mechanical system designers to economically size heating systems which can be relied upon to give comfort to the building occupants under all reasonable conditions, within a particular climate.
@@ -318,7 +256,7 @@ After making the above-cited calculations for each month, AKWarm creates annual 
 
 3.  **Shows Compliance with Building Energy Efficiency Standards**: Heat loss calculations can be use to establish the overall compliance of a building with the state’s building energy standards. Heat loss rates of individual components can be summed to establish an effective overall heat loss rate that is compared with BEES requirements for that location, to establish if the building meets those requirements.
 
-### <span id="_Toc371140050" class="anchor"><span id="_Toc371140177" class="anchor"></span></span>1.4.2 Energy Rating and Report
+### 1.4.2 Energy Rating and Report
 
 The AKWarm Energy Rating process involves analyzing the energy use of the actual building, normalized for standard occupancy conditions, and analyzing the energy use of two reference case buildings: a house that would meet the State Building Energy Efficiency Standards (currently set at 83 points) and a very efficient house (100 points). The task is performed by standardizing the building description and then calculating the energy use of the standardized building.
 
@@ -326,7 +264,7 @@ In the rating system, the rating on a house is given as a score on a scale of 0 
 
 The AKWarm energy rating, includes the number of points earned and the Star rating. A line graph indicates how the rated home compares to the average home in the region and to the Alaska Building Energy Efficiency Standard (BEES) for new construction.
 
-### <span id="_Toc371140051" class="anchor"><span id="_Toc371140178" class="anchor"></span></span>1.4.3 Improvement Options Report
+### 1.4.3 Improvement Options Report
 
 The AKWarm Improvement Options Report contains a cost evaluation of major improvements. Major improvements pertain to the more expensive improvements, such as adding insulation to an attic or replacing a heating system. Low cost recommendations are provided on a separate checklist. Low cost measures range in cost from requiring no materials and little time to install to improvements that may cost a few hundred dollars.
 
@@ -334,11 +272,11 @@ The improvement options report is generated after AKWarm analyzes possible energ
 
 The improvement options that were evaluated and determined to be cost effective are listed at the top of the page. These are measures that show a savings to cost ratio of 1 or more. This table includes a description of the improvement measure and the location for which it is recommended, as well as an estimate of the average cost of installation, the annual savings, and the rating points gained from installation.
 
-<span id="_Toc371140052" class="anchor"><span id="_Toc371140179" class="anchor"><span id="_Toc371146337" class="anchor"></span></span></span>Chapter 2 Residential Heat Loss
-============================================================================================================================================================================
+Chapter 2 Residential Heat Loss
+===
 
-<span id="_Toc371140053" class="anchor"><span id="_Toc371140180" class="anchor"><span id="_Toc371146338" class="anchor"></span></span></span>2.1 Conduction Heat Losses 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.1 Conduction Heat Losses 
+---
 
 The rate at which heat moves through a solid material depends on its thermal conductivity and on the temperature difference across the material. The fundamental relationship between these quantities is given as:
 
@@ -374,7 +312,7 @@ R = R-value of the material (°F \* ft2 hr/Btu)
 
 A = area heat flows across (ft2)
 
-### <span id="_Toc371140054" class="anchor"><span id="_Toc371140181" class="anchor"></span></span>2.1.1 Building Conduction Heat Loss Calculations 
+### 2.1.1 Building Conduction Heat Loss Calculations 
 
 The standard heat loss calculation procedure is to develop a thermal conductivity for each component of the building, which is then used in parallel with the other building components to establish the heat loss rate of the entire building. This procedure is area weighted, that is, the calculation procedure assumes that heat flows through materials as a function of their overall area and thermal properties independent of all other components contained in the building. Thus the sum of all the wall areas times the heat loss rate (U-value) of all the wall areas will describe the total amount of heat that will flow through those walls under particular temperature conditions. This amount of heat, in so far as the building is maintained at a given temperature, will be completely independent of the amount of heat that flows through the windows or the ceiling, or any other building component.
 
@@ -422,15 +360,16 @@ In addition to the thermal resistances of the solid materials that make up an as
 
 AKWarm uses air film R-values for nonreflective surfaces typical of most building surfaces:
 
-|---------------------------------------------|
+
 | TABLE 2.1 THERMAL RESISTANCES FOR AIR FILMS |
+|:--------------------------------------------|
 | POSITION                                    |
 | INSIDE AIR FILM                             |
 | Horizontal                                  |
 | Sloping 45 Degrees                          |
 | Vertical                                    |
 | Horizontal                                  |
-|                                             |
+|---------------------------------------------|
 | OUTSIDE AIR FILM                            |
 | 15 mph wind on any surface                  |
 
@@ -442,8 +381,8 @@ Wood-framed buildings with wall studs, ceiling joists, window headers and other 
 
 These are the multipliers used to adjust the overall component R-value for the effects of insulation damage, as described by the user.
 
-|--------------------|------------|
 | Insulation Quality | Multiplier |
+|:-------------------|-----------:|
 | OK                 | 1          |
 | Damaged            | .95        |
 | Very Damaged       | .67        |
@@ -454,28 +393,22 @@ Buffer spaces are intermediate, not intentionally heated spaces between the livi
 
 The procedure AKWarm uses to calculate the effect of buffer zones establishes the heat loss rate from the building to the buffer, then from the buffer space to the outside, neglecting thermal storage. These two heat flows are added together in series.
 
-|----------------------------------------------------|
 | **Buffer Zone Effective R-values Used By AKWarm ** |
 | **Buffer Zone**                                    |
+|----------------------------------------------------|
 | Ceiling With Attic                                 |
 | Cathedral Ceiling                                  |
 | Floor over Leaky Crawl                             |
 | Floor over Tight Crawl                             |
 | Floor over Tight Insulated Crawl                   |
 
-### <span id="_Toc371140055" class="anchor"><span id="_Toc371140182" class="anchor"></span></span>2.2.2 Above Grade Walls
+### 2.2.2 Above Grade Walls
 
 The average overall R-values of wood frame walls are calculated by assuming parallel heat flow paths through areas with different thermal resistances. These different paths are represented by:
 
 1.  The insulation value of the wood members themselves (studs, plates, frames)
-
-<!-- -->
-
-1.  The insulation value of the headers, which span the wall areas above windows and doors to carry structural loads.
-
-<!-- -->
-
-1.  The insulation value of the cavity, or the area between the studs where insulation material is placed.
+2.  The insulation value of the headers, which span the wall areas above windows and doors to carry structural loads.
+3.  The insulation value of the cavity, or the area between the studs where insulation material is placed.
 
 All walls are assumed to be finished on the inside with 1/2 inch gypsum wall board and on the outside with either 1/2 inch plywood sheathing and beveled wood siding, or with T-111 5/8 inch siding.
 
@@ -483,25 +416,16 @@ For each type of above grade wall described, AKWarm uses Equation 2 to calculate
 
 To determine framing fraction, AKWarm takes into account the characteristics of the framing type being analyzed, including framing member spacing and framing member thickness. Using these methods, AKWarm provides framing factors equivalent to those listed in the table below for stud walls. *If framing members have thicknesses other than 1.5 inches, different framing factors will be calculated*.
 
-|------------------|------------------|---------------|-------------|-----------------------|---------------------|
-| *Wall Type*      
-                   
- PATHS             | Single Stud Wall | Strapped Wall | Double Wall | Curtain/Standoff Wall | Stressed Skin Panel |
-|                  | 16 “o.c.         | 24” o.c.      | 16 “o.c.    | 24” o.c               |                     |
-| Header           | .03              | .03           | .03         | .03                   | .03                 |
-| Framing Fraction | .18              | .13           | Main:.18    
-                                                                    
-                                                       Other:.09    
-                                                                    
-                                                       Overlap:.5   | Main:.144             
-                                                                                            
-                                                                     Other:.09              
-                                                                                            
-                                                                     Overlap:.5             | Main:.126           
-                                                                                                                  
-                                                                                             Other:.112           
-                                                                                                                  
-                                                                                             Plywood:.015         |
+
+| *Wall Type* PATHS| Single Stud Wall   | Strapped Wall           | Double Wall  | Curtain/Standoff Wall | Stressed Skin Panel |
+|------------------|----------|---------|-------------------------|--------------|-----------------------|---------------------|
+|                  | 16 “o.c. | 24” o.c.| 16 “o.c.   | 24” o.c.   |              |                       |                     |
+|------------------|----------|---------|-------------------------|--------------|-----------------------|---------------------|
+| Header           | .03      | .03     | .03        | .03        | .03          | .03                   |                     |
+|------------------|----------|---------|-------------------------|--------------|-----------------------|---------------------|
+| Framing Fraction | .18      | .13     | Main:.18   | Main:.144  | Main:.126    | Main:.126             | Frame:.061          |
+|                  |          |         | Other:.09  | Other:.09  | Other:.112   | Other:.099            | Spline:.076         |
+|                  |          |         | Overlap:.5 | Overlap:.5 | Plywood:.015 | Plywood:.007          |                     |
 
 **Assumptions used:**
 
