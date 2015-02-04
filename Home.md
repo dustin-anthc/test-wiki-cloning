@@ -49,3 +49,5 @@ The wiki is divided into two main sections-- one for current or prospective **us
 * [Documentation Overview](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Documentation-Overview-(mmap))
 
 ### TEAC Meeting Notes
+
+![AHFC Banner](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Images/AHFC%20MASTER%20HEADER.png)
