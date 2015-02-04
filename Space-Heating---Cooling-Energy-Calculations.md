@@ -17,7 +17,7 @@
 Introduction
 ------------
 
-The space heating energy use calculation is the most important calculation performed by AkWarm when analyzing residential buildings and is of major importance in the commercial building energy analysis. This document describes the details of that calculation in a way that is hopefully understandable to a technical energy analyst; computer programming experience is not a prerequisite. The document focuses on the residential space heating calculation but includes a section that describes how the commercial space heating calculation differs from the residential. A description of the space cooling calculation is also included in this document.
+The space heating energy use calculation is the most important calculation performed by AkWarm when analyzing residential buildings and is of major importance in the commercial building energy analysis. This page describes the details of that calculation in a way that is hopefully understandable to a technical energy analyst; computer programming experience is not a prerequisite. The page focuses on the residential space heating calculation but includes a section that describes how the commercial space heating calculation differs from the residential. A description of the space cooling calculation is also included in this page.
 
 <a name="overview"></a>
 General Overview of the Residential Space Heating Calculation
@@ -29,7 +29,7 @@ For each month, these are the calculations that are performed:
 
 -   The **Gross Heat Loss** (not accounting for any internal or solar gains) of the building’s shell components, natural air leakage, and mechanical ventilation air flow is determined given the thermostat setpoints and the average outdoor temperature for the month. The Main Living Space of the home and the Garage are analyzed separately because those spaces can have different thermostat setpoints. However, after separately calculating the heat loss of the Garage and the Main Living Space, those two heat losses are combined for the subsequent steps in the calculation.
 
--   The **Internal Gains** from people, lights, and appliances (including the water heater) are determined. Some portion of these internal gains are usable and offset the need for space heating, and the rest of the gains cause the building to overheat beyond the thermostat setpoint temperature. A formula from the Hot-2000 simulation program is used to determine the fraction of the internal gains that are usable.
+-   The **Internal Gains** from people, lights, and appliances (including the water heater) are determined. Some portion of these internal gains are usable and offset the need for space heating, and the rest of the gains cause the building to overheat beyond the thermostat setpoint temperature. A formula from the [Hot-2000 simulation program](http://www.nrcan.gc.ca/energy/software-tools/7423) is used to determine the fraction of the internal gains that are usable.
 
 -   The **Solar Gains** from windows, skylights, and from solar incident on opaque walls and door surfaces are calculated. Again, a portion of these gains are usable and offset space heating needs; the rest of the gain causes overheating beyond the setpoint temperature. The solar gain usability is determined by analyzing the size of the gain relative to the heat loss occurring during the month.
 
@@ -37,7 +37,7 @@ For each month, these are the calculations that are performed:
 
 -   For the primary and secondary heating systems, the **Distribution System Efficiency** is determined from the type of distribution system (forced air, hydronic, direct) and the location, insulation, and leakage of the distribution pipes/ducts. These distribution efficiencies are used to scale up the net heat load and calculate the heat load on the primary and secondary heating plants.
 
--   The **Seasonal Efficiency of the Primary and Secondary Heating Plants** are determined from the AFUE of the plants in the Energy Library or the direct entry of the AFUE by the user. Also, the AFUE is adjusted for the existence of any upgrade devices on the heating system (e.g. vent damper, modulating aquastat). Once the heating plant efficiency has been determined, the fuel use of the heating plant can be calculated by dividing the net heat load seen by the plant by the seasonal efficiency.
+-   The **Seasonal Efficiency of the Primary and Secondary Heating Plants** are determined from the [AFUE](http://www.cchrc.org/sites/default/files/docs/afue_final.pdf) of the plants in the Energy Library or the direct entry of the AFUE by the user. Also, the AFUE is adjusted for the existence of any upgrade devices on the heating system (e.g. vent damper, modulating aquastat). Once the heating plant efficiency has been determined, the fuel use of the heating plant can be calculated by dividing the net heat load seen by the plant by the seasonal efficiency.
 
 <a name="calc_details"></a>
 Calculation Details
