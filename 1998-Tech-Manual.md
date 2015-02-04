@@ -1,279 +1,173 @@
--   
--   <span id="_Toc371140035" class="anchor"><span id="_Toc371140161" class="anchor"><span id="_Toc371146331" class="anchor"></span></span></span>Chapter 1
--    How AKWarm Calculates Energy Use
-    -   <span id="_Toc371140037" class="anchor"><span id="_Toc371140164" class="anchor"><span id="_Toc371146333" class="anchor"></span></span></span>1.1 Overview
-        -   <span id="_Toc359743498" class="anchor"><span id="_Toc359744405" class="anchor"><span id="_Toc359769968" class="anchor"><span id="_Toc359775675" class="anchor"><span id="_Toc359778200" class="anchor"><span id="_Toc359779165" class="anchor"><span id="_Toc371140038" class="anchor"><span id="_Toc371140165" class="anchor"></span></span></span></span></span></span></span></span>Basic Functions
-    -   <span id="_Toc371140039" class="anchor"><span id="_Toc371140166" class="anchor"><span id="_Toc371146334" class="anchor"></span></span></span>1.2 AKWarm Inputs
-        -   <span id="_Toc371140040" class="anchor"><span id="_Toc371140167" class="anchor"></span></span>I. AKWarm Libraries
-        -   <span id="_Toc371140041" class="anchor"><span id="_Toc371140168" class="anchor"></span></span>II. User Inputs
-    -   <span id="_Toc371140042" class="anchor"><span id="_Toc371140169" class="anchor"><span id="_Toc371146335" class="anchor"></span></span></span>1.3 AKWarm’s Internal Computer
-        -   <span id="_Toc371140043" class="anchor"><span id="_Toc371140170" class="anchor"></span></span>House Heat Balance
-        -   <span id="_Toc371140044" class="anchor"><span id="_Toc371140171" class="anchor"></span></span>1.3.1 AKWarm Weather Data
-        -   <span id="_Toc371140045" class="anchor"><span id="_Toc371140172" class="anchor"></span></span>1.3.2 ENERGY ALGORITHMS
-        -   <span id="_Toc371140046" class="anchor"><span id="_Toc371140173" class="anchor"></span></span>1.3.3 Results of monthly calculations
-        -   <span id="_Toc371140047" class="anchor"><span id="_Toc371140174" class="anchor"></span></span>1.3.4 Annual energy totals
-    -   
-        <span id="_Toc371140048" class="anchor"><span id="_Toc371140175" class="anchor"><span id="_Toc371146336" class="anchor"></span></span></span>1.4 AKWarm Outputs
-        -   <span id="_Toc371140049" class="anchor"><span id="_Toc371140176" class="anchor"></span></span>1.4.1 Heat Loss and Heat Load Report
-        -   <span id="_Toc371140050" class="anchor"><span id="_Toc371140177" class="anchor"></span></span>1.4.2 Energy Rating and Report
-        -   <span id="_Toc371140051" class="anchor"><span id="_Toc371140178" class="anchor"></span></span>1.4.3 Improvement Options Report
--   
-    <span id="_Toc371140052" class="anchor"><span id="_Toc371140179" class="anchor"><span id="_Toc371146337" class="anchor"></span></span></span>Chapter 2 Residential Heat Loss
-    -   <span id="_Toc371140053" class="anchor"><span id="_Toc371140180" class="anchor"><span id="_Toc371146338" class="anchor"></span></span></span>2.1 Conduction Heat Losses
-        -   <span id="_Toc371140054" class="anchor"><span id="_Toc371140181" class="anchor"></span></span>2.1.1 Building Conduction Heat Loss Calculations
-        -   <span id="_Toc371140055" class="anchor"><span id="_Toc371140182" class="anchor"></span></span>2.2.2 Above Grade Walls
-        -   <span id="_Toc371140056" class="anchor"><span id="_Toc371140183" class="anchor"></span></span>2.2.3 Above Grade Floors
-        -   <span id="_Toc371140057" class="anchor"><span id="_Toc371140184" class="anchor"></span></span>2.2.4 Ceiling With Attic
-        -   <span id="_Toc371140058" class="anchor"><span id="_Toc371140185" class="anchor"></span></span>2.2.5 Vaulted Ceiling
-        -   <span id="_Toc371140059" class="anchor"><span id="_Toc371140186" class="anchor"></span></span>2.2.6 Window/Glazing Components
-    -   <span id="_Toc371140060" class="anchor"><span id="_Toc371140187" class="anchor"><span id="_Toc371146339" class="anchor"></span></span></span>2.3 Below Ground Building Heat Loss Coefficients
-        -   <span id="_Toc371140061" class="anchor"><span id="_Toc371140188" class="anchor"></span></span>2.3.1 Below Grade Wall
-        -   <span id="_Toc371140062" class="anchor"><span id="_Toc371140189" class="anchor"></span></span>2.3.2 On-Grade or Below Grade Floors
-        -   <span id="_Toc371140063" class="anchor"><span id="_Toc371140190" class="anchor"></span></span>Summary
-    -   <span id="_Toc371140064" class="anchor"><span id="_Toc371140191" class="anchor"><span id="_Toc371146340" class="anchor"></span></span></span>2.4 Heat Loss From Air Infiltration & Mechanical Ventilation
-        -   <span id="_Toc371140065" class="anchor"><span id="_Toc371140192" class="anchor"></span></span>2.4.1 AKWarm calculates natural infiltration (cfm).
-        -   <span id="_Toc371140066" class="anchor"><span id="_Toc371140193" class="anchor"></span></span>2.4.2 AKWarm Assesses Mechanical Ventilation
-        -   <span id="_Toc371140067" class="anchor"><span id="_Toc371140194" class="anchor"></span></span>2.4.3 Net Ventilation Heat Loss
+<H1>AKWarm Technical Manual - 1998 </H1>
+
+<H2>Contents</H2>
+-   Chapter 1: How AKWarm Calculates Energy Use
+    -   1.1 Overview
+        -   1.1.1 Basic Functions
+    -   1.2 AKWarm Inputs
+        -   1.2.1 AKWarm Libraries
+        -   1.2.2 User Inputs
+    -   1.3 AKWarm’s Internal Computer - House Heat Balance
+        -   1.3.1 AKWarm Weather Data
+        -   1.3.2 ENERGY ALGORITHMS
+        -   1.3.3 Results of monthly calculations
+        -   1.3.4 Annual energy totals
+    -   1.4 AKWarm Outputs
+        -   1.4.1 Heat Loss and Heat Load Report
+        -   1.4.2 Energy Rating and Report
+        -   1.4.3 Improvement Options Report
+-  Chapter 2: Residential Heat Loss
+    -   2.1 Conduction Heat Losses
+        -   2.1.1 Building Conduction Heat Loss Calculations
+        -   2.2.2 Above Grade Walls
+        -   2.2.3 Above Grade Floors
+        -   2.2.4 Ceiling With Attic
+        -   2.2.5 Vaulted Ceiling
+        -   2.2.6 Window/Glazing Components
+    -   2.3 Below Ground Building Heat Loss Coefficients
+        -   2.3.1 Below Grade Wall
+        -   2.3.2 On-Grade or Below Grade Floors
+        -   2.3.3 Summary
+    -   2.4 Heat Loss From Air Infiltration & Mechanical Ventilation
+        -   2.4.1 AKWarm calculates natural infiltration (cfm).
+        -   2.4.2 AKWarm Assesses Mechanical Ventilation
+        -   2.4.3 Net Ventilation Heat Loss
         -   2.4.4 Gross Heat Loss
--   
-    <span id="_Toc371140069" class="anchor"><span id="_Toc371140196" class="anchor"><span id="_Toc371146341" class="anchor"></span></span></span>Chapter 3 Building Heat Gains
-    -   <span id="_Toc371140070" class="anchor"><span id="_Toc371140197" class="anchor"><span id="_Toc371146342" class="anchor"></span></span></span>3.1 AKWarm calculates internal gains
-        -   <span id="_Toc371140071" class="anchor"><span id="_Toc371140198" class="anchor"></span></span>3.1.1 Internal gains from occupants
-        -   <span id="_Toc371140072" class="anchor"><span id="_Toc371140199" class="anchor"></span></span>3.1.2 Internal gains from lights and appliances
-        -   <span id="_Toc371140073" class="anchor"><span id="_Toc371140200" class="anchor"></span></span>3.1.3 Fuel use and internal gains associated with the domestic hot water heater.
-    -   <span id="_Toc371140074" class="anchor"><span id="_Toc371140201" class="anchor"><span id="_Toc371146343" class="anchor"></span></span></span>3.2 AKWarm Calculates Passive Solar Heat Gains
-        -   <span id="_Toc371140075" class="anchor"><span id="_Toc371140202" class="anchor"></span></span>3.2.1 Solar Area
-        -   <span id="_Toc371140076" class="anchor"><span id="_Toc371140203" class="anchor"></span></span>3.2.2 Gross Solar Gain
-        -   <span id="_Toc371140077" class="anchor"><span id="_Toc371140204" class="anchor"></span></span>3.2.3 Estimate of Building Thermal Mass
-    -   <span id="_Toc371140078" class="anchor"><span id="_Toc371140205" class="anchor"><span id="_Toc371146344" class="anchor"></span></span></span>3.3 Heating System Performance
-        -   <span id="_Toc371140079" class="anchor"><span id="_Toc371140206" class="anchor"></span></span>Primary or secondary Heating System Energy Use
--   <span id="_Toc371140080" class="anchor"><span id="_Toc371140207" class="anchor"><span id="_Toc371146345" class="anchor"></span></span></span>Chapter 4 Putting It All Together
-    -   <span id="_Toc371140081" class="anchor"><span id="_Toc371140208" class="anchor"><span id="_Toc371146346" class="anchor"></span></span></span>4.1 Heating Load
-        -   <span id="_Toc371140082" class="anchor"><span id="_Toc371140209" class="anchor"></span></span>4.1.1 Why an “estimate”?
-        -   <span id="_Toc371140083" class="anchor"><span id="_Toc371140210" class="anchor"></span></span>4.1.2 Why “rate”?
-        -   <span id="_Toc371140084" class="anchor"><span id="_Toc371140211" class="anchor"></span></span>4.1.3 Why “near minimum”?
-    -   <span id="_Toc371140085" class="anchor"><span id="_Toc371140212" class="anchor"><span id="_Toc371146347" class="anchor"></span></span></span>4.2 Useful solar and internal gains
-        -   <span id="_Toc371140086" class="anchor"><span id="_Toc371140213" class="anchor"></span></span>4.2.1 Calculate the useable portion of the gross internal gains
-        -   <span id="_Toc371140087" class="anchor"><span id="_Toc371140214" class="anchor"></span></span>4.2.2 Calculate the useable portion of the gross solar gains
-    -   <span id="_Toc371140088" class="anchor"><span id="_Toc371140215" class="anchor"><span id="_Toc371146348" class="anchor"></span></span></span>4.3 AKWarm calculates the net load on the heating systems.
-        -   <span id="_Toc371140089" class="anchor"><span id="_Toc371140216" class="anchor"></span></span>4.3.1. Net out Useable internal and solar gains
-        -   <span id="_Toc371140090" class="anchor"><span id="_Toc371140217" class="anchor"></span></span>4.3.2. Partition the net load across the primary and secondary heating systems.
-        -   <span id="_Toc371140091" class="anchor"><span id="_Toc371140218" class="anchor"></span></span>4.3.3 Calculate the impact of a setback thermostat
-    -   <span id="_Toc371140092" class="anchor"><span id="_Toc371140219" class="anchor"><span id="_Toc371146349" class="anchor"></span></span></span>4.4 Annual Fuel Use and Fuel Costs
-        -   <span id="_Toc371140093" class="anchor"><span id="_Toc371140220" class="anchor"></span></span>4.4.1 Annual Fuel Use
-        -   <span id="_Toc371140094" class="anchor"><span id="_Toc371140221" class="anchor"></span></span>4.4.2 Energy Cost By Source
-        -   <span id="_Toc371140095" class="anchor"><span id="_Toc371140222" class="anchor"></span></span>4.4.3 Energy Cost By End Use
--   
--   <span id="_Toc371140096" class="anchor"><span id="_Toc371140223" class="anchor"><span id="_Toc371146350" class="anchor"></span></span></span>Chapter 5 The AKWarm Rating
-    -   <span id="_Toc371140097" class="anchor"><span id="_Toc371140224" class="anchor"><span id="_Toc371146351" class="anchor"></span></span></span>5.1 Introduction
-    -   <span id="_Toc371140098" class="anchor"><span id="_Toc371140225" class="anchor"><span id="_Toc371146352" class="anchor"></span></span></span>5.2 Rating Procedure
-        -   <span id="_Toc371140099" class="anchor"><span id="_Toc371140226" class="anchor"></span></span>5.2.1 Standardization of Operating Conditions
-        -   <span id="_Toc371140100" class="anchor"><span id="_Toc371140227" class="anchor"></span></span>5.2.2 Reference House
-        -   <span id="_Toc371140101" class="anchor"><span id="_Toc371140228" class="anchor"></span></span>5.2.3 Source BTUs
-    -   <span id="_Toc371140102" class="anchor"><span id="_Toc371140229" class="anchor"><span id="_Toc371146353" class="anchor"></span></span></span>5.3 Rating Calculations
-        -   <span id="_Toc371140103" class="anchor"><span id="_Toc371140230" class="anchor"></span></span>5.3.1 Actual Energy Cost
-        -   <span id="_Toc371140104" class="anchor"><span id="_Toc371140231" class="anchor"></span></span>5.3.2 How AKWarm Calculates Avoided Air Pollution Through Energy Efficiency
-        -   <span id="_Toc371140105" class="anchor"><span id="_Toc371140232" class="anchor"></span></span>5.3.3 Rating Point Calculation
-        -   <span id="_Toc371140106" class="anchor"><span id="_Toc371140233" class="anchor"></span></span>5.3.4 Rating Star Levels
-        -   <span id="_Toc371140107" class="anchor"><span id="_Toc371140234" class="anchor"></span></span>5.3.5 Messages Printed on Rating Certificate
+-   Chapter 3 Building Heat Gains
+    -   3.1 AKWarm calculates internal gains
+        -   3.1.1 Internal gains from occupants
+        -   3.1.2 Internal gains from lights and appliances
+        -   3.1.3 Fuel use and internal gains associated with the domestic hot water heater.
+    -   3.2 AKWarm Calculates Passive Solar Heat Gains
+        -   3.2.1 Solar Area
+        -   3.2.2 Gross Solar Gain
+        -   3.2.3 Estimate of Building Thermal Mass
+    -   3.3 Heating System Performance
+        -   3.3.1 Primary or secondary Heating System Energy Use
+-   Chapter 4 Putting It All Together
+    -   4.1 Heating Load
+        -   4.1.1 Why an “estimate”?
+        -   4.1.2 Why “rate”?
+        -   4.1.3 Why “near minimum”?
+    -   4.2 Useful solar and internal gains
+        -   4.2.1 Calculate the useable portion of the gross internal gains
+        -   4.2.2 Calculate the useable portion of the gross solar gains
+    -   4.3 AKWarm calculates the net load on the heating systems.
+        -   4.3.1. Net out Useable internal and solar gains
+        -   4.3.2. Partition the net load across the primary and secondary heating systems.
+        -   4.3.3 Calculate the impact of a setback thermostat
+    -   4.4 Annual Fuel Use and Fuel Costs
+        -   4.4.1 Annual Fuel Use
+        -   4.4.2 Energy Cost By Source
+        -   4.4.3 Energy Cost By End Use
+-   Chapter 5 The AKWarm Rating
+    -   5.1 Introduction
+    -   5.2 Rating Procedure
+        -   5.2.1 Standardization of Operating Conditions
+        -   5.2.2 Reference House
+        -   5.2.3 Source BTUs
+    -   5.3 Rating Calculations
+        -   5.3.1 Actual Energy Cost
+        -   5.3.2 How AKWarm Calculates Avoided Air Pollution Through Energy Efficiency
+        -   5.3.3 Rating Point Calculation
+        -   5.3.4 Rating Star Levels
+        -   5.3.5 Messages Printed on Rating Certificate
         -   5.3.6 Rating Calibration Parameters (as defined in Energy Library, and in use 3/98)
--   <span id="GlossaryHeading" class="anchor"><span id="_Toc371140108" class="anchor"><span id="_Toc371140235" class="anchor"><span id="_Toc371146354" class="anchor"></span></span></span></span>Chapter 6
--    AKWarm Home Improvement Reports
-    -   <span id="_Toc371140109" class="anchor"><span id="_Toc371140236" class="anchor"><span id="_Toc371146356" class="anchor"></span></span></span>6.1 Introduction
-        -   <span id="_Toc371140110" class="anchor"><span id="_Toc371140237" class="anchor"></span></span>6.1.1 Improvement Measure Categories
-        -   <span id="D2H_HelpMarking" class="anchor"><span id="_Toc371140111" class="anchor"><span id="_Toc371140238" class="anchor"></span></span></span>6.1.2 Improvement Calculations
+-   Chapter 6: AKWarm Home Improvement Reports
+    -   6.1 Introduction
+        -   6.1.1 Improvement Measure Categories
+        -   6.1.2 Improvement Calculations
 
-Technical Manual
 
-AKWarm
-
-Doc-To-Help Standard Manual
-
-**
-**
-
-Contents
-
-1. How AKWarm Calculates Energy Use
-
-1.1 Overview
-
-1.2 AKWarm Inputs
-
-1.3 AKWarm’s Internal Computer
-
-1.4 AKWarm Outputs 8
-
-2. Residential Heat Loss
-
-2.1 Conduction Heat Losses
-
-2.3 Below Ground Building Heat Loss Coefficients
-
-2.4 Heat Loss From Air Infiltration & Mechanical Ventilation
-
-3. Building Heat Gains
-
-3.1 AKWarm calculates internal gains
-
-3.2 AKWarm Calculates Passive Solar Heat Gains
-
-3.3 Heating System Performance
-
-4. Putting It All Together
-
-4.1 Heating Load
-
-4.2 Useful solar and internal gains
-
-4.3 AKWarm calculates the net load on the heating systems.
-
-4.4 Annual Fuel Use and Fuel Costs
-
-5. The AKWarm Rating
-
-5.1 Introduction
-
-5.2 Rating Procedure
-
-5.3 Rating Calculations
-
-6. AKWarm Home Improvement Reports
-
-6.1 Introduction
-
-<span id="ChapterHeading" class="anchor"></span>
-
-##### 
-
-<span id="_Toc371140035" class="anchor"><span id="_Toc371140161" class="anchor"><span id="_Toc371146331" class="anchor"></span></span></span>Chapter 1 
-=======================================================================================================================================================
-
- How AKWarm Calculates Energy Use 
-==================================
-
-<span id="_Toc371140037" class="anchor"><span id="_Toc371140164" class="anchor"><span id="_Toc371146333" class="anchor"></span></span></span>1.1 Overview
----------------------------------------------------------------------------------------------------------------------------------------------------------
+***
+***
+#         Chapter 1: How AKWarm Calculates Energy Use
+##        1.1 Overview
 
 **AKWarm** is an easy-to-use computerized home energy <span id="D2HBEnergy_Ratin1" class="anchor"></span>analysis tool designed specifically for new and existing residential buildings in Alaska. It was developed under the direction of the Alaska Housing Finance Corporation (AHFC) for use in assisting home energy raters, weatherization assessors and home builders in evaluating the energy performance of homes on a consistent basis. **AKWarm** provides a prediction of the energy use of individual buildings operated under standard conditions, calculates an equivalent energy rating and recommends cost-effective energy improvements based on actual conditions in the building.
 
-### <span id="_Toc359743498" class="anchor"><span id="_Toc359744405" class="anchor"><span id="_Toc359769968" class="anchor"><span id="_Toc359775675" class="anchor"><span id="_Toc359778200" class="anchor"><span id="_Toc359779165" class="anchor"><span id="_Toc371140038" class="anchor"><span id="_Toc371140165" class="anchor"></span></span></span></span></span></span></span></span>Basic Functions
+###       1.1.1 Basic Functions
 
-> The basic functions of **AKWarm** allow you to:
+ The basic functions of **AKWarm** allow you to:
 
-1.  Create a house data file. A description of the building and its energy related characteristics, including shell components,<span id="D2HEndOfTarget" class="anchor"><span id="D2HLastEntry" class="anchor"></span></span> heating system, and geographical location, are entered as data into **AKWarm**, and stored in a house data file. Data is gathered in the field or from construction plans. Creating and editing of house data files is described in Chapter 4.
+  1.  Create a house data file. A description of the building and its energy related characteristics, including shell components, heating system, and geographical location, are entered as data into **AKWarm**, and stored in a house data file. Data is gathered in the field or from construction plans. Creating and editing of house data files is described in Chapter 4.
 
-2.  Analyze energy use. Using the information in a house data file, **AKWarm** computes heat loss, heat gain, and energy required to keep the house at a comfortable thermostatic set point, during a full year of operation. Energy use calculations are discussed in Chapter 6.
+  2.  Analyze energy use. Using the information in a house data file, **AKWarm** computes heat loss, heat gain, and energy required to keep the house at a comfortable thermostatic set point, during a full year of operation. Energy use calculations are discussed in Chapter 6.
 
-3.  Show compliance with the Alaska Building Energy Efficiency Standard (BEES) for new construction.
+  3.  Show compliance with the Alaska Building Energy Efficiency Standard (BEES) for new construction.
 
-4.  Generate a Home Energy Rating. **AKWarm** uses AHFC's energy rating program to predict a home's energy score.
+  4.  Generate a Home Energy Rating. **AKWarm** uses AHFC's energy rating program to predict a home's energy score.
 
-5.  Compute the savings of individual energy conservation measures. **AKWarm** reviews possible efficiency improvement measures, calculates savings for each measure, evaluates the interaction between measures, and ranks the measures in order of their cost-effectiveness.
+  5.  Compute the savings of individual energy conservation measures. **AKWarm** reviews possible efficiency improvement measures, calculates savings for each measure, evaluates the interaction between measures, and ranks the measures in order of their cost-effectiveness.
 
-6.  Produce rating certificates and reports. As part of the energy calculation process, **AKWarm** generates a number of performance reports that can be viewed on-screen and printed.
+  6.  Produce rating certificates and reports. As part of the energy calculation process, **AKWarm** generates a number of performance reports that can be viewed on-screen and printed.
 
-7.  Save house data files.
+  7.  Save house data files.
 
-<span id="_Toc371140039" class="anchor"><span id="_Toc371140166" class="anchor"><span id="_Toc371146334" class="anchor"></span></span></span>1.2 AKWarm Inputs
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+##        1.2 AKWarm Inputs </H3>
+###       1.2.1 AKWarm Libraries </H4>
+####      *1.2.1.1. Information for 281 Alaska Communities*
+#####     1.2.1.1.1 Weather Information:
+  20 Prime Locations: <BR>
+  1.  Monthly solar, wind speed, average dry bulb temperature <BR>
+  2.  Annual heating degree days, dry bulb temperature, ground temperature, wind speed, design temperature
 
-### <span id="_Toc371140040" class="anchor"><span id="_Toc371140167" class="anchor"></span></span>I. AKWarm Libraries
+  All Other Locations<BR>
+  1.  Annual heating degree days, dry bulb temperature, wind speed, design temperature
 
-#### *A. Information for 281 Alaska Communities*
+#####     1.2.1.1.2. Fuel Costs: 
+  1.  Oil, gas, propane, wood, coal (if not available, user input allowed)
 
-##### Weather Information:
+#####     1.2.1.1.3. Gas & Electric Utility Costs: 
+  1.  Block rate, customer service charge, fuel surcharge, PCE
 
-20 Prime Locations:
+####      *1.2.1.2. Thermal & Energy Efficient Properties*
+#####     1.2.1.2.1. Building and Insulation Materials
+  1.  Description, R-value (From ASHRAE 1993 Fundamentals)
 
-1.  Monthly solar, wind speed, average dry bulb temperature
+#####     1.2.1.2.2. Windows and Doors
+  1.  Glazing shading coefficient (From ASHRAE Fundamentals)
+  2.  U-value of glass, frame, air gap, gas fill (From ASHRAE Fundamentals)
+  3.  Door U-values (From ASHRAE Fundamentals)
 
-2.  Annual heating degree days, dry bulb temperature, ground temperature, wind speed, design temperature
+#####     1.2.1.2.3. Heating Systems, Hot Water Systems
+  1.  Heating System description, AFUE, Steady State-AFUE adjustment, Auxiliary Power/heat output; upgrade devices - reduction in part-load losses, increase in steady state efficiency
+  2.  Hot Water Systems: Energy factor, Recovery efficiency, insulation R-value
 
-All Other Locations
+####      *1.2.1.3. Economic Factors*
+#####     1.2.1.3.1. Building and Insulation: Materials and Labor Costs
+The costs of materials for energy efficient improvement options were gathered from building materials suppliers and contractors around the state. Weatherization contractors have the greatest knowledge of costs in areas outside of the road system. Their bid lists were used to estimate labor times and costs for each improvement option. In most cases, the material and labor costs are only for replacement or addition of the energy efficient improvement, not for additional modifications that may be necessary to accommodate the task.
 
-1.  Annual heating degree days, dry bulb temperature, wind speed, design temperature
+#####     1.2.1.3.2. Fuel Cost Escalation Factors
+The US Department of Energy has developed “fuel cost escalation factors” to account for the fact that fuel will not cost the same in twenty years as it does today, and therefore estimates of energy savings should take into account these projected changes in cost. AKWarm uses DOE’s projected escalation factors.
 
-##### Fuel Costs: 
+#####     1.2.1.3.3. Community Cost Multipliers
+Material and labor costs were gathered for two areas of the state: the lowest cost, on-the road system communities, and the highest cost communities where material and labor are flown in (or equivalent). Then each of the 281 communities in the database was assigned a cost multiplier, with 1 being the road-system low cost, 5 being the highest cost, and 2,3, and 4 being intermediary, based on data collected by the State Dept. of Labor and the Dept. of Community and Regional Affairs, and other economic data.
 
-1.  Oil, gas, propane, wood, coal (if not available, user input allowed)
+###       1.2.2 User Inputs
+####      *1.2.2.1. House Site<*
+  1.  Location: City, Prime Weather City, Utility(s),
 
-##### Gas & Electric Utility Costs: 
+####      *1.2.2.2. House Characteristics*
+  1.  Occupancy; House-type; Wind-Shielding; Heated Floor Area; \# Bedrooms
 
-1.  Block rate, customer service charge, fuel surcharge, PCE
+####      *1.2.2.3. Shell Components*
+  1.  Location; area; insulation type and amount
 
-#### *B. Thermal & Energy Efficient Properties*
+####      *1.2.2.4. Air Leakage and Mechanical Ventilation*
+  1.  Air Leakage in air changes per hour or cubic feet per minute<BR>
+  2.  Description of mechanical ventilation system (from list)
 
-##### Building and Insulation Materials
+####      *1.2.2.5. Heating System*
+  1.  Description (from list); AFUE or Steady State Efficiency; Distribution type, location, quality
 
-1.  Description, R-value (From ASHRAE 1993 Fundamentals)
+####      *1.2.2.6. Other Appliances*
+  1.  Domestic hot water system: type, energy factor, location, insulation<BR>
+  2.  Fuel type for clothes dryer and range<BR>
+  3.  Estimate of range of electricity use: average, low, high
 
-##### Windows and Doors
-
-1.  Glazing shading coefficient (From ASHRAE Fundamentals)
-
-2.  U-value of glass, frame, air gap, gas fill (From ASHRAE Fundamentals)
-
-3.  Door U-values (From ASHRAE Fundamentals)
-
-##### Heating Systems, Hot Water Systems
-
-1.  Heating System description, AFUE, Steady State-AFUE adjustment, Auxiliary Power/heat output; upgrade devices - reduction in part-load losses, increase in steady state efficiency
-
-2.  Hot Water Systems: Energy factor, Recovery efficiency, insulation R-value
-
-#### *C. Economic Factors*
-
-##### Building and Insulation: Materials and Labor Costs
-
-> The costs of materials for energy efficient improvement options were gathered from building materials suppliers and contractors around the state. Weatherization contractors have the greatest knowledge of costs in areas outside of the road system. Their bid lists were used to estimate labor times and costs for each improvement option. In most cases, the material and labor costs are only for replacement or addition of the energy efficient improvement, not for additional modifications that may be necessary to accommodate the task.
-
-##### Fuel Cost Escalation Factors
-
-> The US Department of Energy has developed “fuel cost escalation factors” to account for the fact that fuel will not cost the same in twenty years as it does today, and therefore estimates of energy savings should take into account these projected changes in cost. AKWarm uses DOE’s projected escalation factors.
-
-##### Community Cost Multipliers
-
-> Material and labor costs were gathered for two areas of the state: the lowest cost, on-the road system communities, and the highest cost communities where material and labor are flown in (or equivalent). Then each of the 281 communities in the database was assigned a cost multiplier, with 1 being the road-system low cost, 5 being the highest cost, and 2,3, and 4 being intermediary, based on data collected by the State Dept. of Labor and the Dept. of Community and Regional Affairs, and other economic data.
-
-### <span id="_Toc371140041" class="anchor"><span id="_Toc371140168" class="anchor"></span></span>II. User Inputs
-
-#### A. House Site
-
-1.  Location: City, Prime Weather City, Utility(s),
-
-#### B. House Characteristics
-
-1.  Occupancy; House-type; Wind-Shielding; Heated Floor Area; \# Bedrooms
-
-#### C. Shell Components
-
-1.  Location; area; insulation type and amount
-
-#### D. Air Leakage and Mechanical Ventilation
-
-1.  Air Leakage in air changes per hour or cubic feet per minute
-
-2.  Description of mechanical ventilation system (from list)
-
-#### E. Heating System
-
-1.  Description (from list); AFUE or Steady State Efficiency; Distribution type, location, quality
-
-#### F. Other Appliances
-
-1.  Domestic hot water system: type, energy factor, location, insulation
-
-2.  Fuel type for clothes dryer and range
-
-3.  Estimate of range of electricity use: average, low, high
-
-<span id="_Toc371140042" class="anchor"><span id="_Toc371140169" class="anchor"><span id="_Toc371146335" class="anchor"></span></span></span>1.3 AKWarm’s Internal Computer
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### <span id="_Toc371140043" class="anchor"><span id="_Toc371140170" class="anchor"></span></span>House Heat Balance
-
-AKWarm conducts a monthly energy balance on a house design to determine potential energy requirements. The monthly energy balance includes monthly bin analyses of specific building components and mechanical systems. It evaluates the effects of solar and internal gains and determines space heating, water heating, appliances needs, based on monthly modeling of both above-grade and below grade building envelope components
+##        1.3 AKWarm’s Internal Computer - House Heat Balance
+**AKWarm** conducts a monthly energy balance on a house design to determine potential energy requirements. The monthly energy balance includes monthly bin analyses of specific building components and mechanical systems. It evaluates the effects of solar and internal gains and determines space heating, water heating, appliances needs, based on monthly modeling of both above-grade and below grade building envelope components
 
 1.  AKWarm uses the user-supplied information for house size, location, occupant level (number of bedrooms plus one), and energy component descriptions.
 
@@ -281,43 +175,41 @@ AKWarm conducts a monthly energy balance on a house design to determine potentia
 
 3.  For each energy use, AKWarm does monthly calculations: each routine internally loops through each month’s weather information.
 
-### <span id="_Toc371140044" class="anchor"><span id="_Toc371140171" class="anchor"></span></span>1.3.1 AKWarm Weather Data
-
+###       1.3.1 AKWarm Weather Data
 It is important to understand how AKWarm determines the temperature data to use in its energy calculation for a city. Average dry bulb monthly temperature data is provided in the Energy Library for each of the approximately 20 Main Weather Cities, but not for the 253 other cities. For each of these other cities, annual average temperature or annual degree days may be present in the Energy Library. If annual average temperature is present, AKWarm compares it to the annual average temperature of the Main Weather City to come up with a temperature adjustment. That temperature adjustment is then applied to the monthly temperature from the Main Weather City to create a monthly temperature for the actual location. The adjusted monthly temperatures are used in the energy calculation..
 
 In the few cities that do not have annual average temperature data, AKWarm looks to see if degree days are present. If so, it compares the city’s degree days to main Weather City’s degree days to come up with a temperature adjustment to apply to the monthly temperature data. If annual average temperature data and degree days are not available, AKWarm makes no adjustment to the monthly temperature data from the main Weather City.
 
 In a perfect world, both degree day comparisons and annual average temperature comparisons should produce nearly the same information. Alaska weather data is not perfect. Inconsistencies exist between degree day information and annual average temperature information, even when it comes from the same source. AKWarm’s built-in validity checking routine of its Energy Library includes a test that checks for inconsistencies. Minor inconsistencies (0.6 degrees F or less) are left in the data, but any larger discrepancies are screened out.
 
-#### Wind Speed
-
+####      *1.3.1.1 Wind Speed*
 An adjustment similar to the temperature adjustment process is used to adjust the monthly wind speeds of the Main Weather City. The monthly wind speeds are adjusted to more closely match the annual average wind speed of the actual city where the home is located (if the city’s annual average wind speed is available).
 
 AKWarm converts wind speed at airport weather station to site wind speed (measured at a height equal to the ceiling of the top floor)
 
-##### Site Wind Speed
-
+#####     1.3.1.1.1. Site Wind Speed
 AKWarm converts weather station wind speed to site wind speed, measured at the top floor ceiling. It uses the wind conversion model found in the Lawrence Berkeley Laboratory infiltration model. The degree of wind shielding selected by the user of AKWarm is what is considered "WindShield ID" in the discussion below . House ht is the height of the top floor ceiling of the house in feet.
 
 A number of assumptions are made, since they are not provided as inputs:
 
-weather station wind measurement height = 20 ft;
-
-weather station terrain class = 2, shielding class = 1;
+    weather station wind measurement height = 20 ft;
+    weather station terrain class = 2, shielding class = 1;
 
 assumptions for each windshield ID are:
 
-> Site wind multiplier = coefficient \* (house height/32.8) ^ exponent
+    Site wind multiplier = coefficient \* (house height/32.8) ^ exponent
 
 The coefficient and exponent vary depending on the terrain and shielding assumed for each windshield ID and depending on the assumptions about the weather station. See the details in the LBL infiltration model to determine how to calculate coefficient and exponent from these assumptions: “The Prediction of Air Infiltration”, M. Sherman and B. Dickinson, July 1985, LBL-19040.
 
-|-----------------|------------------------------------|----------------------------------|
+
 | AKWarm Category | LBL-defined Classes                | Site Wind Multiplier             |
+|:----------------|:-----------------------------------|:---------------------------------|
 | Shielded        | Terrain Class 4, shielding class 4 | .412 \* (house height/32.8) ^.25 |
 | Average         | terrain class 3, shielding class 3 | .678 \* (house height/32.8) ^.2  |
 | Exposed         | Terrain class 3, shielding class 2 | .805 \* (house height/32.8) ^.2  |
 
-### <span id="_Toc371140045" class="anchor"><span id="_Toc371140172" class="anchor"></span></span>1.3.2 ENERGY ALGORITHMS
+
+<H4>1.3.2 ENERGY ALGORITHMS</h4>
 
 1.  Above Grade Heat Loss
 
