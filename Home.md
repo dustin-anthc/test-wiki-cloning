@@ -32,7 +32,9 @@ The wiki is divided into two main sections-- one for current or prospective **us
 - [Energy Library Maintenance](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Help:-Energy-Library-Maintenance)
 
 ###Code Architecture Diagrams
-- [Energy Calculation Diagram](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Energy%20Calculation%20Code%20Architecture%20Diagram.pdf)
+- [Energy Calculation Diagram](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Code%20Architecture%20Diagrams/Energy%20Calculation%20Code%20Architecture%20Diagram.pdf)
+- [Water Heating Diagram](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Code%20Architecture%20Diagrams/DHWheater_EnergyCalc.pdf)
+- [Appliance Fuel Diagram](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Code%20Architecture%20Diagrams/AppFuel_EnergyCalc.pdf)
 
 ###Calculation Details
 - [Rating Calculation](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Rating_Calculation)
