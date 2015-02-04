@@ -33,6 +33,7 @@ The wiki is divided into two main sections-- one for current or prospective **us
 
 ###Code Architecture Diagrams
 - [Energy Calculation Diagram](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Energy%20Calculation%20Code%20Architecture%20Diagram.pdf)
+
 ###Calculation Details
 - [Rating Calculation](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Rating_Calculation)
 - [Space Heating / Cooling Energy Calculations](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Space_Heating_Cooling_Energy_Calc)
