@@ -1,6 +1,6 @@
-:skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:<BR>
+
 ![/Wiki\_Test\_Repository/AKWarmLogo.png](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Images/AKWarmLogo.png)<BR>
-:skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull::skull:<BR>
+
 <H1> Wiki Test Repository </H1>
 
 Welcome to the wiki for **AKWarm** home energy rating software.  AKWarm is a free program owned by the [Alaska Housing Finance Corporation](http://www.ahfc.us/) that is used to model the energy use of residential buildings in cold climates, evaluate energy efficiency improvements, and provide an energy rating.  
