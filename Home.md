@@ -24,7 +24,7 @@ The wiki is divided into two main sections-- one for current or prospective **us
 
 # Developers
 ### The Basics
-- <button type="button" onclick="location.href='https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarm-Software-Overview'">Software Overview</button>:  Gives a general overview of the AKWarm software from a developer's perspective, and should be the first document read by a developer intending to work on the software.
+- [Software Overview}(https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarm-Software-Overview):  Gives a general overview of the AKWarm software from a developer's perspective, and should be the first document read by a developer intending to work on the software.
 - [User Interface](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarm-User-Interface-Documentation): Describes the AKWarm_UI project, which is the proect that provides the user interface for AKWarm.  
 - [Calc Project](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarmCalc-Project).  Describes the AKWarmCalc proect, which contains the main data structures and calculations for the software.
 - [Setup Project](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarm2Setup): Describes the AKWarm2Setup project, which produces the installer software for AKWarm.  Also describes all aspects of creating a new version of AKWarm for installation. 
