@@ -82,7 +82,7 @@ New versions of the Energy Library are released as information in the library is
 
 4.  After editing of the Energy Library data has been completed in the Microsoft Access file, the Access file *2012-05-18.accdb* needs to be converted into the *.lib* format. (The *LibEdit.accdb* is only used for editing data and is not needed from this point onward). The command line utility produced by the *EnergyLibraryMaintenance* Project is used for this purpose. The filename for the command line utility is called *elmaint.exe*, and it can be found in the source code tree at *EnergyLibraryMaintenance\\bin\\x86\\Release\\elmaint.exe*. If the file is not present, then the *EnergyLibraryMaintenance* project needs to be built. To do so, set the *EnergyLibraryMaintenance* project as the Visual Studio StartUp project, set the Build Configuration to “Release”, and as noted before, the Active Solution Platform should be set to “x86”. Building the project should create the *elmaint.exe* file in the above listed location.
 
-5.  Detailed instructions on use of the *elmaint.exe* utility are given in the *Help\_EnergyLibraryMaintenance.pdf* document, but the command needed for conversion of the Access file into a *.lib* file is:
+5.  Detailed instructions on use of the *elmaint.exe* utility are given in the [[EnergyLibraryMaintenance document|Energy-Library-Maintenance]], but the command needed for conversion of the Access file into a *.lib* file is:
     elmaint.exe Convert /source:2012-05-18.accdb /destination:2012-05-18.lib /encrypt
     The above syntax is correct if the Access file is located in the same folder as the elmaint.exe utility; if the file is in a different folder, substitute the full path name to the file in the above command.
 
