@@ -29,7 +29,7 @@ The wiki is divided into two main sections-- one for current or prospective **us
 - [Calc Project](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarmCalc-Project).  Describes the AKWarmCalc proect, which contains the main data structures and calculations for the software.
 - [Setup Project](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/AKWarm2Setup): Describes the AKWarm2Setup project, which produces the installer software for AKWarm.  Also describes all aspects of creating a new version of AKWarm for installation. 
 - [Energy Library Development](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Energy-Library-Development-Project): Describes the purpose of the AKWarm Energy Library, the software routines using the Library, and how to edit and release a new Energy Library.
-- [Energy Library Maintenance](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Help:-Energy-Library-Maintenance):  Explains the use of the command line utility created by the EnergyLibraryMaintenance project, which has the main purpose of converting Energy LIbraries from the MSAccess format to the format need by AKWarm.  
+- [Energy Library Maintenance](/wiki/Energy-Library-Maintenance):  Explains the use of the command line utility created by the EnergyLibraryMaintenance project, which has the main purpose of converting Energy LIbraries from the MSAccess format to the format need by AKWarm.  
 
 ###Code Architecture Diagrams
 - [Energy Calculation Diagram (PDF)](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Code%20Architecture%20Diagrams/Energy%20Calculation%20Code%20Architecture%20Diagram.pdf?raw=true)
