@@ -13,7 +13,7 @@ The wiki is divided into two main sections-- one for current or prospective **us
 # Users
 
 ### Technical Resources 
-* [Source BTUs (Including Special Hydro)](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/0000-Source-BTU)
+* [[Source BTUs (Including Special Hydro)|0000-Source-BTU]]
 * [1998 Tech Manual](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/1998-Tech-Manual)
 * [2007 Rating Program Evaluation](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2007-Rating-Prgm-Eval)
 * [2012 Calc Process](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/2012-Calc-Process)
