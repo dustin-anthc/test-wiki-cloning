@@ -123,7 +123,7 @@ The [Analysis North](analysisnorth.com) web server is currently used for the abo
 
 When a new user input value needs to be added to AkWarm, there are a number of tasks that must be completed. The list below summarizes those tasks:
 
-1.  Add a visual input control to the user interface in the [[AkWarm\_UI]]|AKWarm-User-Interface-Documentation]] project to accept the user’s input. Set the Tab Order setting to put the control in the proper position in the tab sequence.
+1.  Add a visual input control to the user interface in the [[AkWarm\_UI|AKWarm-User-Interface-Documentation]] project to accept the user’s input. Set the Tab Order setting to put the control in the proper position in the tab sequence.
 
 2.  Add a property at the appropriate position in the Project or ProjectComm Object Model to hold the input data. Once a new property is established in the object model, it will automatically be included in the serialized AkWarm file. When older files are opened that do not include the new property, the default value for the new property will automatically be used.
 
