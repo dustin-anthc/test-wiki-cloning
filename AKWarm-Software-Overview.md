@@ -30,7 +30,7 @@ While this document provides a general overview of the application, there is mor
 
 1.  Documents that describe in more detail most of the major Visual Basic projects found in the AkWarm solution.
 
-2.  A document titled “Energy Library Developer Documentation” that gives details on data entry and file conversion procedures for the database that supplies read-only information to the AkWarm application.
+2.  A document titled [[Energy Library Developer Documentation|Energy-Library-Development-Project]] that gives details on data entry and file conversion procedures for the database that supplies read-only information to the AkWarm application.
 
 3.  Approximately 20,000 lines of comments are embedded in the source code and provide detailed low-level documentation of the application.
 
