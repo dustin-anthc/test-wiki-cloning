@@ -1,4 +1,4 @@
-## [[Home|wiki]]
+## [[Home|Home]]
 ## Calculations
 - [[Rating Calculation|Rating_Calculation]]
 - [[Space Heating / Cooling Energy Calculations|Space-Heating-and-Cooling-Energy-Calculations]]
