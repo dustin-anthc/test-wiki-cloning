@@ -38,7 +38,7 @@ The wiki is divided into two main sections-- one for current or prospective **us
 
 ###Calculation Details
 - [[Rating Calculation|Rating_Calculation]]: Describes how the Alaska Home Energy Rating Calculation is performed.
-- [[Space Heating / Cooling Energy Calculations|Space-Heating---Cooling-Energy-Calculations]]: Describes the space heating and cooling calculations in AKWarm, primarily focused on the residential model, but explaining in summary how the commercial model differs.
+- [[Space Heating and Cooling Energy Calculations|Space-Heating-and-Cooling-Energy-Calculations]]: Describes the space heating and cooling calculations in AKWarm, primarily focused on the residential model, but explaining in summary how the commercial model differs.
 - [[Calculation Assumptions|Assumptions_Energy_Calc]]:  Lists a number of assumptions used in the residential energy calculations.
 
 ### Resources
