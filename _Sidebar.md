@@ -2,7 +2,7 @@
 
 ## Calculations
 - [Rating Calculation](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Rating_Calculation)
-- [Space Heating / Cooling Energy Calculations](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Space-Heating---Cooling-Energy-Calculations)
+- [[Space Heating / Cooling Energy Calculations|Space-Heating-and-Cooling-Energy-Calculations]]
 - [Calculation Assumptions](https://github.com/dustin-cchrc/Wiki_Test_Repository/wiki/Assumptions_Energy_Calc)
 
 
