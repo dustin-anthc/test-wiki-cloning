@@ -7,8 +7,8 @@ This section describes the space heating and cooling calculations in AKWarm, pri
 
 Subsections include:
 - Climate
-- Losses
-- Gains
+- [[Losses|Space-Heating-and-Cooling-Energy-Calculations#losses]]
+- [[Gains|Space-Heating-and-Cooling-Energy-Calculations#gains]]
 - Heating systems
 - Design heat load
 - Commercial Buildings
