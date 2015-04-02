@@ -10,7 +10,7 @@ Subsections include:
 - [[Losses|Space-Heating-and-Cooling-Energy-Calculations#losses]]
 - [[Gains|Space-Heating-and-Cooling-Energy-Calculations#gains]]
 - [[Heating systems|Space-Heating-and-Cooling-Energy-Calculations#heating-systems]]
-- [[Cooling systems||Space-Heating-and-Cooling-Energy-Calculations#cooling]]
+- [[Cooling systems|Space-Heating-and-Cooling-Energy-Calculations#cooling]]
 - [[Design heat load|Space-Heating-and-Cooling-Energy-Calculations#design_load]]
 - Commercial Buildings|Space-Heating-and-Cooling-Energy-Calculations#commercial]]
 
