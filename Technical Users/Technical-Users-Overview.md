@@ -1,5 +1,3 @@
-# Technical Users Overview
-
 These sections aim to provide the details of how AKWarm works, including how it calculates energy usage, how the rating is determined, how the cost-effectiveness of improvement options are determined, and what background information goes into these calculations.  It is aimed at users already familiar with the basics of AKWarm, such as AHFC personnel, Raters, Assessors, and Energy professionals who are seeking more in-depth knowledge of how the software operates.
 
 ##[[Energy Calculations|Space-Heating-and-Cooling-Energy-Calculations]]
@@ -12,7 +10,7 @@ Subsections include:
 - [[Heating systems|Space-Heating-and-Cooling-Energy-Calculations#heating-systems]]
 - [[Cooling systems|Space-Heating-and-Cooling-Energy-Calculations#cooling]]
 - [[Design heat load|Space-Heating-and-Cooling-Energy-Calculations#design_load]]
-- Commercial Buildings|Space-Heating-and-Cooling-Energy-Calculations#commercial]]
+- [[Commercial Buildings|Space-Heating-and-Cooling-Energy-Calculations#commercial]]
 
 ##[[Rating Calculation|Rating_Calculation]]
 This section describes how the Alaska Home energy Rating Calculation is performed.
