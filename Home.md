@@ -5,7 +5,7 @@
 
 Welcome to the wiki for **AKWarm** home energy rating software.  AKWarm is a free program owned by the [Alaska Housing Finance Corporation](http://www.ahfc.us/) that is used to model the energy use of residential buildings in cold climates, evaluate energy efficiency improvements, and provide an energy rating.  
 
-The wiki is divided into two main sections-- one for current or prospective **users** of the software, and another for **AKWarm developers**
+The wiki is divided into four main sections-- one for **technical users** of the software, one for **AKWarm developers**, a section covering **standards and sources** related to AKWarm, and a **miscellaneous** section for odds and ends related to AKWarm.  
 
 
 ----------
