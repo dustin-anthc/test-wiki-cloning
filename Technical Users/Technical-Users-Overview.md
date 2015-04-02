@@ -9,17 +9,18 @@ Subsections include:
 - Climate
 - [[Losses|Space-Heating-and-Cooling-Energy-Calculations#losses]]
 - [[Gains|Space-Heating-and-Cooling-Energy-Calculations#gains]]
-- Heating systems
-- Design heat load
-- Commercial Buildings
+- [[Heating systems|Space-Heating-and-Cooling-Energy-Calculations#heating-systems]]
+- [[Cooling systems||Space-Heating-and-Cooling-Energy-Calculations#cooling]]
+- [[Design heat load|Space-Heating-and-Cooling-Energy-Calculations#design_load]]
+- Commercial Buildings|Space-Heating-and-Cooling-Energy-Calculations#commercial]]
 
 ##[[Rating Calculation|Rating_Calculation]]
 This section describes how the Alaska Home energy Rating Calculation is performed.
 
 Subsections include:
-- Overview of Rating Calculation Steps
-- Sample Calculations
-- Additional Calculation Details
+- [[Overview of Rating Calculation Steps|Rating_Calculation#overview]]
+- [[Sample Calculations|Rating_Calculation#sample_calc]]
+- [[Additional Calculation Details|Rating_Calculation#more_details]]
 
 ##[[Improvement Options|Improvement-Options]]
 This section describes in detail how the improvement options are evaluated for cost-effectiveness and ranked.  
