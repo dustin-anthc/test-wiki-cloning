@@ -11,7 +11,7 @@ The wiki is divided into four main sections-- one for **technical users** of the
 | Technical Users             | AKWarm Developers              | Standards and Sources          | Miscellaneous                 |
 |----------------------------|---------------------------------|-------------------------------|---------------------------| 
 | [[/Images/user.png]] | [[/Images/developers.png]] | [[/Images/standards.png]] | [[/Images/Miscellaneous.png]] | 
-| [[Technical Users|Technical-Users-Overview]] | [[Developers|Intro]] | [[Standards and Sources|Standards-and-Sources-Overview]] | [[Miscellaneous|Overview]] |
+| [[Technical Users|/Technical-Users/Technical-Users-Overview]] | [[Developers|/Developers/Intro]] | [[Standards and Sources|Standards-and-Sources-Overview]] | [[Miscellaneous|/Miscellaneous/Overview]] |
 |
 
 
