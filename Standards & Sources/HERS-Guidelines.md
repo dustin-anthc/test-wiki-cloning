@@ -1,5 +1,5 @@
--   [[Introduction|intro]]
--   [[National Software Accuracy Testing|national_testing]]
+-   [[Introduction|#intro]]
+-   [[National Software Accuracy Testing|#national_testing]]
 -   Alaska Program Consistency Testing
     -   Overview
     -   Alaska Home Energy Rating Score
