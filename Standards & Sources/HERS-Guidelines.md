@@ -348,7 +348,7 @@ These 10 models shall then be used to evaluate the estimated annual energy savin
 
 Additionally, each software applicant shall complete a Savings to Investment Ratio (SIR) algorithm test for one of these modeled energy efficiency measures. This manually performed test takes the modeled annual energy cost savings of the EEM directly from the software outputs and then manually calculates the Savings to Investment Ratio using the fuel price escalation factors, improvement lives, and improvement costs from Appendices A, B and C. The savings to investment ratio will be calculated by the following formula:
 
-[[SIR-formula/Images/SIR-formula.gif]]
+[[/Images/SIR-formula.gif]]
 
 *Where*
 
