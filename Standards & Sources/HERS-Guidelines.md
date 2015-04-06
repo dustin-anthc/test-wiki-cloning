@@ -6,7 +6,6 @@
     -   [Alaska Testing Protocol](#testing-protocol)
 -   [Required Reporting](#reporting)
 -   [Definitions](#definitions)
--   [Formulas](#formulas)
 -   Appendix A: Sample Alaska Home Energy Rating Calculation
 -   Appendix B: Alaska-specific utility and fuel prices
 -   Appendix C: Improvement Life and Cost Library
@@ -44,7 +43,7 @@ In order to ensure that any new modeling software provides accurate and consiste
 
 3.  **Reporting Requirements:** For final approval, software applications shall include a method to automatically generate reports proving that the Alaska-specific mandatory inputs, *reference homes*, and energy rating system calculation procedures are either built in to the software or are appropriately entered by end users. Additionally, an energy rating certificate meeting AHFC’s standards shall be produced at the conclusion of any energy rating performed. When evaluating a retrofit energy model, an Improvement Options Report shall be generated in accordance with the guidelines in section 4.3. Lastly, a standardized, HPXML-based energy model file must be provided with each rating to ensure proper data tracking.[1]
 
-> While Alaska-specific needs are the focus of this document, many of the requirements in this document are partially based on three national standards: *ANSI/ASHRAE 140-2011: Standard Method of Test for the Evaluation of Building Energy Analysis Computer Programs*, the *2015 International Energy Conservation Code*, and RESNET's *Mortgage Industry National Home Energy Rating Standards*.
+While Alaska-specific needs are the focus of this document, many of the requirements in this document are partially based on three national standards: *ANSI/ASHRAE 140-2011: Standard Method of Test for the Evaluation of Building Energy Analysis Computer Programs*, the *2015 International Energy Conservation Code*, and RESNET's *Mortgage Industry National Home Energy Rating Standards*.
 
 <a name="national_testing"></a>
 National Software Accuracy Testing
@@ -125,13 +124,13 @@ The Home Energy Rating is intended to rate the efficiency of the home and not th
 
 1.  The **Number of Occupants** in the home shall be set to a value equal to:
 
-\[N_{0} = 2.29 + 0.000411 \times L_{a}\]
+		N = 2.29 + 0.000411 * La
 
-> *Where *
+> *Where:*
 >
-> \(N_{0}\)*= Number of occupants and *
+> N = Number of occupants
 >
-> \(L_{a}\) *= Living space floor area, not counting garage*
+> La = Living space floor area, not counting garage
 >
 > Note 1: If a multi-family building is being rated in its entirety, the Living Area in the above calculation is the living area per unit and the calculated occupants are per living unit as well.
 >
@@ -190,20 +189,18 @@ For water heating the *reference home* is assumed to have a tank-type water heat
 
 **Step 2: Create a Reference Home and Determine its Source Energy Use.** Create a *reference home* using the dimensions from the actual home and the u-values and equipment efficiencies outlined in this document. The source energy use of the *reference home* corresponds to a particular point level on the Energy Rating scale. Currently *reference home* point level is 85 points. Note that the efficiency level of the *reference home* varies across rating regions within the state.[4]
 
-**
-**
 
 **Step 3: Determine the Source Energy use of the Home scoring 100 points on the Rating Scale**. The *Reference Home* determines one point on the Source Energy versus Rating Point linear relationship. A second point in that linear relationship is established by specifying the energy use of a 100 point home. The 100 point home is assumed to have 20% of the space heating energy use of the *reference home* (80% reduction in energy use) and 60% of the domestic water heating energy use of the *reference home*. Mathematically:
 
-\[E_{100} = E_{\text{SH}}\  \times 0.2 + E_{\text{DHW}}\  \times 0.6\ \]
+E<sub>100</sub> = E<sub>SH</sub> * 0.2 + E<sub>DHW</sub>  * 0.6
 
-*Where *
-
-\(E_{100}\) *= The source energy use of the 100 point home*
-
-\(E_{\text{SH}}\ \)*= The source space heating energy use of the reference home*
-
-\(E_{\text{DHW}}\) *= The source domestic hot water energy use of the reference home*
+>*Where:*
+>
+>E<sub>100</sub> = The source energy use of the 100 point home
+>
+>E<sub>SH</sub> = The source space heating energy use of the reference home
+>
+>E<sub>DHW</sub> = The source domestic hot water energy use of the reference home
 
 The 100 point home has 80% less space heating energy use and 40% less water heating use. A lower reduction in water heating use is chosen because it is more difficult and costly to reduce water heating energy use to very low levels.
 
@@ -245,13 +242,15 @@ Software shall also use climate data that has been derived from at least a 10-ye
 
 Estimated energy use for domestic hot water is a significant factor in the Alaska Home Energy Rating Score calculation formula. Thus for consistency in ratings it is important to use the same estimates for average water use per person. For rating calculation purposes, modeling software shall use the default of 15.2 gallons of hot water per person, per day, where the number of occupants is standardized using the following formula:
 
-\[N_{0} = 2.29 + 0.000411 \times L_{a}\]
+		N = 2.29 + 0.000411 * La
 
-> *Where *
+> *Where:*
 >
-> \(N_{0}\)*= Number of occupants and *
+> N = Number of occupants
 >
-> \(L_{a}\) *= Living space floor area, not counting garage*
+> La = Living space floor area, not counting garage
+> not counting garage
+
 
 Energy modeling software shall calculate the energy savings from a programmable thermostat with the following two requirements when estimating the energy benefits: the temperature shall be set back for 8 hours per day, and a 50% multiplier shall be used to account for the likelihood that it will not be properly programmed.
 
@@ -349,7 +348,7 @@ These 10 models shall then be used to evaluate the estimated annual energy savin
 
 Additionally, each software applicant shall complete a Savings to Investment Ratio (SIR) algorithm test for one of these modeled energy efficiency measures. This manually performed test takes the modeled annual energy cost savings of the EEM directly from the software outputs and then manually calculates the Savings to Investment Ratio using the fuel price escalation factors, improvement lives, and improvement costs from Appendices A, B and C. The savings to investment ratio will be calculated by the following formula:
 
-> \(SIR = \ \sum_{t = 1}^{N}{(\text{CS}_{t}}{(1 + d)}^{- t})\ /\ I_{t}\)
+![SIR Formula](/images/SIR-formula.gif)
 
 *Where*
 
@@ -572,51 +571,6 @@ Weatherization Assistance Program: An energy efficiency program jointly financed
 
 XML: Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable.
 
-<a name="formulas"></a>
-Formulas
-========
-
-**Formula 1: Standardized Number of Occupants for Rating Calculation**:
-
-\[N_{0} = 2.29 + 0.000411 \times L_{a}\]
-
-*Where *
-
-\(N_{0}\)*= Number of occupants and *
-
-\(L_{a}\) *= Living space floor area, not counting garage*
-
-Note 1: If a multi-family building is being rated in its entirety, the Living Area in the above calculation is the living area per unit and the calculated occupants are per living unit as well.
-
-Note 2: The calculated field, *number of occupants,* affects the internal gains in the building and the number of gallons of domestic hot water consumed.
-
-**Formula 2: Source Energy Use of a 100 Point Home:**
-
-\[E_{100} = E_{\text{SH}}\  \times 0.2 + E_{\text{DHW}}\  \times 0.6\ \]
-
-*Where *
-
-\(E_{100}\) *= The source energy use of the 100 point home*
-
-\(E_{\text{SH}}\ \)*= The source space heating energy use of the reference home*
-
-\(E_{\text{DHW}}\) *= The source domestic hot water energy use of the reference home*
-
-**Formula 3: Savings to Investment Ratio Calculation**
-
-> \(\text{SIR} = \ \sum_{t = 1}^{N}{(\text{CS}_{t}}{(1 + d)}^{- t})\ /\ I_{t}\)
-
-*Where*
-
-> *SIR = Savings-to-Investment Ratio*
->
-> *CS<sub>t</sub> = Energy cost savings at year t including fuel escalation factors*
->
-> *N = Estimated life of the improvement in years*
->
-> *d = Discount rate*
->
-> *I<sub>t</sub> = Investment costs in year*
 
 Appendix A: Sample Alaska Home Energy Rating Calculation
 ========================================================
