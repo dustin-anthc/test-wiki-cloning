@@ -1,26 +1,12 @@
--   [[Introduction|#intro]]
--   [[National Software Accuracy Testing|#national_testing]]
--   Alaska Program Consistency Testing
-    -   Overview
-    -   Alaska Home Energy Rating Score
-        -   *Standard Operating Characteristics*
-        -   *Reference Homes*
-        -   *Shell Components and Air Change Rates*
-        -   *Space Heating and Water Heating Equipment*
-        -   *Rating Calculation*
-    -   Mandatory Modeling Inputs
-        -   *Inputs for Modeling Energy Usage*
-        -   *Inputs for Modeling Cost-Effectiveness*
-    -   Alaska Testing Protocol
-        -   *Testing Protocol Part 1: Evaluating Energy Ratings for BEES Certification*
-        -   *Testing Protocol Part 2: Evaluating Improvements for AHFC’s Energy Efficiency Retrofit Programs*
--   Required Reporting
-    -   Verification of mandatory inputs, cost-effectiveness procedures, and proper Alaska Home Energy Rating Score calculations
-    -   Energy Rating Certificate
-    -   Improvement Options Report
-    -   Data Collection Procedures for Program Tracking and Management
--   Definitions
--   Formulas
+-   [Introduction](#intro)
+-   [National Software Accuracy Testing](#national_testing)
+-   [Alaska Program Consistency Testing](#consistency)
+    -   [Alaska Home Energy Rating Score](#rating-score)
+    -   [Mandatory Modeling Inputs](#modeling-inputs)
+    -   [Alaska Testing Protocol](#testing-protocol)
+-   [Required Reporting](#reporting)
+-   [Definitions](#definitions)
+-   [Formulas](#formulas)
 -   Appendix A: Sample Alaska Home Energy Rating Calculation
 -   Appendix B: Alaska-specific utility and fuel prices
 -   Appendix C: Improvement Life and Cost Library
@@ -116,6 +102,7 @@ Table 2 shows the change in annual heating loads in millions of BTUs from one AS
 | L322XC-L100AC      | 39.29         | 15.71         |
 | L322XC-L324XC      | 38.27         | 20.21         |
 
+<a name="consistency"></a>
 Alaska Program Consistency Testing
 ==================================
 
@@ -128,6 +115,7 @@ AHFC’s BEES and New Home Rebate Program are based on homes being modeled in AK
 
 Of the over 75,000 locations to receive ratings, more than 35,000 were energy efficiency retrofits that have been undertaken as a part of either AHFC’s Home Energy Rebate or Weatherization Assistance Programs[2]. Energy auditors in these programs have evaluated energy efficiency measures (EEMs) using the AKWarm Residential energy modeling software and have recommended or performed cost-effective measures based on the model outputs. In order to ensure consistency within these programs and to make sure that modeling inputs are Alaska-specific, energy rating software applications shall use the cost libraries and calculation procedures outlined in section 3.3.2 on "Inputs for Modeling Cost-Effectiveness." The economic calculations used by these programs are necessary to ensure that work being done is truly cost-effective. Standardizing the inputs for these calculations is necessary to prevent creating a situation in which energy raters and other software users can influence program outcomes by switching software applications to yield the greatest results.
 
+<a name="rating-score"></a>
 Alaska Home Energy Rating Score 
 --------------------------------
 
@@ -239,6 +227,7 @@ The 100 point home has 80% less space heating energy use and 40% less water heat
 | 92 ≤ x \< 95    | 5 Star Plus                |
 | ≥ 95            | 6 Star                     |
 
+<a name="modeling-inputs"></a>
 Mandatory Modeling Inputs
 -------------------------
 
@@ -328,6 +317,7 @@ Fuel escalation factors shall be used when calculating the cost-effectiveness of
 
 A savings to investment ratio (SIR) shall be calculated to determine the relative cost-effectiveness of all proposed energy efficiency measures. The numerator of the SIR shall be the net present value of the energy savings over the expected life of the EEM, including the aforementioned fuel escalation factor and the Real Discount Rate published by the U.S. Department of Energy.[8] Note that the real discount rate already includes an adjustment for the general price inflation. The denominator shall be the estimated installation cost of the EEM, taken from Appendix C of this document. See section 3.4.2 for the savings to investment ratio formula. An Improvement Options Report shall be produced with each EEM ranked from those with the highest SIR to those with the lowest SIR so that users can easily determine the most cost-effective retrofits.
 
+<a name="testing-protocol"></a>
 Alaska Testing Protocol
 -----------------------
 
@@ -437,6 +427,8 @@ The following table lists the total energy savings in millions of BTUs per year 
 | Juneau - Median Retrofit    | 6.4                        | 9.7                    | 5.5                        | 0.0     | 2.3             | 28.5                  | 0.0               |
 | Nome - Median Retrofit      | 7.1                        | 7.9                    | 6.5                        | 0.0     | 3.2             | 18.0                  | 3.3               |
 
+<a name="reporting"></a>
+
 Required Reporting
 ==================
 
@@ -458,6 +450,7 @@ To be certified for use in Alaska, home energy rating software applications shal
     -   Users shall enter the mandatory inputs outlined in this document, so long as the software automatically outputs a report that details all of the required inputs that were entered. This allows AHFC staff to randomly conduct audits to ensure that the mandatory inputs are being properly entered by users.
 
     -   The software developer shall submit a guide for their software application highlighting which reports include the user-entered information and where all of the mandatory inputs are specifically located for AHFC to reference.
+
 
 Energy Rating Certificate
 -------------------------
@@ -505,11 +498,13 @@ When certifying audits for Alaska programs, software shall provide a printable I
 
 Appendix H includes a sample improvement options report.
 
+<a name="data-collection"></a>
 Data Collection Procedures for Program Tracking and Management 
 ---------------------------------------------------------------
 
 Energy ratings performed by certified energy auditors and assessors in Alaska are uploaded into the Alaska Retrofit Information System (ARIS) database after an energy audit has been completed. The ability to search ARIS and its capability to automatically generate reports allow AHFC staff to ensure that audits are being conducted properly and funds are being allocated efficiently. Having this data housed in a single location also allows for generation of data-driven reports on the programs’ effectiveness that can be shared with the Alaska Legislature and the general public. For these reasons, it is essential that any new software has the capacity to provide a file that can be easily uploaded and incorporated into the ARIS database structure. Software shall have the capacity to provide an XML output in one of two formats: using the same field names as the AKWarm Residential software, or an HPXML file that meets the Building Performance Institute's BPI-2100-S-2013 and BPI-2200-S-2013 Standards[11] designed to promote standardized data collection and transfer methods for the residential energy efficiency industry. If the latter is chosen, the software shall maintain the Alaska Home Energy Rating Score in the "Energy Score" field, in the "Other" energy score type category. Additionally, the "Climate Zone IECC" field shall be modified such that climate zone 9 may be entered as an option to conform to the Alaska Building Energy Efficiency Standard.
 
+<a name="definitions"></a>
 Definitions
 ===========
 
@@ -577,6 +572,7 @@ Weatherization Assistance Program: An energy efficiency program jointly financed
 
 XML: Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable.
 
+<a name="formulas"></a>
 Formulas
 ========
 
