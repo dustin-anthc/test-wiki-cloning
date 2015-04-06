@@ -503,106 +503,83 @@ Data Collection Procedures for Program Tracking and Management
 
 Energy ratings performed by certified energy auditors and assessors in Alaska are uploaded into the Alaska Retrofit Information System (ARIS) database after an energy audit has been completed. The ability to search ARIS and its capability to automatically generate reports allow AHFC staff to ensure that audits are being conducted properly and funds are being allocated efficiently. Having this data housed in a single location also allows for generation of data-driven reports on the programs’ effectiveness that can be shared with the Alaska Legislature and the general public. For these reasons, it is essential that any new software has the capacity to provide a file that can be easily uploaded and incorporated into the ARIS database structure. Software shall have the capacity to provide an XML output in one of two formats: using the same field names as the AKWarm Residential software, or an HPXML file that meets the Building Performance Institute's BPI-2100-S-2013 and BPI-2200-S-2013 Standards[11] designed to promote standardized data collection and transfer methods for the residential energy efficiency industry. If the latter is chosen, the software shall maintain the Alaska Home Energy Rating Score in the "Energy Score" field, in the "Other" energy score type category. Additionally, the "Climate Zone IECC" field shall be modified such that climate zone 9 may be entered as an option to conform to the Alaska Building Energy Efficiency Standard.
 
+
+----------
+
+
 <a name="definitions"></a>
 Definitions
 ===========
 
-ACH: Air changes per hour; this is used to describe the leakiness of a house, and signifies how many times the total volume of air of a home is replaced over the course of an hour. ACH50 is also sometimes used, which is the number of air changes per hour that occur when a home is subjected to a 50 Pascal pressure differential, typically created using a blower door.
+> ACH: Air changes per hour; this is used to describe the leakiness of a house, and signifies how many times the total volume of air of a home is replaced over the course of an hour. ACH50 is also sometimes used, which is the number of air changes per hour that occur when a home is subjected to a 50 Pascal pressure differential, typically created using a blower door.
+> 
+> AHFC: Alaska Housing Finance Corporation.
+> 
+> AFUE: Annual Fuel Utilization Efficiency. A ratio of the annual output energy from a boiler or furnace to the annual input energy. It is a widely-referenced metric for specifying the seasonal energy usage of electric, gas, and oil-fired boilers and furnaces. Its intent is to provide a standard basis of comparison between these heating appliances for residential and light-commercial buildings. .
+> 
+> AKWarm: AKWarm© is the residential energy modeling software that has been used in energy audits of over 75,000 unique housing units in Alaska. It is owned by AHFC and can be downloaded for free at http://www.analysisnorth.com/AkWarm/AkWarm2download.html
+> 
+> Alaska Home Energy Rating Score: A score that rates the energy efficiency of a home in Alaska, with higher numbers indicating more efficient homes. The score has corresponding star ratings which are in common use in the Alaskan housing market.
+> 
+> ANSI: The American National Standards Institute.
+> 
+> ARIS: The Alaska Retrofit Information System is a database owned by AHFC and used by State agencies to track energy efficiency programs and information in Alaska. Every residential energy audit performed for a retrofit program financed by the State is stored here, as well as some commercial building audits.
+> 
+> ASHRAE: The American Society of Heating, Refrigerating and Air-Conditioning Engineers.
+> 
+> ANSI/ASHRAE Standard 140-2011: The Standard Method of Test for the Evaluation of Building Energy Analysis Computer Programs. This standard specifies test procedures for evaluating the technical capabilities and ranges of applicability of computer programs that calculate the thermal performance of buildings and their HVAC systems.
+> 
+> BEES: Alaska's Building Energy Efficiency Standard, which is based on the International Energy Conservation Code with Alaska-specific amendments. This standard must be met for all homes that receive AHFC financing.
+> 
+> BTU: British Thermal Unit, a unit of energy equal to the amount needed to cool or heat one pound of water by one degree Fahrenheit.
+> 
+> cfm: Cubic feet per minute, typically used as a unit for air movement through infiltration or mechanical ventilation.
+> 
+> DHW: Domestic Hot Water; the residential hot water produced for non-space heating purposes such as cleaning and showering.
+> 
+> EEM: Energy Efficiency Measure; Any type of activity or technology implemented to reduce the energy use of a building.
+> 
+> Energy Factor: A metric used to compare the energy conversion efficiency of residential hot water heaters.
+> 
+> Heating Degree Days: A measurement used to reflect the heating demand of a building in a particular climate. It is determined by summing the annual total number of degrees below 65 the temperature is per hour per day.
+> 
+> Home Energy Rebate Program: An energy efficiency retrofit program financed by the State of Alaska and implemented by AHFC. This program provides initial and post-retrofit energy audits and pays homeowners an incentive based on how much they increase the energy efficiency in their home.
+> 
+> HPXML: An XML-based standardized data collection, storage, and transfer method for the home performance industry, based on Building Performance Institute Standards BPI-2100-S-2013 and BPI-2200-S-2013, available for download at http://www.bpi.org/standards\_approved.aspx.
+> 
+> HRV: Heat Recovery Ventilation system; a system that provides whole-house air exchange while recovering some of the heat from the exhaust air.
+> 
+> HVAC: Heating, ventilation and air-conditioning.
+> 
+> Improvement Options Report: A report provided to homeowners after an initial energy audit that lists the recommended improvements that can be made to make their homes more energy efficient. This list should be in order of priority from the most cost-effective to the least.
+> 
+> NOAA: The National Oceanic and Atmospheric Administration, one of the main providers of high quality climate data in the U.S.
+> 
+> Real Discount Rate: The rate used to discount constant year benefits and costs that have already been adjusted to account for inflation.
+> 
+> Reference Home: A reference home is a house with the same dimensions and configuration as a home that is being rated but with standardized insulation levels, mechanical equipment and air leakage measurements. The comparison on energy to this home is the basis for the Alaska Home Energy Rating Score.
+> 
+> RESNET: The Residential Energy Services Network, an organization that makes standards for building energy efficiency rating and certification systems in the U.S.
+> 
+> SIR: Savings to Investment Ratio, the discounted total savings over the life of an investment (energy efficiency measures, in this context) divided by the initial capital cost of the investment.
+> 
+> Source-to-Site Multiplier: A multiplier used to account for the loss in energy as it is converted from one form to another at a power plant. For example, a 33% efficient diesel generator needs 3 units of diesel to produce 1 units of electricity, hence it has a Source-to-Site multiplier of 3.0
+> 
+> TMY3: Typical meteorological year data. A collection of data for 1020 locations in the U.S. used to represent a typical year based on climate averages over the period from 1976 to 2005. TMY3 also includes a standardized data input and storage method that can be used to create weather files for other locations with sufficient data. For more details, see the National Renewable Energy Laboratory User Manual at:
+> 
+> <http://www.nrel.gov/docs/fy08osti/43156.pdf>.
+> 
+> U-value: A measure of a material's overall effectiveness against heat loss. It is the inverse of R-value, with lower values indicating better insulative properties.
+> 
+> Weatherization Assistance Program: An energy efficiency program jointly financed by the State of Alaska and the Federal Government to provide energy efficiency retrofits to low-income and disabled applicants.
+> 
+> XML: Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable.
 
-AHFC: Alaska Housing Finance Corporation.
 
-AFUE: Annual Fuel Utilization Efficiency. A ratio of the annual output energy from a boiler or furnace to the annual input energy. It is a widely-referenced metric for specifying the seasonal energy usage of electric, gas, and oil-fired boilers and furnaces. Its intent is to provide a standard basis of comparison between these heating appliances for residential and light-commercial buildings. .
-
-AKWarm: AKWarm© is the residential energy modeling software that has been used in energy audits of over 75,000 unique housing units in Alaska. It is owned by AHFC and can be downloaded for free at http://www.analysisnorth.com/AkWarm/AkWarm2download.html
-
-Alaska Home Energy Rating Score: A score that rates the energy efficiency of a home in Alaska, with higher numbers indicating more efficient homes. The score has corresponding star ratings which are in common use in the Alaskan housing market.
-
-ANSI: The American National Standards Institute.
-
-ARIS: The Alaska Retrofit Information System is a database owned by AHFC and used by State agencies to track energy efficiency programs and information in Alaska. Every residential energy audit performed for a retrofit program financed by the State is stored here, as well as some commercial building audits.
-
-ASHRAE: The American Society of Heating, Refrigerating and Air-Conditioning Engineers.
-
-ANSI/ASHRAE Standard 140-2011: The Standard Method of Test for the Evaluation of Building Energy Analysis Computer Programs. This standard specifies test procedures for evaluating the technical capabilities and ranges of applicability of computer programs that calculate the thermal performance of buildings and their HVAC systems.
-
-BEES: Alaska's Building Energy Efficiency Standard, which is based on the International Energy Conservation Code with Alaska-specific amendments. This standard must be met for all homes that receive AHFC financing.
-
-BTU: British Thermal Unit, a unit of energy equal to the amount needed to cool or heat one pound of water by one degree Fahrenheit.
-
-cfm: Cubic feet per minute, typically used as a unit for air movement through infiltration or mechanical ventilation.
-
-DHW: Domestic Hot Water; the residential hot water produced for non-space heating purposes such as cleaning and showering.
-
-EEM: Energy Efficiency Measure; Any type of activity or technology implemented to reduce the energy use of a building.
-
-Energy Factor: A metric used to compare the energy conversion efficiency of residential hot water heaters.
-
-Heating Degree Days: A measurement used to reflect the heating demand of a building in a particular climate. It is determined by summing the annual total number of degrees below 65 the temperature is per hour per day.
-
-Home Energy Rebate Program: An energy efficiency retrofit program financed by the State of Alaska and implemented by AHFC. This program provides initial and post-retrofit energy audits and pays homeowners an incentive based on how much they increase the energy efficiency in their home.
-
-HPXML: An XML-based standardized data collection, storage, and transfer method for the home performance industry, based on Building Performance Institute Standards BPI-2100-S-2013 and BPI-2200-S-2013, available for download at http://www.bpi.org/standards\_approved.aspx.
-
-HRV: Heat Recovery Ventilation system; a system that provides whole-house air exchange while recovering some of the heat from the exhaust air.
-
-HVAC: Heating, ventilation and air-conditioning.
-
-Improvement Options Report: A report provided to homeowners after an initial energy audit that lists the recommended improvements that can be made to make their homes more energy efficient. This list should be in order of priority from the most cost-effective to the least.
-
-NOAA: The National Oceanic and Atmospheric Administration, one of the main providers of high quality climate data in the U.S.
-
-Real Discount Rate: The rate used to discount constant year benefits and costs that have already been adjusted to account for inflation.
-
-Reference Home: A reference home is a house with the same dimensions and configuration as a home that is being rated but with standardized insulation levels, mechanical equipment and air leakage measurements. The comparison on energy to this home is the basis for the Alaska Home Energy Rating Score.
-
-RESNET: The Residential Energy Services Network, an organization that makes standards for building energy efficiency rating and certification systems in the U.S.
-
-SIR: Savings to Investment Ratio, the discounted total savings over the life of an investment (energy efficiency measures, in this context) divided by the initial capital cost of the investment.
-
-Source-to-Site Multiplier: A multiplier used to account for the loss in energy as it is converted from one form to another at a power plant. For example, a 33% efficient diesel generator needs 3 units of diesel to produce 1 units of electricity, hence it has a Source-to-Site multiplier of 3.0
-
-TMY3: Typical meteorological year data. A collection of data for 1020 locations in the U.S. used to represent a typical year based on climate averages over the period from 1976 to 2005. TMY3 also includes a standardized data input and storage method that can be used to create weather files for other locations with sufficient data. For more details, see the National Renewable Energy Laboratory User Manual at:
-
-<http://www.nrel.gov/docs/fy08osti/43156.pdf>.
-
-U-value: A measure of a material's overall effectiveness against heat loss. It is the inverse of R-value, with lower values indicating better insulative properties.
-
-Weatherization Assistance Program: An energy efficiency program jointly financed by the State of Alaska and the Federal Government to provide energy efficiency retrofits to low-income and disabled applicants.
-
-XML: Extensible Markup Language, which is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable.
+----------
 
 
-Appendix A: Sample Alaska Home Energy Rating Calculation
-========================================================
-
-Appendix B: Alaska-specific utility and fuel prices
-===================================================
-
-Appendix C: Improvement Life and Cost Library
-=============================================
-
-Appendix D: Community Cost Factors
-==================================
-
-Appendix E: Fuel Escalation Factors
-===================================
-
-Appendix F: Alaska Test Home Inputs
-===================================
-
-Appendix G: Sample Energy Rating Certificate
-============================================
-
-Appendix H: Sample Improvement Options Report
-=============================================
-
-Appendix I: Additional Considered Standards and Requirements
-============================================================
-
-Appendix J: Forms Needed for Software Certification
-===================================================
-
-[1] 
+[1] See section 4.4 on Data Collection Procedures for Program Tracking and Management for details
 
 [2] Note that software certified for use in the Weatherization Assistance Program must have already obtained U.S. Department of Energy Approval, as a portion of this program is federally funded.
 
