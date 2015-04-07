@@ -19,3 +19,5 @@ Describes the AKWarmCalc proect, which contains the main data structures and cal
 
 ### [[Energy Library Maintenance|Energy-Library-Maintenance]]
  Explains the use of the command line utility created by the EnergyLibraryMaintenance project, which has the main purpose of converting Energy LIbraries from the MSAccess format to the format need by AKWarm.
+
+[[/Images/AHFC-header.png]]
