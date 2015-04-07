@@ -8,7 +8,7 @@
 
 ## [[Method for Updating AKWarm Score for BEES|2013-BEES-Update-Method]]
 
-## [[Weatherization Audit Submittal Requirements]]
+## [[Weatherization Audit Requirements]]
 
 ## [[Tax Credit Protocol|2005-Tax-Credit-Protocol-V1-0]]
 
