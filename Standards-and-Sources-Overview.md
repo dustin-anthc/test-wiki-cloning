@@ -9,11 +9,10 @@ The 2012 Alaska Building Energy Efficiency Standard is based on the 2012 Interna
 ### [[Method for Updating AKWarm Score for BEES|2013-BEES-Update-Method]]
 This section details the methodology for updating the required AKWarm score to receive BEES certification.  This update will need to happen each time BEES is updated, which is typically based on the 3 year International Energy Conservation Code cycle.  
 
-### [[Tax Credit Protocol|2005-Tax-Credit-Protocol-V1-0]]
-
-
 ### [[Weatherization Audit Submittal Requirements]]
 This section highlights the federal weatherization audit submittal requirements for quick reference. 
+
+### [[Tax Credit Protocol|2005-Tax-Credit-Protocol-V1-0]]
 
 ### [[Calculation and Assumption Sources]]
 This section provides links and details for some of the sources used to derive calculations and assumptions used in AKWarm.  
