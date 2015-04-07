@@ -1,5 +1,5 @@
 
-![AKWarm Logo](..\wiki\Images\AKWarm-logo.png)<BR>
+[[Images/AKWarm-logo.png]]<BR>
 
 # AKWarm Documentation
 
