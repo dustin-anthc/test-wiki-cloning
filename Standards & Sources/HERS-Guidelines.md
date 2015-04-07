@@ -7,7 +7,7 @@
 -   [Required Reporting](#reporting)
 -   [Definitions](#definitions)
 -   [[Appendix A: Sample Alaska Home Energy Rating Calculation|Rating_Calculation#sample_calc]]
--   Appendix B: Alaska-specific utility and fuel prices
+-   [Appendix B: Alaska-specific utility and fuel prices](../wiki/Images/Appendices/AppendixB.xlsx)
 -   Appendix C: Improvement Life and Cost Library
 -   Appendix D: Community Cost Factors
 -   Appendix E: Fuel Escalation Factors
