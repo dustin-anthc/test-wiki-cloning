@@ -1,5 +1,5 @@
 
-![/Wiki\_Test\_Repository/AKWarmLogo.png](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Images/AKWarmLogo.png)<BR>
+![AKWarm Logo][AKWarm-logo]<BR>
 
 # AKWarm Documentation
 
