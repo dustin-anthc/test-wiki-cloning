@@ -37,7 +37,7 @@ Step 4 in the process is to determine the source energy use of a home scoring 10
 
 The Step 5 process of determining the Rating Point score of the actual home is best illustrated with the following diagram. A linear relationship is established between source energy use and the Rating Point score. That relationship is created by drawing a line through two points: 1) The energy use and point score of 85 for the Reference Home, and 2) The energy use and point score of 100 for the 100 Point Home. On the diagram, these two points are shown as the red dots. The blue line is the line formed by these two points. The line is constrained to not exceed 100 Rating Points or fall below 0 Rating Points.
 
-[[/Technical-Users-Folder/rating-example-graph.png]]
+[[/Images/rating-example-graph.png]]
 
 Once this linear relationship is established, the source energy use of the actual home, 350 MMBtu/year in this example, is found on the blue line, and the corresponding Rating Point score is read off. For the 350 MMBtu/year home, the Rating Point score is ***60.4 Points***. This point score falls in the point range for a **2 Star Plus** home.
 
