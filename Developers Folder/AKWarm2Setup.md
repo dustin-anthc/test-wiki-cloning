@@ -2,6 +2,8 @@
 -   [Installed Files and Locations](#installed_files)
 -   [Procedure for Releasing a New Version of AkWarm](#release_procedure)
 
+[[Images/rating-example-graph.png]]
+
 <a name="introduction"></a> 
 Introduction
 ------------
