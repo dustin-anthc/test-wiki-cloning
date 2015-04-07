@@ -14,4 +14,5 @@ These diagrams graphically display some of the relationships between different A
 ### [[Energy Calculation Assumptions]]
 This section lists some of the assumptions used in AKWarm's energy calculations.  
 
+[[/Images/AHFC-header.png]]
 
