@@ -6,16 +6,16 @@
     -   [Alaska Testing Protocol](#testing-protocol)
 -   [Required Reporting](#reporting)
 -   [Definitions](#definitions)
--   Appendix A: Sample Alaska Home Energy Rating Calculation
+-   [[Appendix A: Sample Alaska Home Energy Rating Calculation|Rating_Calculation#sample_calc]]
 -   Appendix B: Alaska-specific utility and fuel prices
 -   Appendix C: Improvement Life and Cost Library
 -   Appendix D: Community Cost Factors
 -   Appendix E: Fuel Escalation Factors
--   Appendix F: Alaska Test Home Inputs
--   Appendix G: Sample Energy Rating Certificate
--   Appendix H: Sample Improvement Options Report
--   Appendix I: Additional Considered Standards and Requirements
--   Appendix J: Forms Needed for Software Certification
+-   [[Appendix F: Alaska Test Home Inputs|Alaska-Test-Home-Inputs]]
+-   [[Appendix G: Sample Energy Rating Certificate|Appendix-G]]
+-   [[Appendix H: Sample Improvement Options Report|Appendix-H]]
+-   [[Appendix I: Additional Considered Standards and Requirements|AppendixI]]
+-   [[Appendix J: Forms Needed for Software Certification|AppendixJ]]
 
 
 <a name="intro"></a>
