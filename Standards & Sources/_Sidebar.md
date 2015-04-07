@@ -1,6 +1,6 @@
 ## [[Home|Home]] > Standards & Sources
 
-## [[Overview|Overview]]
+## [[Overview|Standards-and-Sources-Overview]]
 
 ## [[HERS Guidelines|HERS Guidelines]]
 
@@ -8,8 +8,8 @@
 
 ## [[Method for Updating AKWarm Score for BEES|2013-BEES-Update-Method]]
 
-## [[Tax Credit Protocol|2005-Tax-Credit-Protocol-V1-0]]
-
 ## [[Weatherization Audit Submittal Requirements]]
+
+## [[Tax Credit Protocol|2005-Tax-Credit-Protocol-V1-0]]
 
 ## [[Calculation and Assumption Sources]]
