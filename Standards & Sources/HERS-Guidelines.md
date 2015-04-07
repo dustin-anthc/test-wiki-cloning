@@ -8,9 +8,9 @@
 -   [Definitions](#definitions)
 -   [[Appendix A: Sample Alaska Home Energy Rating Calculation|Rating_Calculation#sample_calc]]
 -   [Appendix B: Alaska-specific utility and fuel prices](../wiki/Images/Appendices/AppendixB.xlsx)
--   Appendix C: Improvement Life and Cost Library
--   Appendix D: Community Cost Factors
--   Appendix E: Fuel Escalation Factors
+-   [Appendix C: Improvement Life and Cost Library](../wiki/Images/Appendices/AppendixC.xlsx)
+-   [Appendix D: Community Cost Factors](../wiki/Images/Appendices/AppendixD.xlsx)
+-   [Appendix E: Fuel Escalation Factors](../wiki/Images/Appendices/AppendixE.xlsx)
 -   [[Appendix F: Alaska Test Home Inputs|Alaska-Test-Home-Inputs]]
 -   [Appendix G: Sample Energy Rating Certificate](../wiki/Images/Appendices/AppendixG.pdf)
 -   [Appendix H: Sample Improvement Options Report](../wiki/Images/Appendices/AppendixH.pdf)
