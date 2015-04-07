@@ -12,8 +12,8 @@
 -   Appendix D: Community Cost Factors
 -   Appendix E: Fuel Escalation Factors
 -   [[Appendix F: Alaska Test Home Inputs|Alaska-Test-Home-Inputs]]
--   [Appendix G: Sample Energy Rating Certificate](../Images/Appendices/AppendixG.pdf)
--   [Appendix H: Sample Improvement Options Report](../Images/Appendices/AppendixH.pdf)
+-   [Appendix G: Sample Energy Rating Certificate](../wiki/Images/Appendices/AppendixG.pdf)
+-   [Appendix H: Sample Improvement Options Report](../wiki/Images/Appendices/AppendixH.pdf)
 -   [[Appendix I: Additional Considered Standards and Requirements|AppendixI]]
 -   [[Appendix J: Forms Needed for Software Certification|AppendixJ]]
 
