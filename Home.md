@@ -16,4 +16,4 @@ The wiki is divided into four main sections-- one for **technical users** of the
 
 ----------
 
-![AHFC Banner](https://github.com/dustin-cchrc/Wiki_Test_Repository/blob/master/Images/AHFC%20MASTER%20HEADER.png)
+[[Images/AHFC-header.png]]
