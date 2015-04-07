@@ -16,3 +16,5 @@ This section highlights the federal weatherization audit submittal requirements 
 
 ### [[Calculation and Assumption Sources]]
 This section provides links and details for some of the sources used to derive calculations and assumptions used in AKWarm.  
+
+[[/Images/AHFC-header.png]]
