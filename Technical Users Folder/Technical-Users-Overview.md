@@ -25,3 +25,5 @@ This section describes in detail how the improvement options are evaluated for c
 
 ##[[AKWarm Libraries|akwarm-libraries]]
 This section describes the libraries of information used by AKWarm and their data sources, including climate, fuel/utility prices, and installation costs and details of energy efficiency measures.  
+
+[[/Images/AHFC-header.png]]
