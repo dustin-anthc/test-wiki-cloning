@@ -16,4 +16,4 @@ The wiki is divided into four main sections-- one for **technical users** of the
 
 ----------
 
-[[Images/AHFC-header.png]]
+[[/Images/AHFC-header.png]]
