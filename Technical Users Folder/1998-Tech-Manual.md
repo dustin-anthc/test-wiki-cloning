@@ -174,7 +174,7 @@ Material and labor costs were gathered for two areas of the state: the lowest co
 2.  From the Energy Library, AKWarm gets the weather information (temperature, wind speed and design temperature) and fuel and electric prices for the city where the home is located.
 
 3.  For each energy use, AKWarm does monthly calculations: each routine internally loops through each month’s weather information.
-
+<a name="weather-data"></a>
 ###       1.3.1 AKWarm Weather Data
 It is important to understand how AKWarm determines the temperature data to use in its energy calculation for a city. Average dry bulb monthly temperature data is provided in the Energy Library for each of the approximately 20 Main Weather Cities, but not for the 253 other cities. For each of these other cities, annual average temperature or annual degree days may be present in the Energy Library. If annual average temperature is present, AKWarm compares it to the annual average temperature of the Main Weather City to come up with a temperature adjustment. That temperature adjustment is then applied to the monthly temperature from the Main Weather City to create a monthly temperature for the actual location. The adjusted monthly temperatures are used in the energy calculation..
 
