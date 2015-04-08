@@ -6,10 +6,27 @@ This U.S. Department of Energy program notice describes the minimum requirements
 
 ### Energy Estimation Methodology
 
+Three main sections of this Wiki deal with AKWarm's energy estimation methodology: 
+
+1. The Energy Calculation section details the calculations used by the AKWarm software
+2. The Technical Users Manual describes a variety of assumptions used in energy calculations and calculation methodology
+3. and the HERS Guidelines describe the requirements that AKWarm has been shown to meet, and its appendices include the actual library data used in the calculations.  
+
+The following section provides answers to the DOE audit questions in the form of brief descriptions and links to the relevant sections of this Wiki where more detailed information can be found.  
+
+
+
+----------
+### DOE Audit Questions and Responses 
+
 - What energy estimating method is used?
 
 
 - What format of climatic data is used?  If degree-day weather data is used, what base temperature is used and why?  Which weather data sites are used by different subgrantees in the Grantee territory?
+
+> AKWarm uses various climatic data for its calculations, including heating degree days, annual temperatures, and wind speeds.  20 main cities in Alaska have detailed data in the climate library, and the smaller communities typically have some amount of data that is then adjusted based on the nearest main city.  For a detailed description of how climate data is used in AKWarm, see the section on [[AKWarm Weather Data|1998-Tech-Manual#weather-data]]
+
+
 - Are existing energy use and energy requirements of the dwelling determined from actual energy bills, by generally accepted engineering calculations, or optionally, both?
 - Does the energy audit address all significant heating and cooling loads?
 - How are conductive, convective, and radiative heat losses (or gains) estimated?
@@ -49,6 +66,10 @@ This U.S. Department of Energy program notice describes the minimum requirements
 ### Measure Interaction
 
 - Describe how the energy audit tool accounts for the interaction between architectural and mechanical measures.
+
+> AKWarm analyzes each measure separately by comparing the energy use of the building with and without the improvement.  After it determines the most cost-effective improvement, it then incorporates it into the base model and re-calculates each additional measure to determine the second most cost-effective measure and so on.  Thus if the energy efficiency measures are performed in the order of cost-effectiveness, each item in the list takes into account the effects of each previous item.  For a more detailed description of this process, see the [[Improvement Calculations|AKWarm-Software-Overview#improvement-calculations]] section. 
+
+
 - Provide audit results of a sample dwelling unit to document that, when moving from an architectural to a mechanical measure, the energy audit tool adjusts the estimated fuel cost savings of measures with lower, non-interacted savings-to-investment ratios...
 
 ### Cost-effectiveness Requirements
