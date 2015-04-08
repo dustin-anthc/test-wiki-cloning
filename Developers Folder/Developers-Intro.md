@@ -9,7 +9,7 @@ This section gives a general overview of the AKWarm software from a developer's 
 Describes the AKWarm_UI project, which is the project that provides the user interface for AKWarm.  
 
 ### [[Calc Project|AKWarmCalc-Project]]  
-Describes the AKWarmCalc proect, which contains the main data structures and calculations for the software.
+Describes the AKWarmCalc project, which contains the main data structures and calculations for the software.
 
 ### [[Setup Project|AKWarm2Setup]]
  Describes the AKWarm2Setup project, which produces the installer software for AKWarm.  Also describes all aspects of creating a new version of AKWarm for installation. 
