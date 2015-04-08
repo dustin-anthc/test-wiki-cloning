@@ -1,5 +1,5 @@
 -   [Introduction](#intro)
--   [General Overview of the Residential Space Heating Calculation](#overview)
+-   [General Overview of the Residential Space Heating Calculation](#general_overview)
 -   [Calculation Details](#calc_details)
     -   [Temperature Difference driving Gross Heat Loss](#temp_difference)
     -   [U-Values of Shell Components](#u-values)
@@ -19,7 +19,7 @@ Introduction
 
 The space heating energy use calculation is the most important calculation performed by AkWarm when analyzing residential buildings and is of major importance in the commercial building energy analysis. This page describes the details of that calculation in a way that is hopefully understandable to a technical energy analyst; computer programming experience is not a prerequisite. The page focuses on the residential space heating calculation but includes a section that describes how the commercial space heating calculation differs from the residential. A description of the space cooling calculation is also included in this page.
 
-<a name="overview"></a>
+<a name="general_overview"></a>
 General Overview of the Residential Space Heating Calculation
 -------------------------------------------------------------
 
