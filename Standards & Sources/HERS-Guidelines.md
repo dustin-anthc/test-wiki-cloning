@@ -292,6 +292,7 @@ The multipliers in Table 5 shall be used when modeling energy use in Alaska.
 
 The Special Hydro Electricity multiplier shall be used in the following communities where electricity from hydroelectric dams provide the primary space heating: Craig, Douglas, Haines, Juneau, Kasaan, Ketchikan, Klawock, Kodiak, Larsen Bay, Metlakatla, Petersburg, Sitka, Skagway, Thorne Bay, Ward Cove, and Wrangell. These communities rely primarily on hydroelectric power, but many use diesel powered generators for peak loads. Wood multipliers are less than 1.0 to reflect the fact that in Alaska they represent a significant renewable resource.
 
+<a name=cost-effectiveness-inputs></a>
 ### *Inputs for Modeling Cost-Effectiveness*
 
 #### Fuel Costs
