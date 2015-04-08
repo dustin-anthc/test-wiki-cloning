@@ -808,6 +808,7 @@ If the user chooses “High”, AKWarm increases the total electrical usage by 3
 
 To determine internal gains, AKWarm assumes 95% of use is released in the insulated shell. (Some is outdoor lighting, outdoor use, and gain that causes some elevation in heat loss, e.g. hot light fixtures in the top floor ceiling) Hot-2000’s internal gain utilization curve tops out at 95%.
 
+<a name="dhw"></a>
 ### <span id="_Toc371140073" class="anchor"><span id="_Toc371140200" class="anchor"></span></span>3.1.3 Fuel use and internal gains associated with the domestic hot water heater. 
 
 #### A. Single family or multi-family, single unit buildings
