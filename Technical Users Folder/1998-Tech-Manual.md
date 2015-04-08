@@ -1719,6 +1719,7 @@ Ratio of Best (100 point) Energy Use to BEES Energy Use: Space Heating: 0.2 Dome
 <span id="GlossaryHeading" class="anchor"><span id="_Toc371140108" class="anchor"><span id="_Toc371140235" class="anchor"><span id="_Toc371146354" class="anchor"></span></span></span></span>Chapter 6 
 ========================================================================================================================================================================================================
 
+<a name="improvements"></a>
  AKWarm Home Improvement Reports
 ================================
 
