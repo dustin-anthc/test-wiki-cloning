@@ -39,6 +39,10 @@ This U.S. Department of Energy program notice describes the minimum requirements
 > Weatherization audits using AKWarm software do address domestic hot water consumption.  Estimation of energy use of systems is calculated using the method described [[here|1998-Tech-Manual#dhw]]
 
 - Are estimated fuel/energy cost savings discounted to net present value?
+
+> Yes, the estimated energy cost savings are discounted to net present value using the DOE discount rate which is updated annually.  Please see the section on [[Improvement Calculations|1998-Tech-Manual#improvements]] and the HERS Guidelines requirements for [[cost effectiveness inputs|HERS-Guidelines#cost-effectiveness-inputs]] for more details.  
+
+
 - For multifamily audits what internal verification feature, such as trueing-up the model with actual energy consumption, does the audit use to validate each audit, or how does the Grantee otherwise ensure that the building is properly modeled?
 
 
