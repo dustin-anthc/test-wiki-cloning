@@ -30,7 +30,14 @@ This U.S. Department of Energy program notice describes the minimum requirements
 
 
 - How are blower door readings and the results of other tests used by the energy estimating method?
+
+>Blower door tests are converted to an estimated natural air leakage rate which is then used in the heat loss calculation.  See the section on [[Natural Air Leakage|Space-Heating-and-Cooling-Energy-Calculations]] for more details.
+
 - Does the energy audit software address domestic hot water and/or household appliance measures?  If so, how is the energy estimated for these end uses?
+
+> AKWarm estimates energy use for household appliances so that [[internal gains|Space-Heating-and-Cooling-Calculations#gains]] are properly accounted for, but there are no options for appliance energy efficiency measures.
+> Weatherization audits using AKWarm software do address domestic hot water consumption.  Estimation of energy use of systems is calculated using the method described [[here|1998-Tech-Manual#dhw]]
+
 - Are estimated fuel/energy cost savings discounted to net present value?
 - For multifamily audits what internal verification feature, such as trueing-up the model with actual energy consumption, does the audit use to validate each audit, or how does the Grantee otherwise ensure that the building is properly modeled?
 
