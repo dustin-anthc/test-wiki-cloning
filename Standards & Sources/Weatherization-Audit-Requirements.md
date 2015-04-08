@@ -21,6 +21,15 @@ The following section provides answers to the DOE audit questions in the form of
 
 - What energy estimating method is used?
 
+>AKWarm conducts a monthly energy balance on a house design to determine potential energy requirements. The monthly energy balance includes monthly bin analyses of specific building components and mechanical systems. It evaluates the effects of solar and internal gains and determines space heating, water heating, appliances needs, based on monthly modeling of both above-grade and below grade building envelope components
+
+>1. AKWarm uses the user-supplied information for house size, location, occupant level (number of bedrooms plus one), and energy component descriptions.
+
+>2. From the Energy Library, AKWarm gets the weather information (temperature, wind speed and design temperature) and fuel and electric prices for the city where the home is located.
+
+>3. For each energy use, AKWarm does monthly calculations: each routine internally loops through each month’s weather information.
+
+>For additional information, see the [[General Overview of the Residential Space Heating Calculation|Space-Heating-and-Cooling-Energy-Calculations#general_overview]] and/or the [[Technical Users Manual section|1998-Tech-Manual#]] on the house heat balance.
 
 - What format of climatic data is used?  If degree-day weather data is used, what base temperature is used and why?  Which weather data sites are used by different subgrantees in the Grantee territory?
 
