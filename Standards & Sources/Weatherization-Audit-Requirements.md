@@ -89,6 +89,14 @@ The following section provides answers to the DOE audit questions in the form of
 
 ## Cost-effectiveness Requirements
 
+Describe how SIRs are calculated for all individual weatherization measures and for the overall package of measures installed in a dwelling unit. Include a description of how user defined measures will be allowed, including who will be allowed to develop, procedures, and Grantee monitoring of the cost effective use of user defined weatherization measures. List the costs included in
+the denominator of individual and overall SIR calculations, including at minimum the cost of materials, labor and on-site supervision.
+
+Explain how the cost of air sealing, as an energy saving measure, is included in the SIR for the package of weatherization measures. Air sealing (i.e., the air sealing measure that uses materials referenced in the Appendix A air sealing category) is the exclusive energy conservation measure that is not required to show a post-weatherization individual SIR of
+1.0 or greater. The package of weatherization measures, including costs and projected savings for air sealing, must have a post-weatherization SIR of 1.0 or greater.
+
+Describe how all incidental repair costs are included in the cost of the overall package of weatherization measures and the overall SIR (See WPN 12-9 for more details).
+
 ## Measures Considered
 
 ## Sample Audits
