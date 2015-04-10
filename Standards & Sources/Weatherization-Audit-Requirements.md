@@ -38,14 +38,14 @@ The following section provides answers to the DOE audit questions in the form of
 
 - **Are existing energy use and energy requirements of the dwelling determined from actual energy bills, by generally accepted engineering calculations, or optionally, both?**
 
-Existing energy use is generally determined by accepted engineering calculations (see the [[Energy Calculations| ]] section for more details).  AKWarm also 
+Existing energy use is generally determined by accepted engineering calculations (see the [[Energy Calculations|Space-Heating-and-Cooling-Energy-Calculations#calc_details]] section for more details).  AKWarm also allows for actual energy bills to be input into the software and it produces an actual versus modeled visualization that assessors can use to highlight potential modeling errors.  
 
 - **Does the energy audit address all significant heating and cooling loads?**
 - **How are conductive, convective, and radiative heat losses (or gains) estimated?**
 
 >A detailed description of how AKWarm estimates heat loss can be found in the [[Heat Loss|Space-Heating-and-Cooling-Energy-Calculations#losses]] section, and gains can be found in the [[Heat Gains|Space-Heating-and-Cooling-Energy-Calculations#gains]] section.
 
-- **How is the energy consumption of heating and cooling equipment estimated during the audit for pre- and post-weatherization?*8
+- **How is the energy consumption of heating and cooling equipment estimated during the audit for pre- and post-weatherization?**
 
 > For a detailed description, please see the section on [[Heating Systems|Space-Heating-and-Cooling-Energy-Calculations#heating-systems]] and on [[Cooling Systems|Space-Heating-and-Cooling-Energy-Calculations#cooling]].  In summary, energy consumption of heating equipment is estimated in one of three ways:
 > 
