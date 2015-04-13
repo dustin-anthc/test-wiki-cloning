@@ -53,7 +53,7 @@ A benefit-to-cost ratio is calculated to determine the relative cost-effectivene
 
 The formula for this calculation can be represented as: 
 
-[[/Images/BCR-equation.gif]]
+[[..wiki/Images/BCR-equation.gif]]
 
 *Where*
 
