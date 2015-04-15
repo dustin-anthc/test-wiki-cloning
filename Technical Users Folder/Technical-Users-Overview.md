@@ -4,7 +4,7 @@ These sections aim to provide the details of how AKWarm works, including how it 
 This section describes the space heating and cooling calculations in AKWarm, primarily focused on the residential model, but explaining in summary how the commercial model differs.
 
 Subsections include:
-- Climate
+- [[Climate]]
 - [[Losses|Space-Heating-and-Cooling-Energy-Calculations#losses]]
 - [[Gains|Space-Heating-and-Cooling-Energy-Calculations#gains]]
 - [[Heating systems|Space-Heating-and-Cooling-Energy-Calculations#heating-systems]]
