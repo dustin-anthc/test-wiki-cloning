@@ -3,7 +3,7 @@
 AKWarm stores climate data for nearly 300 Alaskan communities.  For the 20 Main Weather Cities, the following data is stored and used in AKWarm calculations:
 
 - Monthly Data
-	- Solar insolation
+	- Solar irradiation
 	- Wind speed
 	- Average dry bulb temperature
 - Annual Data
@@ -55,8 +55,14 @@ Shielded	Terrain Class 4, shielding class 4	.412 * (house height/32.8) ^.25
 Average	terrain class 3, shielding class 3	.678 * (house height/32.8) ^.2
 Exposed	Terrain class 3, shielding class 2	.805 * (house height/32.8) ^.2
 
-## Solar Insolation Data
+## Solar Irradiation Data
+
+AKWarm has detailed solar irradiation data for the Main Weather Cities.  Solar irradiation is the total amount of solar radiation energy received on a given surface area for a period of time.  The values used by AKWarm are hourly irradiation averages, with units in Btus / square foot / hour.   
 
 ## Ground Temperature
 
+*Need to look into calculations as Alan has updated this recently*
+
 ## Design Temperature
+
+The design temperature is used by AKWarm to determine the design heat load.  The design temperature is not the absolute minimum temperature for the location . Rather it is the  dry bulb temperature the outside air is at or above during 97.5% of the year. Although outside temperatures do occasionally go below this design temperature, the duration of these low temperature periods is so short that buildings tend to “coast” through them using heat stored in their thermal mass. When outside temperatures are above the design temperature, the rate of heat flow from the building will be less. If heating systems were designed for maximum weather conditions, excess capacity would exist during most of the system’s operating life.
