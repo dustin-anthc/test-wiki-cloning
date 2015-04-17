@@ -1,41 +1,49 @@
-Formerly “DRAFT- AKWarm ENERGY TAX CREDIT PROTOCOL V1 0”
+# AKWarm Energy Tax Credit Protocol
 
-**AkWarm ENERGY TAX CREDIT PROTOCOL**
+<a name="tax-protocol-overview"></a>
+### Overview
 
-In July 2005 Congress passed the 2005 Energy Policy Act. The legislation provided for a tax credit to builders for building energy efficient homes. To meet the energy saving requirements, a home must use no more than 50% of the energy used by a home built to 2004 International Energy Conservation Code (IECC) standards. The only way to determine if a home will qualify for the tax credit is to have an analysis done using one of the software programs approved by the IRS. AkWarm has been approved as a software program for this purpose *when used in compliance with this ENERGY TAX CREDIT PROTOCOL.*
+In July 2005 Congress passed the 2005 Energy Policy Act. The legislation provided for a tax credit to builders for building energy efficient homes. To meet the energy saving requirements, a home must use no more than 50% of the energy used by a home built to 2004 International Energy Conservation Code (IECC) standards. The only way to determine if a home will qualify for the tax credit is to have an analysis done using one of the software programs approved by the IRS. AKWarm has been approved as a software program for this purpose *when used in compliance with this ENERGY TAX CREDIT PROTOCOL.*
 
-In order to use AkWarm to show that the proposed home uses no more than 50% of the energy used by a home built to 2004 IECC standards, the Energy Rater must make 2 different AkWarm files, one incorporating the energy components as defined by the 2004 IECC standards, and the second file incorporating actual components to be used in the home. BOTH FILES MUST BE SUBMITTED TO AHFC FOR REVIEW WILL BE RETAINED BY AHFC.
+In order to use AKWarm to show that the proposed home uses no more than 50% of the energy used by a home built to 2004 IECC standards, the Energy Rater must make 2 different AkWarm files, one incorporating the energy components as defined by the 2004 IECC standards, and the second file incorporating actual components to be used in the home. BOTH FILES MUST BE SUBMITTED TO AHFC FOR REVIEW AND WILL BE RETAINED BY AHFC.
 
-1.  REFERENCE HOME :
+<a name="protocol"></a>
+### Protocol
 
-> Create IECC Standard Reference Home, using the component values from IECC 2004, as described in Table 1, below. Save this file with a unique name, beginning with the letter R-.
+1.  REFERENCE HOME: Create an IECC Standard Reference Home, using the component values from IECC 2004, as described in Table 1, below. Save this file with a unique name, beginning with the letter R-.
 
-1.  PROPOSED HOME :
+2.  PROPOSED HOME : Using this same file, rename it to start with the letter P-, and change the building components to those in the actual Proposed Design.
 
-> Using this same file, rename it to start with the letter P-, and change the building components to those in the actual Proposed Design.
+3.  ENERGY USE CALCULATION: Using the AkWarm outputs for space heating only, calculate the total annual energy use (BTU/yr) for each case as follows
 
-1.  ENERGY USE CACULATION:
-    > Using the AkWarm outputs for space heating only, calculate the total annual energy use (BTU/yr) for each case as follows – Q (BTU/yr) = [E + V] x 3,413 (BTU/kWh) + F x C where
-    > E = the annual amount of electricity used for space heating (kWh/yr)
-    > V = the annual amount of vent fan energy from mechanical ventilation specification below (kWh/yr)
-    > {NB: for proposed case, V is always zero}
-    > F = the annual amount of fuel used for space heating in the AkWarm output units (gallons, ccf, etc)
-    > C = the conversion from the fuel units to BTU, for example,
-    > C (fuel oil) = 138,000 BTU/gal, or C (natural gas) = 100,000 BTU/100 cubic feet
+	**Q (BTU/yr) = [E + V] x 3,413 (BTU/kWh) + F x C**
 
-2.  TAX CREDIT QUALIFICATION:
+	 *where:*
 
-> Fill out the Tax Credit Qualification Form (see below), demonstrating and certifying that the proposed home uses no more than 50% of the 2004 IECC reference home.
+     	E = the annual amount of electricity used for space heating (kWh/yr)
+     	V = the annual amount of vent fan energy from mechanical ventilation specification below (kWh/yr)
+     	{NB: for proposed case, V is always zero}
+    	F = the annual amount of fuel used for space heating in the AkWarm output units (gallons, ccf, etc)
+     	C = the conversion from the fuel units to BTU, for example,
+     	C (fuel oil) = 138,000 BTU/gal, or C (natural gas) = 100,000 BTU/100 cubic feet
 
-1.  Submit both files and the Tax Credit Qualification Form to AHFC.
+4. TAX CREDIT QUALIFICATION:  Fill out the Tax Credit Qualification Form (see below), demonstrating and certifying that the proposed home uses no more than 50% of the 2004 IECC reference home.
 
-**Table 1: Specifications for the Standard Reference and Proposed Designs**
+5.  Submit both files and the Tax Credit Qualification Form to AHFC.
 
-| **Building Component**      | **Reference House File**                                                                | **Proposed House File** |
-|-----------------------------|-----------------------------------------------------------------------------------------|-------------------------|
-| Above grade walls           | Type: mass wall if proposed wall is                                                     
-                                                                                                                        
-                               Mass, otherwise wood frame                                                               
+<a name="reference-specs"></a>
+### Table 1: Specifications for the Standard Reference and Proposed Designs
+
+| **Building Component** | **Reference House File** | **Proposed House File** |
+|------------------------|--------------------------|-------------------------|
+| Above grade walls      | Type: mass wall if proposed wall is mass, otherwise wood frame.
+Gross Area:  Same as proposed.
+Insulation: R19 | As proposed |
+
+
+
+                                             
+                                                                                                                   Mass, otherwise wood frame                                                               
                                                                                                                         
                                Gross area: same as proposed                                                             
                                                                                                                         
