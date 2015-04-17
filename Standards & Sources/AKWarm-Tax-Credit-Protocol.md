@@ -1,10 +1,10 @@
 # AKWarm Energy Tax Credit Protocol
 
--  [[Overview|#tax-protocol-overview]]
--  [[Protocol|#protocol]]
--  [[Specifications for the Standard Reference and Proposed Designs|#reference-specs]]
+-  [[Overview|AKWarm-Tax-Credit-Protocol#tax-protocol-overview]]
+-  [[Protocol|AKWarm-Tax-Credit-Protocol#protocol]]
+-  [[Specifications for the Standard Reference and Proposed Designs|AKWarm-Tax-Credit-Protocol#reference-specs]]
 -  [List of Cities and Weather Factors](https://docs.google.com/spreadsheets/d/1tOSD73M5SEScmzKY7QV3m2U646YDWh9yAGOrIRRzUHo/edit?usp=sharing)
--  [[Tax Credit FAQ|#tax-credit-faq]]
+-  [[Tax Credit FAQ|AKWarm-Tax-Credit-Protocol#tax-credit-faq]]
 
 
 ----------
