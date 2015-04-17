@@ -36,79 +36,20 @@ In order to use AKWarm to show that the proposed home uses no more than 50% of t
 
 | **Building Component** | **Reference House File** | **Proposed House File** |
 |------------------------|--------------------------|-------------------------|
-| Above grade walls      | Type: mass wall if proposed wall is mass, otherwise wood frame.
-Gross Area:  Same as proposed.
-Insulation: R19 | As proposed |
-
-
-
-                                             
-                                                                                                                   Mass, otherwise wood frame                                                               
-                                                                                                                        
-                               Gross area: same as proposed                                                             
-                                                                                                                        
-                               Insulation: R19                                                                          | As proposed             |
-| Basement/Crawlspace walls   | Type: same as proposed                                                                  
-                                                                                                                        
-                               Gross area: same as proposed                                                             
-                                                                                                                        
-                               Insulation: R-10 continuous or R-13 in framing cavity                                    | As proposed             |
-| Above grade floors          | Type: wood frame                                                                        
-                                                                                                                        
-                               Gross area: same as proposed                                                             
-                                                                                                                        
-                               Insulation: R-30                                                                         | As proposed             |
-| Ceilings                    | Type: wood frame,                                                                       
-                                                                                                                        
-                               Energy heel – full depth to exterior walls                                               
-                                                                                                                        
-                               Gross area: same as proposed                                                             
-                                                                                                                        
-                               Insulation: R-38                                                                         | As proposed             |
-| Windows (south)             | U-factor = 0.35                                                                         
-                                                                                                                        
-                               Area: 4.5% of conditioned floor area                                                     
-                                                                                                                        
-                               External shading: None                                                                   | As proposed             |
-| Windows (not south)         | U-factor = 0.35                                                                         
-                                                                                                                        
-                               Area: 13.5% of conditioned floor area                                                    
-                                                                                                                        
-                               External shading: None                                                                   | As proposed             |
-| Skylights                   | none                                                                                    | As proposed             |
-| Doors                       | 40ft<sup>2</sup>, U-factor = 0.35                                                       | As proposed             |
-| Air exchange rate           | Specific Leakage Area (SLA) = 0.00048 with no energy recovery                           
-                                                                                                                        
-                               For AkWarm: ACH = \* 1000\* W\* NS                                                       
-                                                                                                                        
-                               where, W = weather factor (ASHRAE Std. 136, below);                                      
-                                                                                                                        
-                               NS = number of stories                                                                   | As tested:              |
-| Mechanical ventilation      | None, unless mechanical ventilation is specified by the proposed design, in which case: 
-                                                                                                                        
-                               Annual vent fan energy (kWh/yr) = 0.03942 x CFA + 29.565 x (N + 1), where                
-                                                                                                                        
-                               CFA = conditioned floor area, and                                                        
-                                                                                                                        
-                               N = number of bedrooms                                                                   | As proposed             |
-| Heating systems             | Fuel type: same as Proposed Design                                                      
-                                                                                                                        
-                               Efficiencies (use prevailing federal minimum):                                           
-                                                                                                                        
-                               Electric: air-source heat pump                                                           
-                                                                                                                        
-                               Non-electric furnaces: AFUE 78%                                                          
-                                                                                                                        
-                               Non-electric boiler: AFUE 80%                                                            | As proposed             |
-| Thermostat                  | Type: manual, heating temperature set point = 68º F                                     | As proposed             |
-| Heating System Distribution | Choose semi-conditioned space, moderately leaky ducts                                   | As tested               |
-| Water heater                | Fuel Type: Same as proposed design                                                      
-                                                                                                                        
-                               Efficiency: Oil – EF.50                                                                  
-                                                                                                                        
-                               Gas – EF .57                                                                             
-                                                                                                                        
-                               Electric – EF.90                                                                         | As proposed             |
+| Above grade walls      | *Type:* mass wall if proposed wall is mass, otherwise wood frame.  *Gross Area:*  Same as proposed. *Insulation:* R19 | As proposed. |
+| Basement/Crawlspace walls| *Type:* same as proposed.  *Gross Area:* same as proposed. *Insulation:* R-10 continuous or R-13 in framing cavity. | As proposed |
+| Above grade floors | *Type:* wood frame. *Gross area:* same a proposed. *Insulation:* R-30 | As proposed |                                                                        
+| Ceilings           | *Type:* wood frame. *Energy heel:* full depth to exterior walls. *Gross area:* same as proposed. *Insulation:* R-38 | As proposed |    
+| Windows (south)    | *U-factor:* 0.35  *Area:* 4.5% of conditioned floor area.  *External shading:* None. | As proposed | 
+| Windows (not south) | *U-factor:* 0.35  *Area:* 13.5% of conditioned floor area. *External shading:* None | As proposed |                                                                        
+| Skylights                   | none| As proposed|
+| Doors   | 40ft<sup>2</sup>, *U-factor:* 0.35| As proposed|
+| Air exchange rate           | *Specific Leakage Area (SLA):* 0.00048 with no energy recovery.  *For AKWarm:* **ACH = SLA * 1000 * W * NS**    where W = weather factor (ASHRAE Std. 136, below) and NS = number of stories | As tested |                           
+| Mechanical ventilation      | None, unless mechanical ventilation is specified by the proposed design, in which case: **Annual vent fan energy (kWh/yr) = 0.03942 x CFA + 29.565 x (N + 1)**, where CFA = conditioned floor area, and N = number of bedrooms| As proposed |
+| Heating systems  | *Fuel type:*same as Proposed Design.  *Efficiencies (use prevailing federal minimum):*                               Electric: air-source heat pump, Non-electric furnaces: AFUE 78%, Non-electric boiler: AFUE 80% | As proposed |                                               
+| Thermostat                  | *Type:* manual, *Heating temperature set point:* 68º F | As proposed |
+| Heating System Distribution | Choose semi-conditioned space, moderately leaky ducts | As tested |
+| Water heater                | *Fuel Type:* Same as proposed design, *Efficiency:* Oil – EF 0.50, Gas – EF 0.57, Electric - EF 0.90 | As proposed |
 
 **Tax Credit Qualification Form**
 
