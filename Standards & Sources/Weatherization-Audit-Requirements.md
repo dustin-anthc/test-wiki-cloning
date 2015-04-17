@@ -96,15 +96,23 @@ the denominator of individual and overall SIR calculations, including at minimum
 > 
 > [[**NEED TO ADDD IN DISCUSSION OF USER-DEFINED MEASURES**]] 
 
-Explain how the cost of air sealing, as an energy saving measure, is included in the SIR for the package of weatherization measures. Air sealing (i.e., the air sealing measure that uses materials referenced in the Appendix A air sealing category) is the exclusive energy conservation measure that is not required to show a post-weatherization individual SIR of
-1.0 or greater. The package of weatherization measures, including costs and projected savings for air sealing, must have a post-weatherization SIR of 1.0 or greater.
+- **Explain how the cost of air sealing, as an energy saving measure, is included in the SIR for the package of weatherization measures. Air sealing (i.e., the air sealing measure that uses materials referenced in the Appendix A air sealing category) is the exclusive energy conservation measure that is not required to show a post-weatherization individual SIR of
+1.0 or greater. The package of weatherization measures, including costs and projected savings for air sealing, must have a post-weatherization SIR of 1.0 or greater.**
 
 [[**NOT SURE ABOUT THIS SECTION-- NEED TO ASK AHFC**]]
 
-Describe how all incidental repair costs are included in the cost of the overall package of weatherization measures and the overall SIR (See WPN 12-9 for more details).
+- **Describe how all incidental repair costs are included in the cost of the overall package of weatherization measures and the overall SIR (See WPN 12-9 for more details).**
 
 [[**NOT SURE ABOUT THIS SECTION-- NEED TO ASK AHFC**]]
 
 ## Measures Considered
 
+- **Provide a list of the weatherization measures that the Grantee typically "enables" for the energy audit tool to evaluate. Include material and labor costs for these measures from a Subgrantee considered to be representative of statewide conditions. Provide the expected lifetime of each measure that is used in the SIR calculation.**
+
+>The weatherization measures that the energy audit tool may evaluate can be found in the [Improvement Life and Cost Library](../wiki/Images/Appendices/AppendixC.xlsx).  Because of the geographic size of Alaska and the difficulty in transporting materials to many portions of the state, one generic cost number is not available.  AkWarm, the audit tool for the state, uses a community cost factor to account for differences in the installed cost of energy efficiency measures.  The list of these factors can be found in the [community cost factor library](../wiki/Images/Appendices/AppendixD.xlsx).  Additionally, the [fuel escalation factor table](../wiki/Images/Appendices/AppendixE.xlsx) is useful in understanding how the life cycle savings are determined.
+
 ## Sample Audits
+
+-  **Provide all input data, assumptions, and audit results (recommended measures) for ten sample dwelling units of each major type of structure (e.g., single family, manufactured housing and multifamily building) typical of those weatherized by the Grantee’s program. Completed field data collection forms, including any auditor notes, must be provided for the sample dwelling units, as well as printouts of the data entered into the energy audit software. The recommended measures reports from the audit tool must show the measure cost, first-year savings, SIR for each measure, as well as total job cost and overall SIR. The report must also include a line item for incidental repair costs per WPN 12-9 Incidental Repair Measures Guidance.**
+
+[[**AHFC should probably choose which audits they would like to use**]]
