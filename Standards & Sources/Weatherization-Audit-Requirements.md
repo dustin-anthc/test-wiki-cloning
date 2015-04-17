@@ -31,9 +31,9 @@ The following section provides answers to the DOE audit questions in the form of
 
 >For additional information, see the [[General Overview of the Residential Space Heating Calculation|Space-Heating-and-Cooling-Energy-Calculations#general_overview]] and/or the [[Technical Users Manual section|1998-Tech-Manual#]] on the house heat balance.
 
-- What format of climatic data is used?  If degree-day weather data is used, what base temperature is used and why?  Which weather data sites are used by different subgrantees in the Grantee territory?
+- **What format of climatic data is used?  If degree-day weather data is used, what base temperature is used and why?  Which weather data sites are used by different subgrantees in the Grantee territory?**
 
-> AKWarm uses various climatic data for its calculations, including heating degree days, annual temperatures, and wind speeds.  20 main cities in Alaska have detailed data in the climate library, and the smaller communities typically have some amount of data that is then adjusted based on the nearest main city.  For a detailed description of how climate data is used in AKWarm, see the section on [[AKWarm Weather Data|1998-Tech-Manual#weather-data]]
+> AKWarm uses various climatic data for its calculations, including heating degree days, annual temperatures, and wind speeds.  20 main cities in Alaska have detailed data in the climate library, and the smaller communities typically have some amount of data that is then adjusted based on the nearest main city.  For a detailed description of how climate data is used in AKWarm, see the section on [[AKWarm Weather Data|Climate]]
 
 
 - **Are existing energy use and energy requirements of the dwelling determined from actual energy bills, by generally accepted engineering calculations, or optionally, both?**
@@ -46,7 +46,7 @@ The following section provides answers to the DOE audit questions in the form of
 
 - **How are conductive, convective, and radiative heat losses (or gains) estimated?**
 
->A detailed description of how AKWarm estimates heat loss can be found in the [[Heat Loss|Space-Heating-and-Cooling-Energy-Calculations#losses]] section, and gains can be found in the [[Heat Gains|Space-Heating-and-Cooling-Energy-Calculations#gains]] section.
+>A detailed description of how AKWarm estimates heat loss can be found in the [[Heat Loss|Space-Heating-and-Cooling-Energy-Calculations#losses]] section, and gains can be found in the [[Heat Gains|Space-Heating-and-Cooling-Energy-Calculations#internal_gains]] section.
 
 - **How is the energy consumption of heating and cooling equipment estimated during the audit for pre- and post-weatherization?**
 
@@ -85,17 +85,25 @@ The following section provides answers to the DOE audit questions in the form of
 > AKWarm analyzes each measure separately by comparing the energy use of the building with and without the improvement.  After it determines the most cost-effective improvement, it then incorporates it into the base model and re-calculates each additional measure to determine the second most cost-effective measure and so on.  Thus if the energy efficiency measures are performed in the order of cost-effectiveness, each item in the list takes into account the effects of each previous item.  For a more detailed description of this process, see the [[Improvement Calculations|AKWarm-Software-Overview#improvement-calculations]] section. 
 
 
-- Provide audit results of a sample dwelling unit to document that, when moving from an architectural to a mechanical measure, the energy audit tool adjusts the estimated fuel cost savings of measures with lower, *non-interacted* savings-to-investment ratios...
+- [[**Provide audit results of a sample dwelling unit to document that, when moving from an architectural to a mechanical measure, the energy audit tool adjusts the estimated fuel cost savings of measures with lower, *non-interacted* savings-to-investment ratios...**]]
 
 ## Cost-effectiveness Requirements
 
 Describe how SIRs are calculated for all individual weatherization measures and for the overall package of measures installed in a dwelling unit. Include a description of how user defined measures will be allowed, including who will be allowed to develop, procedures, and Grantee monitoring of the cost effective use of user defined weatherization measures. List the costs included in
 the denominator of individual and overall SIR calculations, including at minimum the cost of materials, labor and on-site supervision.
 
+> SIRs for weatherization measures are first calculated individually to determine the most cost-effective measure.  The most-cost effective measure is then implemented and the remaining measures are again analyzed to determine their level of cost-effectiveness after the first measure has been implemented.  This process continues iteratively until all measures have been analyzed.  For details on the actual calculation, see the section on [[Improvement-Options]].  Additionally, the [improvement cost library](../wiki/Images/Appendices/AppendixC.xlsx) may help clarify what goes into the SIR calculations. 
+> 
+> [[**NEED TO ADDD IN DISCUSSION OF USER-DEFINED MEASURES**]] 
+
 Explain how the cost of air sealing, as an energy saving measure, is included in the SIR for the package of weatherization measures. Air sealing (i.e., the air sealing measure that uses materials referenced in the Appendix A air sealing category) is the exclusive energy conservation measure that is not required to show a post-weatherization individual SIR of
 1.0 or greater. The package of weatherization measures, including costs and projected savings for air sealing, must have a post-weatherization SIR of 1.0 or greater.
 
+[[**NOT SURE ABOUT THIS SECTION-- NEED TO ASK AHFC**]]
+
 Describe how all incidental repair costs are included in the cost of the overall package of weatherization measures and the overall SIR (See WPN 12-9 for more details).
+
+[[**NOT SURE ABOUT THIS SECTION-- NEED TO ASK AHFC**]]
 
 ## Measures Considered
 
