@@ -12,7 +12,8 @@ This section details the methodology for updating the required AKWarm score to r
 ### [[Weatherization Audit Requirements]]
 This section highlights the federal weatherization audit submittal requirements for quick reference. 
 
-### [[Tax Credit Protocol|2005-Tax-Credit-Protocol-V1-0]]
+### [[AKWarm Tax Credit Protocol]]
+This section describes the procedure that needs to be used in order to be approved for energy tax credits by the IRS.  
 
 ### [[Calculation and Assumption Sources]]
 This section provides links and details for some of the sources used to derive calculations and assumptions used in AKWarm.  
