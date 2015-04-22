@@ -1,6 +1,6 @@
 This section is a depository for miscellaneous reports and work that has been done related to AKWarm that may be useful for reference.
 
-### [[2007 Rating Program Evaluation|2007-Rating-Program-Evaluation]]
+### [[Rating Program Evaluation|Rating-Program-Evaluation]]
 This document was a 2007 analysis on different home energy rating software and the pros and cons of using each for AHFC programs in Alaska
 
 <a name="diagrams"></a>
