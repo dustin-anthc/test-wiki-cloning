@@ -20,7 +20,7 @@ ENERGY RATING PROGRAM EVALUATION
 8.  [[Options and Costs|Rating-Program-Evaluation#options-and-costs]]
 
 
-### [Appendices](/..wiki/Images/Energy-Rating-Program-Evaluation-Appendices.pdf)
+### [Appendices](..wiki/Images/Energy-Rating-Program-Evaluation-Appendices.pdf)
 
 A. Energy Use Software Program Information
 
