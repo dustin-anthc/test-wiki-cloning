@@ -14,6 +14,8 @@ The wiki is divided into four main sections-- one for **technical users** of the
 | [[Technical Users|Technical-Users-Overview]] | [[Developers|Developers-Intro]] | [[Standards and Sources|Standards-and-Sources-Overview]] | [[Miscellaneous|Miscellaneous-Overview]] |
 | Technical users such as Raters, Assessors, AHFC staff, and energy professionals should start here. | Software developers who want an overview of AKWarm so they can more easily maintain and enhance the software should start here. | Relevant state and national standards and sources of calculation assumptions | Reference material |
 
+
+#### [[NOTE: Sections in red are placeholders which will be updated as new information becomes available.]]
 ----------
 
 [[/Images/AHFC-header.png]]
