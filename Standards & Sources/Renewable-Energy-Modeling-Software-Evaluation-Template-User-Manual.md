@@ -1,16 +1,16 @@
--   [[Introduction|#remse-intro]]
--   [[How to use the Template|#how-to-use-template]]
--   [[Software Overview|#soft-overview]]
--   [[Mandatory Inputs|#mandatory-inputs]]
-    -   [[Solar PV|#mandatory-pv]]
-    -   [[Solar Thermal|#mandatory-thermal]]
-    -   [[Wind|#mandatory-wind]]
--   [[Test Cases|#test-cases]]
-    -   [[Solar PV|#test-pv]]
-    -   [[Solar Thermal|#test-thermal]]
-    -   [[Wind|#test-wind]]
--   [[Test Results|#test-results]]
--   [[Definitions|#remse-definitions]]
+-   [[Introduction|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#remse-intro]]
+-   [[How to use the Template|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#how-to-use-template]]
+-   [[Software Overview|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#soft-overview]]
+-   [[Mandatory Inputs|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#mandatory-inputs]]
+    -   [[Solar PV|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#mandatory-pv]]
+    -   [[Solar Thermal|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#mandatory-thermal]]
+    -   [[Wind|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#mandatory-wind]]
+-   [[Test Cases|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#test-cases]]
+    -   [[Solar PV|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#test-pv]]
+    -   [[Solar Thermal|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#test-thermal]]
+    -   [[Wind|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#test-wind]]
+-   [[Test Results|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#test-results]]
+-   [[Definitions|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#remse-definitions]]
 
 # Evaluation Template for Renewable Energy Modeling Software: *User Guide*
 
@@ -43,9 +43,9 @@ The person who is assessing whether or not a software program is approved is ref
 
 | **Color:** | **Meaning:**                                                                                                                                                         |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            | Software input is required for approval.                                                                                                                             |
-|            | Input is not required for approval, but is recommended. Special instructions to software users will be required to work around its absence in certain circumstances. |
-|            | *Climate data only:* Software fails if the red field is the only climate data option the software can use.                                                           |
+|       Green     | Software input is required for approval.                                                                                                                             |
+|    Yellow        | Input is not required for approval, but is recommended. Special instructions to software users will be required to work around its absence in certain circumstances. |
+|      Red      | *Climate data only:* Software fails if the red field is the only climate data option the software can use.                                                           |
 
 An evaluator shall fill out the Software Overview form, the applicable forms for renewable energy type, and the relevant portion of the Test Case Ranges form.
 
@@ -152,7 +152,7 @@ Solar Thermal
 
 ### Climate Data Inputs
 
-Solar thermal climate data inputs are the same for solar PV climate data inputs. See the [[above section|#pv-climate-inputs]] for details on acceptable climate inputs for solar thermal systems.
+Solar thermal climate data inputs are the same for solar PV climate data inputs. See the [[above section|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual#pv-climate-inputs]] for details on acceptable climate inputs for solar thermal systems.
 
 ### System Orientation
 
