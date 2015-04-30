@@ -7,7 +7,10 @@ These Home Energy Rating Software guidelines detail the requirements for HERS So
 The 2012 Alaska Building Energy Efficiency Standard is based on the 2012 International Energy Conservation Code with Alaska-specific amendments.  Meeting the standard is mandatory for all new construction in Alaska seeking AHFC financing. While meeting BEES is not required for all new construction, it has become a market standard in Alaska, with approximately half of new construction in recent years being certified to meet BEES. 
 
 ### [[REMSE Template User Manual|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual]]
-The Renewable Energy Modeling Software Evaluation Template User Manual describes the process of how to apply to have a renewable energy modeling tool become approved for use in AKWarm.   
+The Renewable Energy Modeling Software Evaluation Template User Manual describes the process of how to apply to have a renewable energy modeling tool become approved for use in AKWarm. 
+
+### [REMSE Evaluation Template](../wiki/Images/Evaluation-Template-for-Renewable-Energy-Modeling-Software.pdf) 
+The Renewable Energy Modeling Software Evaluation Template is the form for use by AHFC or its subcontractors to evaluate whether a new renewable energy modeling software shall be approved for use in AKWarm.   
 
 ### [[Method for Updating AKWarm Score for BEES|2013-BEES-Update-Method]]
 This section details the methodology for updating the required AKWarm score to receive BEES certification.  This update will need to happen each time BEES is updated, which is typically based on the 3 year International Energy Conservation Code cycle.  

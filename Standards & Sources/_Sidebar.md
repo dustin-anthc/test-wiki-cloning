@@ -8,6 +8,8 @@
 
 ## [[REMSE Template User Manual|Renewable-Energy-Modeling-Software-Evaluation-Template-User-Manual]]
 
+## [REMSE Evaluation Template](../wiki/Images/Evaluation-Template-for-Renewable-Energy-Modeling-Software.pdf)
+
 ## [[Method for Updating AKWarm Score for BEES|2013-BEES-Update-Method]]
 
 ## [[Weatherization Audit Requirements]]
